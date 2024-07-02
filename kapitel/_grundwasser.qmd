@@ -10,11 +10,11 @@ Die thermische Nutzung von Grundwasser bezieht sich auf die Verwendung von Grund
 #| warning: false
 #| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus Grundwasser in Kombination mit einer Wärmepumpe und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
 
-grafikProTechRda$grundwasser$grafik
+#grafikProTechRda$grundwasser$grafik
 ``` 
 
 
-### `r params$genutzt` (`r roundTo(grundwasser$ausbaupfad$genutzt$heizwärme_gwh,10)` GWh)
+### `r params$genutzt` (`r roundTo(grundwasser$ausbaupfad$genutzt$heizwaerme_gwh,10)` GWh)
 Im Kanton Luzern existieren aktuell `r roundTo(grundwasser$ausbaupfad$genutzt$anzahlKonzessionen, 1)`
 bewilligte und sich in Betrieb befindende Konzessionen für thermische Grundwassernutzung mit einer maximalen jährlichen Fördermenge von `r roundTo(grundwasser$ausbaupfad$genutzt$maxjährlFördermengeKonzessionen_Miom3Jahr, 1)`
 Mio. m^3^. Mit einer Temperaturdifferenz von `r roundTo(parameters$grundwasser$dT, 1)`
