@@ -1,0 +1,19 @@
+---
+lang: de 
+---
+
+## Verdreifachung der erneuerbaren Energieproduktion im Kanton Luzern
+
+Das Ziel Netto-Null 2050 und der Ausstieg aus der Kernenergie setzt den zügigen Ausbau erneuerbarer Energie voraus. Zusätzlich spielt der rasche Umstieg auf erneuerbare Energien eine wichtige Rolle in der Versorgungssicherheit. Basierend auf zwei Massnahmen des Planungsberichts Klima und Energie wurden kantonale Ausbauziele für die Produktion erneuerbarer Wärme und Elektrizität definiert.
+
+Um die Ausbauziele zu erreichen, ist eine Steigerung der erneuerbaren Energieproduktion (Strom und Wärme) von aktuell 2'400 GWh auf 7'100 GWh um einen Faktor drei nötig. Bei der Stromproduktion bedeutet dies eine Steigerung um den Faktor sechs, bei der Wärmeproduktion etwas mehr als eine Verdoppelung. 
+
+Die Ausbaupfade der einzelnen Energieträger sind auf dem kantonalen Energiedashboard visualiert und werden jedes Jahr mit den aktuellsten Daten verglichen. Das Energiedashboard bringt damit Transparenz über die gesteckten Ziele und den aktuellen Stand der Umsetzung. Entsprechende Massnahmen im Kanton, den Gemeinden und der Bevölkerung werden motiviert und haben eine Datengrundlage. 
+
+Photovoltaik trägt im Jahr 2050 mit dem grössten Anteil zur kantonalen Energieproduktion bei. Um das kantonale Ziel für Photovoltaik zu erreichen, ist eine zehnfache Steigerung von 200 GWh auf 2'000 GWh nötig. Die aktuelle Ausbaugeschwindigkeit reicht nicht aus, um dieses Ziel zu erreichen. Um zu der nötigen Beschleunigung beizutragen, hat der Kanton Luzern das Potenzial von Photovoltaik auf kantonalen Strasseninfrastrukturanlagen ermittelt. Vom theoretischen Gesamtpotenzial von 177 GWh bieten sich etwa 7 GWh zur direkten Umsetzung an. Priorisierte Objekte sind Lärmschutzwände, Stützmauern, Brücken und Überdachungen.
+
+Im Bereich Wärme setzen viele Energieträger, wie beispielsweise Seewassernutzung, den raschen Ausbau thermischer Netze voraus, um die gewonnene Wärme zum Verbraucher zu transportieren. Thermische Netze sind daher eine Voraussetzung, um die Ziele im Wärmebereich zu erreichen. Ein Schlüsselelement zur Realisierung thermischer Netzbau sind kommunale Energieplanungen, welche die Energieversorgung koordinieren und somit zur Planungssicherheit von Investoren beitragen. Diese stellen die Weichen für eine nachhaltige und vollständig erneuerbare Wärmeversorgung. Die Gemeinden sind deshalb angehalten, eine Netto-null-kompatible Energieplanung zu erstellen. Gemeinden werden dabei vom Kanton mit einem kostenlosen Beratungsangebot unterstützt. 
+
+Grundvoraussetzung für eine kommunale Energieplanung sind jedoch aktuelle Gebäudeenergiedaten, welche im Gebäude- und Wohnungsregister erfasst sind. Durch den Einbezug von kantonalen Datensätzen und in Zusammenarbeit von Forschung, Beratungsbüros, Gemeinden und Kanton wurden Einträge des kantonalen Gebäude- und Wohnungsregistert korrigiert und damit die Qualität wesentlich verbessert. Ergänzt wird das Gebäude- und Wohnungsregister durch das Leitungskataster thermischer Netze. Die Anzahl der erfassten Netze wurde auf Initiative des Kantons mehr als verdoppelt und zusätzlich mit Energiemerkmalen ergänzt. Ein vollständiges Kataster für thermische Netze wird in den nächsten Jahren angestrebt. Das verbesserte Gebäude- und Wohnungsregister inklusive Leitungskataster wurde zusammen mit weiteren kantonalen Informationen zu einer interaktiven Online-Webkarte für Energieplanungen zusammengefasst. Dieses Tool stellt den Gemeinden, Energieplanern und Raumplanern sämtliche relevanten Information zur Energieplanung zu Verfügung. 
+
+

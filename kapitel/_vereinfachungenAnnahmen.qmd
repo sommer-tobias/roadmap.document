@@ -1,0 +1,41 @@
+---
+lang: de 
+---
+
+## Vereinfachungen und Annahmen {#sec-vereinfachungenAnnahmen}
+
+Die aktuelle Energieproduktion sowie die Ausbauziele in diesem Bericht sind eine Grobabschätzung und spiegeln eine fachliche Sicht wieder. Der Fokus liegt auf der Gesamtenergiesystembetrachtung und nicht auf einer detaillierten Ausarbeitung der einzelnen Energieträger. Dieser Bericht soll ausreichend genau sein, um strategische Fragestellungen, welche das Gesamtenergiesystem betreffen, beantworten zu können. Folgende Einschränkungen sind zu beachten:
+
+1. *Speicher*: Es werden Jahresenergiebilanzen gezeigt. Saisonale Dynamiken und der Ausgleich dieser Dynamiken durch Speicher werden nicht explizit betrachtet. Durch die Abstützung auf EP2050+ werden Speicher jedoch implizit in dem Masse vorausgesetzt, wie sie im Szenario ZERO-Basis vorgesehen sind (siehe hierzu auch @sec-ep2050plus). Die Massnahme “ Förderung Winterstromproduktion und Technologien für Strom und Wärme zum saisonalen Ausgleich (KS-E2.3)” des PB K&E befasst sich mit Speichern.
+
+2. *Importe*: Auch im Jahr 2050 werden rund 25 % der Energieträger aus dem Ausland importiert (im Vergleich zu den heutigen rund 75 %). Importiert werden in der Jahresbilanz insbesondere Biogas, Wasserstoff und darauf basierende synthetische Brenn- und Treibstoffe. Diese Importe werden weitgehend im Verkehrs- und Transportsektor verwendet. Ein kleinerer Teil wird in der Industrie für Prozesswärme eingesetzt sowie zur Spitzenlastdeckung in thermischen Netzen. Der Importanteil im Wärmesektor wird in diesem Bericht vernachlässigt. Es wird davon ausgegangen, dass kein Biogas und kein Wasserstoff für die Wärmeproduktion verwendet wird.
+
+<!-- 2.	*Technologische Entwicklungen*: Eine Veränderung des Wirkungsgrades der einzelnen Technologien aufgrund von technologischem Fortschritt mit der Zeit ist nicht berücksichtigt. Ebenso wird die zeitliche Degradation der Komponenten zur Energieproduktion vernachlässigt. Es wird davon ausgegangen, dass sich beide Effekte zumindest teilweise kompensieren. -->
+
+3.	*Wärmepumpen*: Für die Jahresarbeitszahlen von Wärmepumpen werden die Mittelwerte der Jahresarbeitszahlen des Jahres 2019 und der Prognose für 2050 angenommen [Tabelle 42 in @ep2050plusT]:
+    * Luft-Wasser-Wärmepumpen: `r roundTo(parameters$luft$JAZ, 0.1)`
+    * Erdsonden-Wärmepumpen: `r roundTo(parameters$geothermieUntief$JAZ, 0.1)`
+    * Oberflächengewässer-Wärmepumpen: `r roundTo(parameters$oberflachengewaesser$JAZ, 0.1)`
+    * Grundwasser-Wärmepumpen: `r roundTo(parameters$grundwasser$JAZ, 0.1)`
+
+    Eine Jahresarbeitszahl von 3 bedeutet, dass für drei Energieeinheiten Heizwärme auf Nutztemperatur zwei Energieeinheiten aus der Umwelt (z.B. dem Erdreich) und eine Energieeinheit Strom aufgewendet werden. 
+    
+4. *Graue Energie*: Graue Energie bezeichnet die "versteckte" Energie, welche für Herstellung, Transport, Lagerung, Verkauf und Entsorgung eines Produkts aufgewendet wird. Für die Definition der Ausbauziele pro Energieträger wurde die graue Energie nicht mitbetrachtet.
+
+5.	*Kühlen*: Der Fokus bei den einzelnen Energieträgern liegt auf Heizen, nicht auf Kühlen. In @sec-kühlen wird die Entwicklung des Kühlbedarfs grob abgeschätzt und mit der Wärmeproduktion in Bezug gesetzt. Kühlen ist auch ein Thema der Massnahme "KA-E1 Gesamtsystembetrachtung Klima und Bau" des PB K&E. 
+
+6.	*Rundungsdifferenzen*: Für die Berechnungen von Energien wurden Zahlen ungerundet aus den jeweiligen Datengrundlagen verwendet. Um die Lesbarkeit zu verbessern und keine unrealistische Genauigkeit vorzutäuschen, wurden diese Zahlen im Bericht auf die etwa zu erwartenden Genauigkeiten gerundet.<!--# So wird z.B. das Ausbauziel für Solarenergie PV mit `r roundTo(solarenergiePV$ausbaupfad$ziel$strom_gwh, 10)` GWh und nicht mit `r roundTo(solarenergiePV$ausbaupfad$ziel$strom_gwh, 1)` GWh beziffert. --> In manchen Fällen kann es im Bericht dadurch zu Abweichungen zwischen den Summen von gerundeten Werten und den gerundeten Summen kommen. 
+
+7.	*Skalierung*: Werden im Bericht Bundesziele aus den EP2050+ auf den Kanton Luzern skaliert, wird konsequent mit einer Skalierung von `r roundTo(skalierungKLU$anteil * 100, 0.1)` % gearbeitet. Da jeder Energieträger standortspezifische Besonderheiten aufweist, sind die skalierten Werte als Referenz aufzufassen, welche angibt, ob sich der Kanton Luzern im Vergleich zu den Bundeszielen über- oder unterdurchschnittlich verhält. Es gibt jedoch Energieträger, bei denen aufgrund mangelnder Datenlage die skalierten Werte direkt für die kantonalen Potenziale bzw. die Ausbauziele übernommen wurden. Dies ist im Text dann so vermerkt. Die übergeordneten Ziele für Wärme und Strom setzen sich aus einem Mix aus Energieträgern zusammen. Hier halten wird die Skalierung aus den EP2050+ auf den Kanton Luzern für gültig.
+
+
+
+
+
+
+
+
+
+
+
+

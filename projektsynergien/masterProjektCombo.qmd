@@ -1,0 +1,19 @@
+---
+# title: "Potenziale und Umsetzungsmassnahmen für erneuerbare Energien im Kanton Luzern"
+# title: Vision/roter Faden/Wunschdenken verschiedener Projekte im Bereich Energie
+editor: visual
+cache: false
+crossref:
+  fig-title: Abb     # (default is "Figure")
+bibliography: referenzen/references.bib
+lang: de 
+format: docx
+
+reference-doc: templates/MSWordTemplateUwe.docx #only for docxy
+shift-heading-level-by: -1 #onle for pdf
+number-sections: true
+---
+
+{{< include kapitel/_zusammenfassungKurz.qmd >}}
+
+

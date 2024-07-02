@@ -1,0 +1,37 @@
+
+
+
+
+Die im Bericht vorgeschlagenen Ausbauziele ergeben addiert eine Strom- und Wärmeproduktion von insgesamt `r roundTo(grafikGesamtenergieRda$sw$produktionsZiel2050, 10)`
+ GWh im Jahr 2050 (@fig-resStromWaerme). Der Produktionsbedarf (schwarze Linie) geht zurück (@sec-entwicklungEndenergie). Das Produktionsziel für Strom und Wärme im Jahr 2050 mit `r roundTo(grafikGesamtenergieRda$sw$produktionsZiel2050, 10)` GWh übertrifft den nötigen Produktionsbedarf von `r roundTo(grafikGesamtenergieRda$sw$produktionsBedarf2050, 10)` GWh (@sec-zieleStromWärme) um etwa `r roundTo((grafikGesamtenergieRda$sw$bedarfÜberZiel-1)*100, 1)` % (@fig-resStromWaerme). Insgesamt ist eine über dreifache Steigerung der erneuerbaren Strom- und Wärmeproduktion von `r roundTo(grafikGesamtenergieRda$sw$produktionAktuell, 10)` GWh im Jahr 2021 auf `r roundTo(grafikGesamtenergieRda$sw$produktionsZiel2050, 10)` GWh
+   nötig (@fig-tabelleStromWärme). Photovoltaik hat im Jahr 2050 einen Anteil von `r roundTo(grafikGesamtenergieRda$sw$anteilSolarenergiePV2050*100, 1)` %
+bezüglich aller untersuchten Energieträgern. Die untiefe Geothermie folgt mit `r roundTo(grafikGesamtenergieRda$sw$anteilGeothermieUntief2050 *100, 1)` %. Verholzte Biomasse und Abwärme spielen im Jahr 2050 mit `r roundTo(grafikGesamtenergieRda$sw$anteilBiomasseVerholzt2050 * 100, 1)` % und `r roundTo(grafikGesamtenergieRda$sw$anteilAbwärme2050 * 100, 1)` %
+ weiterhin eine tragende Rolle. Die restlichen Technologien tragen weniger als 10 % bei. Die grösste Steigerung zwischen dem aktuellen Stand und dem Jahr
+ 2050 hat mit einem Faktor von `r roundTo(grafikGesamtenergieRda$sw$steigerungGeothermieTief, 10)` die tiefe Geothermie, welche heute fast inexistent ist, gefolgt von der Windenergie (Faktor `r roundTo(grafikGesamtenergieRda$sw$steigerungWindenergie, 1)`), der thermischen Solarenergie (Faktor `r roundTo(grafikGesamtenergieRda$sw$steigerungSolarenergieThermisch, 1)`) und der Photovoltaik (Faktor `r roundTo( grafikGesamtenergieRda$sw$steigerungSolarenergiePV, 1)`). 
+ \
+ 
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| label: fig-resStromWaerme
+#| fig-cap: 'Entwicklung der erneuerbaren Strom- und Wärmeproduktion im Kanton Luzern. Die schwarze durchgezogene Linie zeigt den Produktionsbedarf.'
+grafikGesamtenergieRda$sw$grafik
+```
+
+\
+
+[^erklärungAbweichungStromWärme]: Für Energieträger, welche auf Wärmepumpen basieren (untiefe Geothermie, Luft, Oberflächengewässer, Grundwasser) stimmen die Werte in der Tabelle nicht mit den Werten in den Einzelkapiteln überein, da der Strom für Wärmepumpen hier nicht berücksichtig ist um Doppelzählungen beim Strom zu vermeiden. In @fig-resWaerme ist der Strom für Wärmepumpen beinhaltet und die Werte sind identisch mit jenen in den Einzelkapiteln.
+
+<!-- # ```{r} -->
+<!-- # #| echo: false -->
+<!-- # #| eval: true -->
+<!-- # #| warning: false -->
+<!-- # #| tbl-cap: 'Übersicht der erneuerbaren Strom- und Wärmeproduktion im Kanton Luzern' -->
+<!-- # #| label: tbl-resStromWaerme -->
+<!-- # gt(grafikGesamtenergieRda$sw$tabSummaryShortPub) -->
+<!-- # ``` -->
+
+![Übersicht der erneuerbaren Strom- und Wärmeproduktion im Kanton Luzern, sortiert nach ihrem Produktionsanteil im Jahr 2050[^erklärungAbweichungStromWärme].](grafiken/grafikGesamtenergieStromUndWärme.png){#fig-tabelleStromWärme width=100%}
+
+\

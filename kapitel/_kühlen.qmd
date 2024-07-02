@@ -1,0 +1,29 @@
+## Kühlen {#sec-kühlen}
+
+Mit steigenden Temperaturen infolge der Klimaerwärmung wird der Bedarf an Kühlung, vor allem in Wohn- und Bürogebäuden, aber auch beispielsweise in Alters- und Pflegezentren oder Schulbauten steigen. Durch Extrapolation von Einzelgebäuden auf den gesamten Gebäudepark wird der Anstieg des Kühlbedarfs im Kanton Luzern von aktuell `r roundTo(kühlen$gebäude$climabau$kühlbedarf1995, 10)`
+ GWh auf `r roundTo(kühlen$gebäude$climabau$kühlbedarf2060, 10)`
+  GWh im Jahr 2050 abgeschätzt [@Settembrini2017]. @Mutschler2021 prognostizieren einen Kühlbedarf (wieder skaliert auf den Kanton Luzern) von Gebäuden, inklusive Dienstleistungs- und Bürogebäuden, zwischen `r roundTo(kühlen$gebäude$empa$kühlbedarf2050AbstrModerateLow, 10)`
+   und `r roundTo(kühlen$gebäude$empa$kühlbedarf2050AbstrModerateHigh, 10)`
+    GWh, für das extremste Szenario sogar von bis zu `r roundTo(kühlen$gebäude$empa$kühlbedarf2050FullUptakeRcp86, 10)`
+     GWh. Zu beachten ist, dass der Kühlbedarf nur während wenigen Monaten im Jahr anfällt, dann aber hohe Kühlleistungen nötig sind, was in der Planung berücksichtigt werden muss (Kühlung mit Seewasser, Regeneration von Erdsonden, Kühlen mit Grundwasser).
+
+Neben Gebäuden haben Rechenzentren einen relevanten Kühlbedarf. Werden Bundeszahlen auf den Kanton Luzern skaliert, wäre der Strombedarf der Rechenzentren im Kanton Luzern im Jahr 2019 etwa `r roundTo(kühlen$rechenzentren$kühlbedarf2019_gwh, 10)`
+ GWh und im Jahr 2026 zwischen `r roundTo(kühlen$rechenzentren$kühlbedarf2026Schätzung1_gwh, 10)`
+  GWh und `r roundTo(kühlen$rechenzentren$kühlbedarf2026Schätzung2_gwh, 10)`
+   GWh [@eicherPauli2023; @TEPHSLU2021]. Dieser Strom wird vollständig in Wärme umgewandelt und muss zum Grossteil durch einen Kühlprozess abgeleitet werden. Die abgeleitete Wärme ist Abwärme und zum Heizen verfügbar. 
+
+
+Das Abwärmepotenzial der Rechenzentren von ewl und CKW im Kanton Luzern beträgt `r roundTo(abwärme$ausbaupfad$realistisch$ckwEwl_gwh, 1)`
+ GWh. Im Kanton Luzern sind also Rechenzentren unterdurchschnittlich vertreten. Als Arbeitswerte zur Abschätzung des Kühlbedarfs (Gebäude und Rechenzentren) im Kanton Luzern werden `r roundTo(kühlen$kühlbedarfKlu2021 , 10)`
+ GWh für heute und `r roundTo(kühlen$kühlbedarfKlu2050, 10)`
+  GWh für 2050 angenommen. Dies entspricht einem Anstieg um<!--# den Faktor `r roundTo(kühlen$kühlbedarfKluSteigerungsfaktor, 1)` --> ein Zehnfaches.
+
+ 
+In @fig-resWaerme ist die Entwicklung des Kühlbedarfs mit der prognostizierten Wärmeproduktion im Kanton Luzern überlagert (grau gestrichelte Linie). Der Anteil des Kühlbedarfs im Jahr 2050 am Produktionsziel für Wärme beträgt `r roundTo(grafikGesamtenergieRda$w$anteilKühlbedarfAmProduktionsziel * 100, 1)` %. Der Vergleich der Jahresenergien für Heizen und Kühlen wie in @fig-resWaerme soll als erster Grössenvergleich aufgefasst werden. Da der Kühlbedarf und daher auch die Abwärme jedoch hauptsächlich im Sommer anfallen, wenn der Heizbedarf gering ist, kann die Abwärme oft nicht direkt zum Heizen genutzt werden. Zudem stellen tagestemperaturabhängige Leistungsschwankungen beim Kühlbedarf eine Herausforderung dar. Zeitliche Diskrepanzen zwischen Kühl- und Heizbedarf können durch Speicher überbrückt werden. Speicher sind ein Schwerpunkt der Massnahme "KS-E2.3: Förderung Winterstromproduktion und Technologien für Strom und Wärme zum saisonalen Ausgleich" des PB K&E.    
+
+
+
+
+
+
+

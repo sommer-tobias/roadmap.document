@@ -1,0 +1,60 @@
+
+## Ziele der erneuerbaren Strom- und Wärmeproduktion im Kanton Luzern {#sec-zieleStromWärme}
+Die in Kapitel @sec-entwicklungEndenergie ermittelten Endenergieverbräuche für Strom (`r roundTo(grafikUebersichtEPFinalRda$j2050$stromverbrauch, 10)` GWh)
+ und Wärme (`r roundTo(grafikUebersichtEPFinalRda$j2050$wärmeverbrauch, 10)` GWh) sollen im Jahr 2050 vollständig durch erneuerbare Energien gedeckt werden (rechte Balken in @fig-ziellandschaftStromWärme). Um dieses Ziel zu erreichen, müssen bei der Produktion ebenfalls Verluste miteinbezogen werden. Im Stromsektor beinhalten die Verluste neben den Verteilverlusten ebenso die Energie für Umwandlungsprozesse (z.B. Wasserstofferzeugung) und Energie zur Abscheidung und Speicherung von CO~2~ (CCS, Carbon Capture and Storage, NET, Negativemissionstechnologien). Im Wärmesektor wurden Verteilverluste von `r roundTo(parameters$anteilWärmeverluste*100, 1)` % angenommen[^verlusteTN].
+\
+
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| label: fig-ziellandschaftStromWärme
+#| fig-cap: 'Ziellandschaft für Strom und Wärme im Jahr 2050 im Kanton Luzern. Der Strom für Wärmepumpen ist in dieser Grafik in der Stromproduktion (blaue Balken) beinhaltet und bei der Wärmeproduktion (rote Balken) abgezogen, um Doppelzählungen zu vermeiden.'
+#| fig-asp: 0.9
+#| fig-width: 6
+grafikUebersichtEPFinalRda$j2050$grafik
+```
+
+\
+
+Die Gesamtverluste betragen `r roundTo(grafikUebersichtEPFinalRda$j2050$verluste, 10)` GWh. Unter Berücksichtigung der Verluste resultiert im Stromsektor ein Produktionsbedarf von `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfStromproduktionGesamt, 10)` GWh und im Wärmesektor von `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfWärmeproduktionKantonLuzernExklElektrizität, 10)` GWh (@fig-tabelleGetSummaryTable). In der "Vorlage für eine sichere Stromversorgung"[^notizMantelerlass] ist für die erneuerbare Stromproduktion (skaliert auf den Kanton Luzern) im Jahr 2050 aktuell ein Zielwert von `r roundTo(grafikUebersichtEPFinalRda$j2050$stromproduktionMantelerlassKlu_gwh, 10)` GWh definiert, welcher das Ziel der EP2050+ (`r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfStromproduktionGesamt, 10)` GWh) deutlich übertrifft. In diesem Bericht wird vorerst weiterhin von den Produktionszielen der EP2050+ ausgegangen. Die Wärmeversorgung soll vollständig durch Produktion innerhalb des Kantons Luzern gedeckt werden[^stromanteilDerWärme]. 
+\
+
+Im Stromsektor bildet auf Bundesebene die Wasserkraft eine wichtige Stütze. Da der Kanton Luzern kein Wasserkraftkanton ist, wird davon ausgegangen, dass der Kanton Luzern weiterhin Strom aus Wasserkraft beziehen wird, welcher in anderen Kantonen mit besseren Standortbedingungen erzeugt wird[^ausserkantonaleWasserkraft]. Hier wird angenommen, dass `r roundTo(parameters$wasserkraft$anteilAusserkantonaleWasserkraft * 100, 1)` % der Gesamtproduktion aus Schweizer Wasserkraft prozentual auf alle Kantone verteilt wird. Die verbleibenden `r roundTo((1 - parameters$wasserkraft$anteilAusserkantonaleWasserkraft) * 100, 1)` % werden direkt für den Bedarf in den Produktionskantonen (etwa `r roundTo((1 - parameters$wasserkraft$anteilAusserkantonaleWasserkraft-sbb$anteilSbbAnWasserkraftproduktion) * 100, 1)` %) und den Strombedarf der Schweizer Bundesbahnen (etwa `r roundTo(sbb$anteilSbbAnWasserkraftproduktion * 100, 1)` %) eingesetzt[^bahnstrom]. Mit diesen Annahmen wird der Kanton Luzern im Jahr 2050 `r roundTo(grafikUebersichtEPFinalRda$j2050$stromWasserkraftausserkantonal, 10)` GWh Strom beziehen, welcher durch Wasserkraft ausserhalb der Kantonsgrenzen produziert wurde. Die verbleibenden `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfStromproduktionKantonLuzern, 10)` GWh des Produktionsbedarfs - das sind `r roundTo(getSummary$anteilInnerkantonaleProduktionAmProduktionsbedarf$j2050$strom* 100, 1)` % der Produktionsbedarfs - sollen innerhalb des Kantons Luzern produziert werden [^vergleichKantonZürich].
+
+
+
+
+<!-- das sind `r roundTo(grafikUebersichtEPFinalRda$j2050$anteilStromInnerkantonal* 100, 1)` % - sollen innerhalb des Kantons Luzern produziert werden [^vergleichKantonZürich]. -->
+
+ 
+Zusammenfassend resultiert folgender Produktionsbedarf für die Produktion innerhalb des Kantons Luzern im Jahr 2050, welcher ausschliesslich mit erneuerbaren Energieträgern erreicht werden soll: 
+\
+
+* Stromproduktion: **`r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfStromproduktionKantonLuzern, 10)` GWh**
+* Wärmeproduktion: **`r roundTo( grafikUebersichtEPFinalRda$j2050$bedarfWärmeproduktionKantonLuzernInklElektrizität, 10)` GWh** inkl. Wärmepumpenstrom (`r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfWärmeproduktionKantonLuzernExklElektrizität, 10)` GWh ohne Wärmepumpenstrom)
+* Gesamtproduktion Strom und Wärme: **`r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfProduktionStromWärmeKantonLuzern, 10)` GWh**
+
+
+[^verlusteTN]: Verteilverluste in thermischen Netzen liegen zwischen 10 % bis 15 % bei Hochtemperaturnetzen und 0 % bei Niedertemperaturnetzen (Anergienetze) [@Hangartner2018]. Bei einem Grossteil des Wärmesektors sind Produktion und Nutzung fast am gleichen Ort (z.B. bei Erdsonden oder Luft-Wasser-Wärmepumpen). In diesem Fall sind kaum Wärmeverluste zu erwarten. Daher ist ein mittlerer Verteilverlust von 5 % eine vertretbare Annahme. 
+
+[^notizMantelerlass]: Bundesgesetz über eine sichere Stromversorgung mit erneuerbaren Energien, noch nicht rechtskräftig, Referendum im Oktober 2023 ergriffen, Abstimmung am 9. Juni 2024
+
+[^vergleichKantonZürich]: Zum Vergleich: Die Energiestrategie des Kantons Zürich [@energieplanungKZurich] geht davon aus, dass ein Anteil von `r roundTo(parameters$kantonZürich$anteilStromproduktionAnBedarfInnerhalbKanton * 100, 1)` % des Stromproduktionsbedarfs durch innerkantonale Produktion gedeckt wird.
+
+[^stromanteilDerWärme]: Die Stromproduktion soll zu `r roundTo(grafikUebersichtEPFinalRda$j2050$anteilStromInnerkantonal* 100, 1)` % innerhalb das Kantons Luzern stattfinden. Der Rest wird mit ausserkantonaler Wasserkraft produziert. Da Wärmepumpen zur Wärmeproduktion Strom benötigen, welcher teilweise nicht innerhalb des Kantons Luzern produziert wird, findet streng genommen die Wärmeproduktion ebenfalls nicht zu 100 % innerhalb des Kantons statt.
+
+[^ausserkantonaleWasserkraft]: Das Stromnetz endet nicht an den Kantonsgrenzen. Im Stromnetz kann zudem nicht nach Energieträger unterschieden werden. Es werden daher in der Realität auch andere Energieträger Strom über die Kantonsgrenzen liefern. Bei der Definition der kantonalen Produktionsziele wird jedoch ausschliesslich bei der Wasserkraft von einer ausserkantonalen Produktion ausgegangen.
+
+[^bahnstrom]: Der [Stromverbrauch der Schweizer Bundesbahnen](https://reporting.sbb.ch/nachhaltigkeit?highlighted=2203bf6b26fb16314ed762fed7e5ca3b&years=1,4,5,6,7&scroll=249) betrug im Jahr 2021 `r roundTo(sbb$Strom2021, 10)` GWh, dies entspricht `r roundTo(sbb$anteilSbbAnStromverbrauch * 100, 1)` % des Stromverbrauchs der Schweiz und `r roundTo(sbb$anteilSbbAnWasserkraftproduktion * 100, 1)` % der Stromerzeugung durch Schweizer Wasserkraftwerke (ohne Pumpspeicherkraftwerke). 
+
+<!-- Und liegt in der gleichen Grössenordnung wie die `r roundTo(grafikUebersichtEPFinalRda$j2050$stromWasserkraftausserkantonal, 10)` GWh, welche der Kanton Luzern nach diesem Bericht aus ausserkantonaler Wasserkraft bezieht. Die Stromproduktion aus Wasserkraft (Laufwasserkraftwerke und Speicherkraftwerke) in der Schweiz betrug im Jahr 2021 `r roundTo(ep2050plus$stromerzeugungWasserkraftCH2021_gwh , 10)` GWh. -->
+ 
+
+
+
+
+
+<!-- ![Ziellandschaft Strom und Wärme im Jahr 2050 im Kanton Luzern](output/testgrafik.png){#fig-ziellandschaftStromWärme2 width=100%} -->
+
+

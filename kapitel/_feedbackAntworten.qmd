@@ -1,0 +1,167 @@
+## Kommentare und Antworten aus der Stakeholderkonsultation {#sec-feedbackAntworten}
+Luzern, `r format(Sys.Date(), "%d %B, %Y")`\
+\
+Kommentare in **fett**, Antworten in *kursiv*.\
+\
+
+```{=html}
+<b>fra
+allgemein<br>
+</b>
+```
+**Zusammenfassung und Titel des Berichts**\
+*Die Zusammenfassung des Berichts wurde aufgrund zahlreicher Kommentare komplett überarbeitet. Zusätlich wurde neu eine Tabelle eingefügt, welche die wichtigsten Zahlen des Berichts zusammenfasst. Der Titel wurde von "Potenziale und Ausbauziele für die erneuerbare Energieproduktion im Kanton Luzern" nach interner Absprache zu "Potenziale der erneuerbaren Energieproduktion im Kanton Luzern" geändert.*\
+```{=html}
+<b>
+marco stephan<br>
+</b>
+```
+**Meines Erachtens gäbe es in der Grafik zu den Systemgrenzen der Potenzial noch eine entscheidende weitere Ebene: gesellschaftlich vertretbares/akzeptiertes Potenzial, also soziokulturelle oder gar politische Aspekte. Vgl. Abstimmungen zu alpinen PV Anlagen, Windenergieanalgen (bspw. Rickenbach LU) usw.**\
+*Das ist richtig. Dieses Potenzial ist jedoch objektiv fast unmöglich zu bestimmen. Wir beschränken uns im Bericht daher auf das theoretische und das realistische Potenzial.*\
+\
+**Vorallem bei der Wärme ist eine saisonale Betrachtung, also eine Leistungsbetrachtung zusätzlich zu einer Energiebetrachtung notwendig.**\
+*Wir stimmen zu. In diesem Bericht wird von Jahresenergien ausgegangen. Eine saisonale Betrachtung ist durch die Orientierung an den EP2050+ teilweise berücksichtigt. Die Themen "Kühlen" und "erneuerbare Brenn- und Treibstoffe als Ergänzung zur antizyklischen PV-Produktion"  verlangen eine saisonale, bzw. eine Leistungsbetrachtung. Wir werden dieses Anliegen bei der Ausarbeitung des nächsten Planungsberichts Klima und Energie 2026 berücksichtigen.*\
+\
+**Das Solarpotenzial gemäss der vermerkten Quelle als realistisches Potenzial auszuweisen, erachte ich als kritisch. Denn insbesondere wirtschaftliche Aspekte werden dazu führen, dass dieses nicht annähernd ausgeschöpft wird, insb. bei kleinen Liegenschaften, mit vergleichsweise viel Dachfläche aber einem kleinen Verbrauch. Grosse Anlagen liefern ein schlechtes Eigenverbrauchsverhältnis und eine geringe Wirtschaftlichkeit, wegen hoher Rückspeisung und ungewisser Ertragsentwicklung.**\
+*Die Wirtschaftlichkeit hängt von den zukünftigen Förderungen, Energiepreisen und Rückliefertarifen ab. Diese sind variabel und unsicher. Wir halten es daher für sinnvoll, beim PV-Potenzial weiterhin von den verfügbaren Flächen auszugehen.*\
+\
+**Nutzungskonflikt Solarthermie und PV auf denselber Dachflächen.**\
+*Das Ausbauziel für PV ist auch dann noch tiefer als das realistische Potenzial für PV, wenn beim realistischende Potenzial entsprechende Flächen für Solarthermie abgezogen werden. Dies wird durch folgenden Kommentar in der Fussnote zum Kapitel Solarenergie PV erläutert: "Würde auf den Dächern PV und Solarthermie (für Warmwasser) kombiniert, reduziert sich die verfügbare Fläche für PV dementsprechend. Das realistische Potenzial für PV verringert sich dadurch auf 2’590 GWh (Bundesamt für Energie, 2019). Jedoch auch dann ist das Ausbauziel von 2’490 GWh noch möglich, würde jedoch das so definierte realistische Potenzial fast vollständig ausschöpfen."*\
+\
+**auch die benötigten erneuerbaren gase? evtl. müssen die annahmen früher kommen, um solche fragen früher zu beantworten (Kommentar bezieht sich auf die Wärmeproduktion, welche zu 100 % im Kanton Luzern stattfinden soll)**\
+*Das Kapitel "Vereinfachungen und Annahmen" wird neu als erstes Methodikkapitel aufgeführt. Darin ist auch auch die Vernächlässigung von Importen erneuerbarer Gase für die Wärmeproduktion enthalten.*\
+```{=html}
+<b>
+gregor jung<br>
+</b>
+```
+**Auf die Produktion von Wasserstoff und dessen einfach speicherbare Formen (Ammoniak, Methanol) wird in diesem Dokument grossmehrheitlich nicht eingegangen. Diese sind aber als Ergänzung zur antizyklischen PV-Produktion sehr entscheidend.**\
+*Wir stimmen zu und im Kapitel "Vereinfachungen und Annahmen" ist dies so ausgewiesen. In der Projekt- und Steuerungsgruppe wurde das Anliegen diskutiert. Es wurde entschieden, aufgrund der Unsicherheit der zukünftigen Entwicklung in diesem Bereich und der mangelnden Datenlage - für den Moment - auf einen detaillierten Beschrieb der Rolle erneuerbarer Brenn- und Treibstoffe im Wärmesektor zu verzichten. Der Bericht ist als Ausgangslage zu betrachten und wird stetig weiterentwickelt. Der Einbezug erneuerbarer Brenn- und Treibstoffe wird in Zukunft ein wichtiger Aspekt sein. Siehe dazu auch die Massnahme: "KS-E2.3: Förderung Winterstromproduktion und Technologien für Strom und Wärme zum saisonalen Ausgleich" des PB K&E. Wie beim Thema "Kühlen" ist auch hier eine saisonale Betrachtung nötig, welche über die Jahresbilanzierung des aktuellen Berichts hinausgeht.*\
+\
+**sinnvoll import von biogas und wasserstoff zu vernachlässigen?**\
+*In der Projekt- und Steuerungsgruppe wurde das Anliegen diskutiert und entschieden, auf eine detailliertere Analyse zu verzichten. Siehe auch vorherige Antwort.* \
+```{=html}
+<b>
+Simon Schärer<br>
+</b>
+```
+**Wurde hier der Anteil Wasserkraft, der als Bahnstrom verwendet wird, ausgeklammert? wieviel prozent des stromverbrauchs ist bahnstrom?**\
+*Im Kapitel "Ziele der erneuerbaren Strom- und Wärmeproduktion im Kanton Luzern" wurde eingefügt: "Hier wird angenommen, dass 80 % der Gesamtproduktion aus Schweizer Wasserkraft prozentual auf alle Kantone verteilt wird. Die verbleibenden 20 % werden direkt für den Strombedarf in den Produktionskantonen (etwa 14 %) und den Strombedarf der Schweizer Bundesbahnen (etwa 6 %) eingesetzt". Zusätzlich wurde folgende Fussnote ergänzt: "Der Stromverbrauch der Schweizer Bundesbahnen betrug im Jahr 2021 2’130 GWh, dies entspricht 4 % des Stromverbrauchs der Schweiz und 6 % der Stromerzeugung durch Schweizer Wasserkraftwerke (ohne Pumpspeicherkraftwerke)"*
+\
+
+**Die verbindlichen Zielsetzungen des Mantelerlasses sehen bis 2035 einen wesentlich schnelleren Ausbau als die EP2050+ vor. Inwiefern wird dies noch berücksichtigt?**\
+*Im Kapitel "Ziele der erneuerbaren Strom- und Wärmeproduktion im Kanton Luzern" wurde folgender Absatz eingefügt "In der “Vorlage für eine sichere Stromversorgung”  ist für die erneuerbare Stromproduktion (skaliert auf den Kanton Luzern) im Jahr 2050 aktuell ein Zielwert von 5’330 GWh definiert, welcher das Ziel der EP2050+ (4’810 GWh) deutlich übertrifft. In diesem Bericht wird vorerst weiterhin von den Produktionszielen der EP2050+ ausgegangen."*\
+\
+**Wurde der Rückgang Heizgradtage und Anstieg Kühlgradtage aufgrund der Klimaveränderung berücksichtigt?**\
+*Ja. Durch Abstützung auf die EP2050+ sind diese Entwicklungen implizit berücksichtigt.*\
+```{=html}
+Urs-Peter Menti/Markus Koschenz, HSLU
+```
+**Es fehlt ein Hinweis auf die Koordination mit anderen Kantonen**\
+*Die Energiefachstellen sind durch die Energiefachstellenkonferenz (EnFK) sowohl auf nationaler als auch auf zentralschweizer Ebene vernetzt. Desweiteren ist die Vernetzung mit anderen Kantonen durch die Teilnahme an verschiedenen nationalen Arbeitsgruppen sichergestellt, z.B. der AG MuKEn, AG Förderung, AG Energiedaten, AG Aus- und Weiterbildung. Auf einen Hinweis darauf im Bericht wird verzichtet.*\
+\
+**Wurden graue Treibhausgasemissionen bei den Ausbauzielen berücksichtigt?**\
+*Nein. Für die Ausbauziele wurde pro Energieträger die aktuelle Produktion und das Potenzial berücksichtigt. Als Randbedingung muss zusätzlich die Summe der erneuerbaren Energieproduktion den Bedarf an Strom und Wärme in 2050 zu 100 % decken. Dies ist neu auch im Kapitel "Vereinfachungen und Annahmen" so vermerkt. Für die Priorisierung der Energieträger bei den Workshops im Herbst 2023 flossen jedoch die Umweltbelastungspunkte mit ein. Die Umweltbelastungspunkte beinhalten "die Nutzung von Energie- und stofflichen Ressourcen, von Land und Süsswasser, durch Emissionen in Luft, Gewässer und Boden, durch die Ablagerung von Rückständen aus der Abfallbehandlung sowie durch Verkehrslärm." Bei den "Emissionen in Luft" sind die grauen Treibhausgasemissionen enthalten. In der nachgelagerten konkreten Massnahmenausarbeitung werden graue Emissionen berücksichtigt.*\
+\
+**In einer solchen Untersuchung ist es nicht vertretbar, dem Thema Kühlen eine nur so untergeordnete Rolle beizumessen. Gerade der Umgang mit dem Kühlen bedarf Weitsicht (thermische Netzte, Oberflächenwasser usw.). Ich bitte die Berichtsverfasser dieses Thema der Bedeutung entsprechend in die Publikation aufzunehmen**\
+*Kühlen ist wichtig, nimmt jedoch im aktuellen Bericht eine untergeordnete Rolle ein. Eine detaillierte Betrachtung übersteigt jedoch den Rahmen des aktuellen Berichts. Im aktuellen Bericht schaffen wir eine Grundlage der Grössenordnungen der einzelnen Energieträger im Gesamtenergiesystem basierend auf Jahresenergien. Um der Kühlthematik gerecht zu werden, ist eine saisonale Betrachtung basierend auf Leistungen, nicht auf Energien nötig. Den Hinweis dazu haben wir im Kapitel "Kühlen" ergänzt. Wir werden prüfen, ob Kühlen (mit Fokus auf einer Leistungsbetrachtung) eine separate Massnahme im nächsten Planungsbericht Klima und Energie 2026 sein wird.*\
+\
+**Macht eine Aggregation von Strom und Wärme in eine Grafik Sinn?**\
+*Eine solche Agreggation macht Sinn, weil damit die Grössenverhältnisse von Strom und Wärme sichtbar werden. In der Literatur wird häufiger über Strom berichtet, vermutlich weil dieser besser messbar und daher auch dokumentierbar ist. Etwa die Hälfte der Endenergie ist jedoch Wärme. Zusätzlich zur Gesamtenergiebetrachtung finden sich im Bericht auch separate Betrachtungen der Sektoren Strom und Wärme (siehe Kapitel "Übersicht aller Ausbauziele").*\
+```{=html}
+<b>
+Andreas Hurni<br>
+</b>
+```
+**Evtl. bei Solarenerige PV die Ausbauziele gemäss Mantelerlass bzw. Stromgesetz ergänzen, die höher sind.**\
+*Es wurde folgende Aussage ergänzt: Swissolar geht von einer Produktion von 45 TWh bis 2050 aus. Dies entspricht auch dem Ziel für die erneuerbare Stromproduktion ohne Wasserkraft im Jahr 2050 gemäss der Vorlage zum Dies entspricht auch dem Ziel für die erneuerbare Stromproduktion ohne Wasserkraft im Jahr 2050 gemäss der Vorlage zum "Gesetz über eine sichere Stromversorgung mit erneuerbaren Energien". Erneuerbare Energien ohne Wasserkraft sind zum Grossteil durch die Photovoltaik bestimmt. 45 TWh national entsprechen 2’850 GWh für den Kanton Luzern.*\
+```{=html}
+<b>
+NELU<br>
+</b>
+```
+**Die Skalierung der Potenziale ist unseres Erachtens nur teilweise sinnvoll/zulässig bzw. muss je Technologie differenziert betrachtet werden aufgrund z.B. von topografischen, raumstrukturellen und meteorologischen Voraussetzungen des Kantons Luzern.**\
+*Im Kapitel "Vereinfachungen und Annahmen" wurde dieser Punkt wie folgt aufgenommen: "Werden im Bericht Bundesziele aus den EP2050+ auf den Kanton Luzern skaliert, wird konsequent mit einer Skalierung von 6.3 % gearbeitet. Da jeder Energieträger standortspezifische Besonderheiten aufweist, sind die skalierten Werte als Referenz aufzufassen, welche angibt, ob sich der Kanton Luzern im Vergleich zu den Bundeszielen über- oder unterdurchschnittlich verhält. Es gibt jedoch Energieträger, bei denen aufgrund mangelnder Datenlage die skalierten Werte direkt für die kantonalen Potenziale bzw. Ausbauziele übernommen wurden. Dies ist im Text dann so vermerkt. Die übergeordneten Ziele für Wärme und Strom setzen sich aus einem Mix aus Energieträgern zusammen. Hier halten wird die Skalierung aus den EP2050+ auf den Kanton Luzern für gültig."*\
+\
+**Das 2000-Watt-Ziel ist im kantonalen Energiegesetz verankert. Die Reduktion des Endenergieverbrauchs pro Person sollte daher noch stärker vorangetrieben werden als hier vorgesehen. Um die Klima- und Energieziele zu erreichen, sind aus unserer Sicht die beiden Schienen „Effizienz“ und „Ausbau der erneuerbaren Energien“ voranzutreiben.**\
+*Beim vorliegenden Bericht handelt es sich um eine erste pragmatische Abschätzung der nötigen Ausbauziele pro Energieträger, wobei sich der Energieverbrauch (auch pro Person) gemäss den EP2050+ reduziert. Die Reduktion des Energieverbrauchs in den EP2050+ reicht nicht aus, um die 2000-Watt-Ziele bis 2050 zu erfüllen. Dies ist im Bericht erwähnt. Würde sich der Energieverbrauch gemäss 2000-Watt entwickeln, könnten die Ausbauziele reduziert werden. In einem ersten Schritt halten wir im Anbetracht der unsicheren Entwicklung des Energieverbrauchs und des akuten Handlungsbedarfs ambitionierte Ausbauziele für sinnvoller. Deckt die erneuerbare Energieproduktion den Energieverbrauch früher als erwartet, können die Ausbauziele dementsprechend angepasst werden.*\
+\
+**Es kann auch erneuerbarer Strom aus anderen Quellen sein, der in den Kanton importiert wird (z.B. Windkraft, Geothermie etc.)** \
+*Im Kapitel "Ziele der erneuerbaren Strom- und Wärmeproduktion" wurde folgende Fussnote ergänzt: "Das Stromnetz endet nicht an den Kantonsgrenzen. Im Stromnetz kann zudem nicht nach Energieträger unterschieden werden. Es werden daher in der Realität auch andere Energieträger Strom über die Kantonsgrenzen liefern. Bei der Definition der kantonalen Produktionsziele wird jedoch ausschliesslich bei der Wasserkraft von einer ausserkantonalen Produktion ausgegangen."*\
+\
+**Das ist nicht mal 25 % des realistischen Potenzials (bezieht sich auf Windenergie), während bei PV -  richtigerweise -  75% des realistischen Potenzials ausgeschöpft werden sollen. Die Ziele für die Windenergie im Kanton Luzern sollten aus unserer Sicht deutlich ambitionierter sein. **\
+*Folgender Text wurde im Kapitel Windenergie ergänzt: "Das Ausbauziel der Windenergie entspricht einer Potenzialausschöpfung von 23 %. Dies ist die geringste Potenzialausschöpfung aller 12 untersuchten Energieträger. Das Ausbauziel ist daher konservativ und als Minimalziel aufzufassen."*\
+\
+**Das Ausbauziel von 1'700 GWh für Geothermie untief erachten wir ebenfalls als eher tief, gemessen am theoretischen Potenzial von 4‘200 GWh. Hier braucht es definitiv genauere Analysen des Wärmebedarfs in den Erdwärmegebieten im Sinne eines Gegenüberstellens des Bedarfs und der Potenziale in diesen Gebieten.**\
+*Wir stimmen zu und schlagen die Analysen auch im Text vor. Die 1'700 GWh sind als vorläufiger Arbeitswert anzusehen.*\
+\
+**Beim Energieträger Luft und dem realistischen Potenzial ist die Skalierung zu differenzieren. Der Schall ist je nach Bebauungsdichte unterschiedlich einzuordnen, daher ist die Ausnutzung des Potenzials je nach Bebauungsdichten unterschiedlich**.\
+*Das ist richtig und wird neu im Text zum Kapitel Luft auch so erwähnt.*\
+\
+**Die Skalierung des theoretischen und realistischen Potenzials (nach Stromverbrauch) beim Energieträger Geothermie tief ist unseres Erachtens zu überdenken. Das Geothermiepotenzial ist doch viel mehr geologisch und durch mögliche Standorte (wo die Abwärmenutzung gegeben ist) definiert.**\
+*Im Bericht wurde eingefügt: "Sowohl für das theoretische als auch für das realistische Potenzial fehlen Grundlagenstudien, welche die Geologie, mögliche Standorte und den lokalen Wärmebedarf miteinbeziehen. Aufgrund mangelnder Daten werden hier die skalierten Bundeswerte übernommen."*\
+\
+**Das sind unseres Erachtens sehr konservative Annahmen (bezogen auf das Ausbauziel Geothermie tief)** \
+*Wir nehmen dies so zur Kenntnis für zukünftige Anpassungen.*\
+\
+**Das Potenzial (Grundwasser) kann nur dort genutzt werden, wo Wärmebedarf vorhanden ist. Auch hier braucht es ein räumliche Analyse von Potenzial und Bedarf (Dito Erdwärme). Um möglichst viel des realistischen Potenzials ausschöpfen zu können, ist hier eine regionale Planung/Koordination unter Berücksichtigung der Temperaturauswirkungen notwendig.**\
+*Ein der Fussnote zum realistischen Potenzial wird neu vermerkt: "Voraussetzung für die Nutzung des Potenzials ist der lokale Wärmebedarf. Dieser Aspekt reduziert das realistische Potenzial zusätzlich. Die dafür nötige räumliche Analyse des Wärmebedarfs übersteigt den Rahmen dieses Berichts."*\
+\
+**Aus unserer Sicht ist diese Abschätzung (bzgl. realistisches Potenzial Oberflächengewässer) sehr konservativ und es besteht hier ein grösseres Potenzial als die bereits angefragten Konzessionen (z.B. am Sempacher- und Baldeggersee). Wieso werden beim Ausbauziel (für Oberflächengewässer) nur 350 GWh angenommen, wenn bereits Anfragen für 620 GWh vorliegen? Was sind hier limitierende Faktoren und wieso?**\
+*Die Datenlage für das realistische Potenzial für Oberflächengewässer im Kanton Luzern ist limitiert und eine detailliertere Studie ist im Rahmen dieses Projekts nicht möglich. Das theoretische Potenzial von 4'600 GWh zeigt, dass das Wasservolumen der Seen im Kanton Luzern nicht limitierend ist. Es sind wirtschaftliche Faktoren, die das realistische Potenzial bestimmen. Wir gehen davon aus, dass die Wirtschaftlichkeit gegeben ist, wenn bereits Konzessionen vorliegen. Für das Ausbauziel haben wir vermerkt, dass dieses aktuell eher konservativ ist (gestützt auf einer Einschätzung von ewl).*\
+\
+**Verglichen mit den 350 GWh Seewärme und den 190 GWh tiefer Geothermie ist dieses Potenzial sehr hoch und entspricht auch nicht den Energieperspektiven 2050+. Zumal tendenziell mehr Anlagen gebaut werden müssen um die gleichen Produktionszahlen zu erreichen. Die Skalierung ist zu differenzieren: ist das Potenzial von Wärmeverbunden und industrieller Prozesswärme gleich hoch wie im CH-Schnitt?**\
+*Wir stimmen zu. Das Ausbauziel von 440 GWh für Solarthermie ist ambitioniert gewählt und orientiert sich an der "Roadmap Solarwärme Schweiz 2050" von Swissolar. Etwa 10 % des zukünftigen Wärmebedarfs sollen gemäss Roadmap im Jahr 2050 durch Solarthermie gedeckt werden. Das Ausbauziel für Solarthmerie liegt unter den Ausbauzielen von untiefer Geothermie (1690 GWh), verholzter Biomasse (950 GWh), Luft (730 GWh) und Abwärme (670 GWh). Unsicher ist, wie der zukünftige Hochtemperaturbedarf (Prozesswärme) nach dem Wegfall von Erdgas im Kanton Luzern gedeckt werden wird. Wird Erdgas durch Holz substitutiert, steht dieses Holz nicht mehr den Holzwärmeverbünden zur Verfügung. Hier kann Solarthermie die entstandene Lücke schliessen. Aus diesem Grund halten wir in diesem Bericht am ambitionierten Ausbauziel fest. In der Zusammenfassung schreiben wir jedoch: "Bei Änderung der technologischen und politischen Rahmenbedingungen können die Ausbauziele der einzelnen Energieträger angepasst werden." *\
+<!-- **Verglichen mit den 350 GWh Seewärme und den 190 GWh tiefer Geothermie ist das Potenzial von Solarthermie sehr hoch und entspricht auch nicht den Energieperspektiven 2050+. Zumal tendenziell mehr Anlagen gebaut werden müssen um die gleichen Produktionszahlen zu erreichen. Die Skalierung ist zu differenzieren: ist das Potenzial von Wärmeverbunden und industrieller Prozesswärme gleich hoch wie im CH-Schnitt?**\ -->
+<!-- *auch wieder Skalierungsfrage, können wir hier nicht beantworten, braucht es Diskussionskapitel? Dort: Unsicherheiten im Wärmebereich: Solarthermie eher hoch angesetzt, geothermie untief (und geothermie tief) und oberflächengewässer evtl. eher tief. hier kann ausgeglichen werden. zudem: hochtemperaturwärme bisher nicht berücksichtigt.* -->
+```{=html}
+<b>
+David Stickelberger<br>
+</b>
+```
+**Für das Ausbauziel ein Mittel zwischen EP2050+ und dem Ziel von Swissolar zu wählen, scheint mir wenig sinnvoll. Gemäss Stromgesetz sollen bis 2035 35 TWh Strom aus neuen erneuerbaren Energien produziert werden, bis 2050 45 TWh. Es ist klar, dass der grösste Teil davon aus PV stammen muss. Das BFE schätzt, dass bis 2035 29-30 TWh Solarstrom produziert werden müssten, 5x mehr als aktuell. Aufgrund dieser Überlegungen empfehle ich, das Ausbauziel nochmals zu überprüfen. Das gilt möglicherweise auch für die anderen Technologien im Strombereich, wo die Bezugnahme auf die nicht mehr aktuellen EP2050+ evtl. zu falschen Schlüssen führt.**\
+*Neu wird im Kapitel zu Solarenergie PV das Ziel der Vorlage zum "Stromgesetz" erwähnt. Anstatt das Ausbauziel wie gefordert zu erhöhen, wurde das Zwischenziel bis 2035 erhöht. Das neue Zwischenziel basiert auf einer bestehenden Forderung des Kantonsrats zum aktuellen Planungsbericht Klima und Energie. Wird dieses Ziel bis im Jahr 2035 erfüllt, ist die Entwicklung auf Kurs Richtung 45 TWh Stromproduktion durch PV in der Schweiz.*\
+```{=html}
+<b>
+Martin Hiefner, ökostrom<br>
+</b>
+```
+**Wie ist das gemeint (bezieht sich das Kapitel Biomasse nicht verholzt)? Hinsichtlich der Wirkung auf die Humuswirkung zeigen Studien auf, dass Gärgülle und -mist unvergorener Gülle und Mist in nichts nachstehen. Der C-Gehalt ist etwas geringer, dafür wird der Kohlenstoff durch die Vergärung stabilisiert, was sich förderlich auf die Humusreproduktion auswirkt. (Ganz zu schweigen davon, dass sämtliche Nährstoffe über die hochwertigen Vergärungsprodukte von landwirtschaftlichen und gewerblich-industriellen Biogasanlagen im Sinne der Kreislaufwirtschaft in die Böden zurückgeführt werden.)**\
+*Die Stellungnahme zur Humusbildung laute neu wie folgt "Tendenziell fördert vergorene Gülle (im Vergleich zum Ausbringen unvergorener Gülle), trotz dem geringeren Kohlenstoffgehalt, zusätzlich die Humusbildung".*\
+```{=html}
+<b>
+andreas odermatt<br>
+</b>
+```
+**Erfahrungs- und Planungswerte liegen eher um 10%. Bei der FW haben wir aktuell bis zu 15% Verluste.**\
+*Diese Aussage bezieht sich auf den Satz: "Im Wärmesektor wurden Verteilverluste von 5 % angenommen". Die Fussnote wurde angepasst und lautet nun "Verteilverluste in thermischen Netzen liegen zwischen 10 % bis 15 % bei Hochtemperaturnetzen und 0 % bei Niedertemperaturnetzen (Anergienetze) (Hangartner u. a., 2018). Bei einem Grossteil des Wärmesektors sind Produktion und Nutzung fast am gleichen Ort (z.B. bei Erdsonden oder Luft-Wasser-Wärmepumpen). In diesem Fall sind kaum Wärmeverluste zu erwarten. Daher ist ein mittlerer Verteilverlust von 5 % eine vertretbare Annahme."*\
+\
+**Der Rückgang der Energieproduktion aus verholzter Biomasse in den EP2050+ muss geklärt werden.**\
+*Neu wurde folgender Abschnitt im Kapitel zur verholzten Biomasse eingefügt: "Der Rückgang (in den EP2050+) beruht hauptsächlich auf Rückgängen in den Sektoren Haushalte und Dienstleistungen. Als Begründung werden steigende Energieeffizienz und kostengünstige Alternativen für die Bereitstellung von Raumwärme und Warmwasser mit Wärmepumpen und Wärmenetzen genannt. Im Jahr 2050 wird ebenfalls angenommen, dass ein geringer Teil fester Biomasse als Massnahme zur Erzeugung von Negativemissionen eingesetzt wird, indem dieser in Form von Pflanzenkohle in landwirtschaftliche Böden eingearbeitet wird"*\
+\
+**studie holinger (bezogen auf Kapitel "Biomasse nicht verholzt") wurde nicht berücksichtigt, evtl. noch referenzieren**\
+*Die Studie von Holinger AG wurde berücksichtigt und wird in der Fussnote auch referenziert: "Die Studie Holinger AG (2022) analysiert Einzelanlagen und die aufsummierte Gesamtenergie ergibt 151 GWh. Der Unterschied zum angegebenen Wert von 174 GWh zeigt die Unsicherheit der Abschätzungen aufgrund unterschiedlicher Methodiken"*\
+```{=html}
+<b>
+Ralph Gisler<br>
+</b>
+```
+**Bei diesem Ziel geht es um die Reduktion von Emissionen. Im ganzen Bericht ist dann aber nur noch von GWh die Rede. Der Link von der Energie zu den Emissionen wird nicht gemacht (Welche Systemgrenzen werden gezogen? Welche Emissionsfaktoren werden angenommen?) Welchen Effekt der Ausbau der erneuerbaren Energien auf die Treibhausgas-Bilanz des Kantons hat, ist nicht ersichtlich. Meines Erachtens sollte man diesen Punkt in der Methodik adressieren.**\
+*Die Massnahme KS-E2.1 aus dem Planungsbericht Klima und Energie lautet: "Definieren der Potenziale und kantonalen Ziele für erneuerbare Energien". Das Ziel "100 Prozent erneuerbare Energieversorgung bis 2050" ist eine Voraussetzung für das Klimaschutzziel "Netto null bis 2050". Eine Analyse der Treibhausgasbilanz sprengt jedoch den Rahmen dieses Berichts. Im Kapitel "Ziel" wurde zur Klärung folgender Absatz ergänzt: "Der Umstieg auf erneuerbare Energieproduktion alleine reicht nicht aus, um das Ziel “Netto null bis 2050” zu erreichen. Zusätzlich müssen die nichtenergiebedingten Treibhausgasemissionen aus den Sektoren Abfall und Landwirtschaft reduziert bzw. durch natürliche oder technischen Senken aus der Atmosphäre entfernt werden. Der Energieaufwand für diese Senken ist durch die Abstützung auf die Energieperspektiven (Bundesamt für Energie, 2020a, siehe auch Kapitel 1) enthalten. Eine Treibhausgasbilanz ist in diesem Bericht nicht enthalten."*\
+\
+**Welchen konkreten Zweck erfüllen die Ausbauziele für den Kanton? Dienen diese dem Controlling der  Umsetzung der Klima- und Energiestrategie? Welchen Beitrag leisten die Stossrichtungen zur Erreichung der Ausbauziele?**\
+*Folgender Abschnitt wurde in der Zusammenfassung ergänzt: "Die vorgeschlagenen Ausbauziele dienen als Grundlage für die Erarbeitung von weiterführenden Strategien und Umsetzungsmassnahmen zu den einzelnen erneuerbaren Energieträgern. [...] Die Daten ermöglichen ein Monitoring der aktuellen Energieproduktion im Vergleich zu den vorgeschlagenen Zielpfaden. [...] Die Abschätzung soll die Technologien mit dem grössten Potenzial bzw. den grössten Herausforderungen identifizieren."*\
+\
+
+
+
+
+
+
+
+
+
+
+
+
+

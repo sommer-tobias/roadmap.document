@@ -1,0 +1,26 @@
+```{r}
+#| echo: false
+#| warning: false
+#| eval: true
+
+
+flagShowNumbers <- 1
+flagShowSteps <- 0
+flagShowKühlen <- 0
+sw <- grafikGesamtenergie('stromUndWärme', flagShowNumbers, flagShowSteps, flagShowKühlen)
+s <- grafikGesamtenergie('strom', flagShowNumbers, flagShowSteps, flagShowKühlen)
+w <- grafikGesamtenergie('wärme', flagShowNumbers, flagShowSteps, flagShowKühlen)
+flagKLU <- 1
+flagShowNumbers <- 1
+ejahr <- 2050
+
+wf <- grafikUebersichtEPFinal(ejahr, flagKLU, flagShowNumbers)
+save(sw, s, w, wf, file = 'output/grafikGesamtenergie.rda')
+
+
+
+
+```
+
+
+

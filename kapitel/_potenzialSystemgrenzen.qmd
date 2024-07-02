@@ -1,0 +1,24 @@
+---
+lang: de 
+---
+
+## Systemgrenzen {#sec-systemgrenzenPotenzial}
+
+Im Folgenden werden die Systemgrenzen für das theoretische Potenzial, das realistische Potenzial, die aktuelle Produktion und das Ausbauziel für 2050 definiert (@fig-potenzialSystemgrenzen).
+
+
+![Schematische Darstellung der Systemgrenzen für die Potenziale, die aktuelle Produktion und das Ausbauziel für 2050. Das theoretische und realistische Potenzial basiert auf Ressourcen innerhalb des Kantons Luzern. Bei der aktuellen Produktion und dem Ausbauziel können Ressourcen ausserhalb des Kantons Luzern miteinbezogen sein.](grafiken/potenzialSystemgrenzen2.png){#fig-potenzialSystemgrenzen width=100%}
+
+
+### Theoretisches Potenzial
+Das theoretische Potenzial gibt die maximale Energiegewinnung an, welche pro Energieträger basierend auf den verfügbaren Ressourcen innerhalb des Kantons Luzern theoretisch möglich wäre, ohne rechtliche, technische, wirtschaftliche und ökologische Einschränkungen (@fig-potenzialSystemgrenzen). 
+
+### Realistisches Potenzial
+Das realistische Potenzial gibt an, wieviel Energie pro Energieträger realistisch gewonnen werden könnte. Dabei fliessen rechtliche, technische, ökologische und wirtschaftliche Überlegungen ein. Bei Oberflächengewässern basiert das theoretische Potenzial z.B: auf dem Wasservolumen der Gewässer und einer Annahme zur akzeptablen Temperaturdifferenz. Das realistische Potenzial ist geringer, weil eine thermische Nutzung nur in gewässernahen Gebieten wirtschaftlich realisierbar ist. Eine genaue Betrachtung der rechtlichen, technischen, wirtschaftlichen und ökologischen Aspekte für jede der zwölf Technologien übersteigt den Rahmen dieses Berichts. Beim realistischen Potenzial handelt sich um eine Grobabschätzung. Das realistische Potenzial ist kleiner als das theoretische Potenzial (@fig-potenzialSystemgrenzen) und basiert ebenfalls auf Ressourcen innerhalb der Kantonsgrenzen. Bei einzelnen Technologien wird das realistische Potenzial in weiterführenden Studien noch genauer untersucht werden müssen (z.B. bei nichtverholzter Biomasse/Biogas). Bei der Windenergie wurde dies bereits gemacht [@TeilrevisionRichtplanWind2022].
+
+### Ausbauziel
+Das Ausbauziel für 2050 ist für die meisten Technologien kleiner als das realistische Potenzial. Die Ressourcen dafür befinden sich innerhalb der Kantonsgrenzen. Vor allem bei verholzter Biomasse und nicht verholzter Biomasse ist ein Import von Holz und Biogas denkbar, um im Kanton Luzern Energie zu produzieren. <!--#  (Die gestrichelte Linie  @fig-potenzialSystemgrenzen überquert in diesem Fall die blaue Linie, welche für den Kanton Luzern steht.) --> 
+
+
+### Aktuelle Produktion
+Die aktuelle Produktion bezieht sich auf die tatsächliche momentane Energieproduktion im Kanton Luzern. Die Ressourcen für diese Produktion können zum Teil von ausserhalb der Kantonsgrenzen kommen.

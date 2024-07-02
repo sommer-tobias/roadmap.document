@@ -1,0 +1,15 @@
+
+Übergeordnetes Ziel dieses Berichts sind «Netto-Null Treibhausgasemissionen bis 2050» gemäss Planungsbericht über die Klima- und Energiepolitik des Kantons Luzern (PB K&E, [B 87](https://newsletter.lu.ch/files/SK/Mitteilungen%202021/10_Okt/20211018_B87.pdf)) [@PKuE2021]. Der Ausbau der erneuerbaren Energien ist mit der Energiestrategie 2050 des Bundes und mit den Vorgaben des Klima- und Innovationsgesetzes (KIG) konform. Um das Netto-Null-Ziel bei gleichzeitigem Ausstieg aus der Kernenergie zu erreichen, muss die Energieproduktion basierend auf erneuerbaren Energieträgern im Kanton Luzern zügig ausgebaut werden. Der vorliegende Fachbericht schlägt deshalb für jeden erneuerbaren Energieträger Ausbauziele zur Energieproduktion im Kanton Luzern vor. Diese sind so gewählt, dass sie den zu erwartenden Produktionsbedarf an Strom und Wärme im Jahr 2050 mit erneuerbaren Energien decken. Die Ausbauziele bilden die Grundlage, um die Strategien und Umsetzungsmassnahmen für die einzelnen Energieträger zu definieren. Aufgrund der fortschreitenden technologischen Entwicklung und sich verändernden politischen Rahmenbedingungen werden die Ziele regelmässig überprüft und gegebenenfalls angepasst. Der Umstieg auf erneuerbare Energieproduktion alleine reicht nicht aus, um das Ziel "Netto null bis 2050" zu erreichen. Zusätzlich müssen die nichtenergiebedingten Treibhausgasemissionen aus den Sektoren Abfall und Landwirtschaft reduziert bzw. durch natürliche oder technischen Senken aus der Atmosphäre entfernt werden. Der Energieaufwand für diese Senken ist durch die Abstützung auf die Energieperspektiven [@ep2050plus, siehe auch @sec-ep2050plus] enthalten. Eine Treibhausgasbilanz ist in diesem Bericht nicht enthalten.  
+
+
+
+
+
+<!--# sowie Stossrichtungen für die dafür benötigten Massnahmen festzulegen. --> 
+
+
+<!--# comment --> 
+
+
+
+

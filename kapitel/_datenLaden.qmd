@@ -1,0 +1,34 @@
+```{r}
+#| echo: false
+#| warning: false
+#| eval: true
+
+
+library(tidyverse)
+library(knitr)
+#library(readxl)
+# library(knitr)
+# library(RColorBrewer)
+# library(modelr)
+#library(stringr)
+#library(gridExtra)
+#library(grid)
+#library(gt)
+
+
+setwd(here::here())
+
+# #lade alle daten
+# #source('scripts/loaddata.R')
+# 
+# #lade alle funktionen die z.B. für das plotten verwendet werden
+# #source('scripts/loadfunctions.R')
+source('scripts/loaddata.R')
+
+
+#source('scripts/loadDataForReporting.R')
+
+```
+
+
+

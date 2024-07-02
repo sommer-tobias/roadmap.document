@@ -1,0 +1,34 @@
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#t <- getProduction('stromUndWärme')  # eher über GrafikGesamtenergie gehen, dort alles relevante rausziehen inklusive komplette Tabellen
+```
+
+## Strom
+
+Die im Bericht vorgeschlagenen Ausbauziele resultieren in einer Stromproduktion von insgesamt etwa `r roundTo(grafikGesamtenergieRda$s$produktionsZiel2050, 10)`
+ GWh im Jahr 2050. Der Strombedarf (schwarze Linie) steigt aufgrund der zunehmenden Elektrifizierung in den Sektoren Verkehr (Elektrofahrzeuge) und Wärme (Wärmepumpen) an (@sec-entwicklungEndenergie). Das Ziel für die erneuerbare Stromproduktion von `r roundTo(grafikGesamtenergieRda$s$produktionsZiel2050, 10)`
+ GWh im Jahr 2050 übertrifft den nötigen Produktionsbedarf von `r roundTo(grafikGesamtenergieRda$s$produktionsBedarf2050, 10)` GWh um etwa `r roundTo((grafikGesamtenergieRda$s$bedarfÜberZiel-1)*100, 1)` % (@fig-resStrom). Insgesamt ist eine fast sechsfache Steigerung von `r roundTo(grafikGesamtenergieRda$s$produktionAktuell, 10)`
+  GWh im Jahr 2021 auf `r roundTo(grafikGesamtenergieRda$s$produktionsZiel2050, 10)` GWh
+   nötig (@fig-tabelleStrom). Die Stromproduktion durch Photovoltaik hat in den letzten Jahren die Stromproduktion aus Abwärme (hauptsächlich KVA Renergia) überholt und wird weiter ausgebaut. Im Jahr 2050 werden `r roundTo( grafikGesamtenergieRda$s$anteilSolarenergiePV2050*100, 1)`
+    % des Stroms durch Photovoltaik erzeugt. Alle anderen Technologien tragen einzeln weniger als 10 % bei.
+\
+  
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| label: fig-resStrom
+#| fig-cap: 'Entwicklung der erneuerbaren Stromproduktion im Kanton Luzern. Die schwarze durchgezogene Linie zeigt den Produktionsbedarf für Strom.'
+grafikGesamtenergieRda$s$grafik
+```
+
+\
+
+![Übersicht der erneuerbaren Stromproduktion im Kanton Luzern, sortiert nach ihrem Produktionsanteil im Jahr 2050[^erklärungAbweichungStrom]](grafiken/grafikGesamtenergieStrom.png){#fig-tabelleStrom width=100%}
+
+\
+
+[^erklärungAbweichungStrom]: Für Energieträger, welche Strom und Wärme produzieren (tiefe Geothermie, Abwärme, verholzte und nicht-verholzte Biomasse) ist hier nur der Stromanteil aufgeführt, der Wärmeanteil findet sich in @fig-resWaerme.
+

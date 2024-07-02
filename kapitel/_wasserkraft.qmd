@@ -1,0 +1,47 @@
+## Wasserkraft {#sec-wasserkraft}
+
+
+### Definition
+
+Wasserkraft bezieht sich auf die Energie, die mithilfe von Wasserkraftwerken aus der potenziellen Energie (Höhendifferenz) von Wasser gewonnen wird. Es werden dabei verschiedene Leistungsklassen unterschieden. Kleinstwasserkraftwerke haben Leistungen bis zu 300 kW, Kleinwasserkraftwerke habe Leistungen zwischen 300 kW und 10 MW, bei Wasserkraftwerken mit mehr als 10 MW Leistung handelt es sich um Grosswasserkraft. Im Kanton Luzern haben die grössten Anlagen eine Leistung von ca. 2 MW (Perlen, Rathausen). Somit sind alle Anlagen im Kanton Luzern entweder Klein- oder Kleinstwasserkraftwerke. Die grössten Wasserkraftwerke in der Schweiz (z.B. Grimsel, Linth-Limmern) haben installierte Leistungen von über 1000 MW, mehr als 500-mal so viel wie die grössten Anlagen im Kanton Luzern. Das theoretische und realistische Potenzial bezieht sich auf den Planungsbericht über die Wasserkraftnutzung im Kanton Luzern [B 180](https://www.lu.ch/downloads/lu/kr/botschaften/2007-2011/b_180.pdf) [@B180Wasserkraft]. Dabei werden lediglich Kleinwasserkraftwerke betrachtet. Beim genutzten Potenzial werden sowohl Kleinst- als auch Kleinwasserkraftwerke berücksichtigt. Im Kanton Luzern gibt es kein Potenzial für Grosswassserkraftwerke. 
+
+```{r}
+#| label: fig-wasserkraft
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus Wasserkraft und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+
+grafikProTechRda$wasserkraft$grafik
+```
+```{=html}
+<b>
+Warum ist das Potenzial der EP2050+ kleiner als das Ausbauziel? Paul fragt ausserdem, ob der schwarze Balken hier Sinn macht.
+</b>
+```
+
+### `r params$genutzt` (`r roundTo(wasserkraft$ausbaupfad$genutzt$wasserPronovoAktuell_gwh,1)` GWh)
+
+Der Kanton Luzern ist kein Wasserkraftkanton. Die Stromproduktion durch Wasserkraft im Kanton Luzern zwischen 2019 und 2022 schwankt zwischen `r roundTo(wasserkraft$ausbaupfad$genutzt$wasserPronovoAb2019Min_gwh, 1)` 
+ GWh und  `r roundTo(wasserkraft$ausbaupfad$genutzt$wasserPronovoAb2019Max_gwh, 1)` GWh bzw. im Mittel etwa `r roundTo(wasserkraft$ausbaupfad$genutzt$mittlereJahresproduktionAb2019proAnlage_gwh,1)`
+ GWh. Dies sind nur etwa 2 % der aktuellen skalierten Bundeswerte (@fig-wasserkraft). Die Produktion im Jahr 2022 lag bei `r roundTo(wasserkraft$ausbaupfad$genutzt$wasserPronovoAktuell_gwh, 1)` GWh.
+   Ein Grossteil der Energie wird durch die Kraftwerke Rathausen und Perlen (je etwa 15 GWh) produziert. Die Kraftwerke Emmenweid, Ettisbühl und Thorenberg produzieren je etwa 5 GWh, Mühlenplatz und das Trinkwasserkraftwerk Stollen je etwa 2 GWh. Zusätzlich existieren noch einige kleinere Anlagen.
+
+
+### Theoretisches Potenzial (`r roundTo(wasserkraft$ausbaupfad$theoretisch$strom_gwh,1)` GWh)
+
+Gemäss Planungsbericht über die Wasserkraftnutzung im Kanton Luzern [B 180](https://www.lu.ch/downloads/lu/kr/botschaften/2007-2011/b_180.pdf) [@B180Wasserkraft] beträgt das theoretische Potenzial für Wasserkraft im Kanton Luzern `r roundTo(wasserkraft$ausbaupfad$theoretisch$strom_gwh,1)` GWh. 
+
+### Realistisches Potenzial (`r roundTo(wasserkraft$ausbaupfad$realistisch$potentialKLU_gwh,1)` GWh)
+
+Im Planungsbericht über die Wasserkraftnutzung im Kanton Luzern [B 180](https://www.lu.ch/downloads/lu/kr/botschaften/2007-2011/b_180.pdf) [@B180Wasserkraft] wird ein realistisches Ausbaupotenzial von 30 bis 40 GWh angegeben. Wird dieses Ausbaupotenzial zu den damals genutzten 48 GWh hinzugezählt, ergibt sich ein realistisches Potenzial von 78 bis 88 GWh. Gleichzeitig wird aber berichtet, dass sich ein Grossteil dieses Potenzials in Ausschluss- und Vorbehaltsgebieten befindet, was im Widerspruch zu einem ökologisch nutzbaren Potenzial steht und daher eher dem theoretischen Potenzial zuzuordnen wäre. Der Kanton verfolgt den Grundsatz, wenige Gewässer mit einem vergleichsweise hohen Potenzial zu nutzen und dafür andere Gewässer ungenutzt zu lassen. In diesem Rahmen wurde das Wasserkraftwerk an der Waldemme mit einer Jahresproduktion von etwa `r roundTo(parameters$wasserkraft$produktionWaldemme_gwh, 0.1)`
+ GWh bewilligt, welches im Jahr 2023 die Produktion aufnahm. Weiteres Ausbaupotenzial ergibt sich dadurch, bestehende Anlagen zu optimieren. Stillgelegte Anlagen können reaktiviert werden, wenn die gesetzlichen Rahmenbedingungen eingehalten werden und der Nutzen die ökologischen Nachteile überwiegt[^trinkwasserkraftwerke]. Bewilligungen sollen zudem nur ausgesprochen werden, wenn die Wirtschaftlichkeit und Wirksamkeit nachgewiesen sind. Es wird davon ausgegangen, dass mit dem neuen Wasserkraftwerk Waldemme das realistische Potenzial nahezu ausgeschöpft ist. Als realistisches Potenzial werden 57 GWh angenommen[^kleinwasserkraftMapGeoAdmin]. 
+ 
+[^kleinwasserkraftMapGeoAdmin]: Auf der Webseite [https://map.geo.admin.ch](https://map.geo.admin.ch/?topic=energie&bgLayer=ch.swisstopo.pixelkarte-grau&lang=de&catalogNodes=2419,2420,2427,2480,2429,2431,2434,2436,2767,2441&layers=ch.bfe.kernkraftwerke,ch.bfe.kleinwasserkraftpotentiale&E=2666828.57&N=1210375.37&zoom=5&layers_visibility=false,true) kann das theoretische hydroelektrische Potential für Kleinwasserkraft in der Layer "Kleinwasserkraftpotentiale" abgerufen werden. 
+
+[^trinkwasserkraftwerke]: Zum Potenzial von Trinkwasserkraftwerken im Kanton Luzern (wie z.B. das Kraftwerk Stollen) existieren keine Studien. InfraWatt initiiert aktuell das Projekt "Studien zum Potenzial von Mikroturbinen im Trinkwasserbereich für Wasserversorger in der Schweiz". In dieser Studie wird voraussichtlich auch das Potenzial für den Kanton Luzern bestimmt.
+
+### `r params$ziel` (`r roundTo(wasserkraft$ausbaupfad$ziel$strom_gwh, 1)` GWh)
+
+Das Wasserkraftpotenzial im Kanton Luzern ist weitgehend ausgeschöpft und das Ausbauziel für 2050 entspricht dem realistischen Potenzial von `r roundTo(wasserkraft$ausbaupfad$ziel$strom_gwh, 1)` GWh.
+{{< pagebreak >}}
+

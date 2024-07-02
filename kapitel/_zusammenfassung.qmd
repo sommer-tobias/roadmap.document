@@ -1,0 +1,51 @@
+Der Kanton Luzern strebt den Ausbau der erneuerbaren Energien an. Diesen Auftrag erhielt die Regierung aus der parlamentarischen Beratung des Planungsberichts Klima und Energie. Der Ausbau der erneuerbaren Energien ist nötig, damit der Kanton das Klimaschutzziel «Netto null bis 2050» erreichen kann. Mit der verstärkten Nutzung erneuerbarer Energieträger löst sich der Kanton Luzern aus der Abhängigkeit von Energieträgern aus dem Ausland und setzt dabei auf ein modernes und zugleich kosteneffizientes Energiesystem. Mit der Nutzung einheimischer Energien trägt der Kanton Luzern nicht nur zum Erreichen der Ausbauziele in der Schweiz bei, sondern generiert auch Wertschöpfung vor Ort. Der Ausbau der erneuerbaren Energien ist mit der Energiestrategie 2050 des Bundes und mit den Vorgaben des Klima- und Innovationsgesetzes konform. 
+\
+
+In diesem Bericht wird aufgezeigt, wie hoch das Potenzial zur Strom- und Wärmeproduktion der verschiedenen erneuerbaren Energieträger im Kanton Luzern ist. Zusätzlich werden aus fachlicher Sicht für jeden Energieträger kantonale Ausbauziele vorgeschlagen, um das Ziel «100 Prozent erneuerbare Energieversorgung bis 2050» zu erreichen.
+\
+
+Die vorgeschlagenen Ausbauziele dienen als Grundlage für die Erarbeitung von weiterführenden Strategien und Umsetzungsmassnahmen zu den einzelnen erneuerbaren Energieträgern. Die Ergebnisse sind eine Grobabschätzung und basieren auf aktuell zur Verfügung stehenden Daten. Bei der Datenerhebung wurde der Schwerpunkt auf die Reproduzierbarkeit gelegt, so dass die Daten regelmässig und automatisiert ins Luzerner Klima- und Energieinformationssystem (LU-KEIS) übertragen und der Öffentlichkeit zur Verfügung gestellt werden können. Die Daten ermöglichen ein Monitoring der aktuellen Energieproduktion im Vergleich zu den vorgeschlagenen Zielpfaden. Bei Änderung der technologischen und politischen Rahmenbedingungen können die Ausbauziele der einzelnen Energieträger angepasst werden. Der Fokus liegt auf dem Gesamtüberblick des Energiesystems und nicht auf der Detailausarbeitung einzelner Technologien. Saisonale Dynamiken und die Abstimmung der Energieträger untereinander sind nicht explizit berücksichtigt, jedoch durch Abstützung auf die Energieperspektiven 2050+ (Szenario ZERO-Basis) implizit beachtet. Die Abschätzung soll die Technologien mit dem grössten Potenzial bzw. den grössten Herausforderungen identifizieren. Für diese Technologien sind dann weitere Detailstudien nötig.
+\
+
+Der Bericht wurde durch die Projektgruppe verfasst und in regelmässigen Abständen mit der Projektsteuerung gepiegelt. Im Herbst 2023 wurden die Ergebnisse mit Repräsentanten und Repräsentantinnen von zwölf Organisationen diskutiert und Vorschläge eingearbeitet. Im Frühjahr 2024 wurde der Bericht allen involvierten Personen (Workshopteilnehmende sowie weitere Fachexperten und Fachexpertinnen) zur Konsultation zugestellt und anschliessend überarbeitet.
+\
+
+Insgesamt wurden zwölf erneuerbare Energieträger untersucht: Photovoltaik, Solarthermie, Windenergie, Wasserkraft, Biomasse verholzt, Biomasse nicht verholzt und die Umweltwärmequellen Geothermie tief, Geothermie untief, Grundwasser, Oberflächengewässer, Luft und Abwärme (@fig-zusammenfassung).
+\
+
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| label: fig-zusammenfassung
+#| fig-cap: 'Übersicht der Entwicklung der erneuerbaren Strom- und Wärmeproduktion im Kanton Luzern bis 2050 und die realistischen Potenziale (Balken rechts) der einzelnen Energieträger. Die schwarze durchgezogene Linie zeigt den Produktionsbedarf im Kanton Luzern. Für mehr Details, siehe @sec-ausbauziele.'
+grafikGesamtenergieRda$sw$grafik
+```
+
+\
+
+![Übersicht der Energielandschaft im Jahr 2021 und 2050 im Kanton Luzern[^_zusammenfassung-1]](grafiken/getSummaryTable.png){#fig-tabelleGetSummaryTableZusammenfassung width="100%"}
+
+\
+
+[^_zusammenfassung-1]: Zahlen zur Endenergie und zu den Produktionsbedarfen basierend auf skalierten Werten der EP2050+, gerundet auf 10 GWh.
+
+[^_zusammenfassung-2]: Zahlen zur Endenergie und zu den Produktionsbedarfen basierend auf skalierten Werten der EP2050+, gerundet auf 10 GWh.
+
+Im Jahr 2050 müssen voraussichtlich etwa `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfStromproduktionGesamt, params$roundfac)` GWh Strom produziert werden, um den Strombedarf im Kanton Luzern zu decken (eine Übersicht aller genannten Werte findet sich in @fig-tabelleGetSummaryTableZusammenfassung). Von diesen `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfStromproduktionGesamt, params$roundfac)` GWh wird angenommen, dass `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfStromproduktionKantonLuzern, params$roundfac)` GWh innerhalb des Kantons Luzern und `r roundTo(grafikUebersichtEPFinalRda$j2050$stromWasserkraftausserkantonal, params$roundfac)` GWh ausserhalb des Kantons Luzern produziert werden[^_zusammenfassung-3]. Der Bedarf an Wärmeproduktion im Jahr 2050 beträgt `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfWärmeproduktionKantonLuzernInklElektrizität, params$roundfac)` GWh inklusive Wärmepumpenstrom und `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfWärmeproduktionKantonLuzernExklElektrizität, params$roundfac)` GWh exklusive Wärmepumpenstrom. Diese Wärme soll vollständig im Kanton Luzern produziert werden. Daraus ergibt sich ein Gesamtproduktionsbedarf für Strom und Wärme von `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfProduktionStromWärmeKantonLuzern, params$roundfac)` GWh (`r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfStromproduktionKantonLuzern, params$roundfac)` GWh Strom + `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfWärmeproduktionKantonLuzernExklElektrizität, params$roundfac)` GWh Wärme[^_zusammenfassung-4]), welcher im Jahr 2050 innerhalb des Kantons Luzern produziert werden soll.
+\
+
+[^_zusammenfassung-3]: Die ausserkantonale Stromproduktion wurde aus der nationalen Wasserkraftproduktion abgeleitet, siehe @sec-zieleStromWärme.
+
+[^_zusammenfassung-4]: Bei dieser Summe ist der Strom für Wärmepumpen im Strom enthalten. Daher wird bei der Wärme der Wärmepumpenstrom nicht mitgezählt.
+
+Die Summe der Ausbauziele aller erneuerbarer Energieträger soll im Jahr 2050 den Produktionsbedarf des Kantons Luzern decken. Das vorgeschlagene Ausbauziel für Strom beträgt `r roundTo(grafikGesamtenergieRda$s$produktionsZiel2050, params$roundfac)` GWh und übersteigt den Produktionsbedarf von `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfStromproduktionKantonLuzern, params$roundfac)` GWh um `r roundTo((getSummary$anteilInnerkantonaleProduktionAmInnerkantonalenProduktionsbedarf$j2050$strom - 1)*100, 1)` %. Mit diesem Ausbauziel werden `r roundTo( getSummary$anteilInnerkantonaleProduktionAmProduktionsbedarf$j2050$strom * 100, 1)` % des gesamten Produktionsbedarfs des Kantons innerhalb des Kantons Luzern produziert. Das Ausbauziel für Wärme beträgt `r roundTo(grafikGesamtenergieRda$w$produktionsZiel2050, params$roundfac)` GWh inklusive Wärmepumpenstrom (`r roundTo(grafikGesamtenergieRda$uw$produktionsZiel2050, params$roundfac)` GWh exklusive Wärmepumpenstrom). Das Produktionsziel für Wärme übersteigt den Produktionsbedarf von `r roundTo(grafikUebersichtEPFinalRda$j2050$bedarfWärmeproduktionKantonLuzernInklElektrizität, params$roundfac)` GWh um `r roundTo((getSummary$anteilInnerkantonaleProduktionAmInnerkantonalenProduktionsbedarf$j2050$wärme - 1)*100, 1)` %. Insgesamt ergibt sich ein Produktionsziel für Strom und Wärme von `r roundTo(grafikGesamtenergieRda$sw$produktionsZiel2050, params$roundfac)` GWh (`r roundTo(grafikGesamtenergieRda$s$produktionsZiel2050, params$roundfac)` GWh Strom + `r roundTo(grafikGesamtenergieRda$uw$produktionsZiel2050, params$roundfac)` GWh Wärme[^_zusammenfassung-5]).
+\
+
+[^_zusammenfassung-5]: Wie weiter oben ist der Strom für Wärmepumpen im Strom enthalten. Daher wird bei der Wärme der Wärmepumpenstrom nicht mitgezählt.
+
+Um diese Ziele zu erreichen ist eine über dreifache Steigerung der erneuerbaren Strom- und Wärmeproduktion von `r roundTo(grafikGesamtenergieRda$sw$produktionAktuell, 10)` GWh im Jahr 2021 auf `r roundTo(grafikGesamtenergieRda$sw$produktionsZiel2050, 10)` GWh nötig (@fig-zusammenfassung, @fig-tabelleGetSummaryTableZusammenfassung). Beim Strom ist eine Steigerung der erneuerbaren Energieproduktion von aktuell `r roundTo(grafikGesamtenergieRda$s$produktionAktuell, 10)` GWh auf `r roundTo(grafikGesamtenergieRda$s$produktionsZiel2050, 10)` GWh um einen Faktor `r roundTo(grafikGesamtenergieRda$s$steigerung, 0.1)` nötig. Bei der Wärme ist eine Steigerung von `r roundTo(grafikGesamtenergieRda$w$produktionAktuell, 10)` GWh auf `r roundTo(grafikGesamtenergieRda$w$produktionsZiel2050, 10)` GWh um einen Faktor `r roundTo(grafikGesamtenergieRda$w$steigerung, 0.1)` nötig.
+\
+
+Sowohl beim Strom als auch bei der Wärme ist mit diesen ambitionierten Zielen das Potenzial noch nicht ausgeschöpft (Balken in @fig-zusammenfassung). Die Ziele «100 Prozent erneuerbare Energieversorgung bis 2050» und «Netto null bis 2050» sind daher realistisch und machbar. Zur Zielerreichung werden alle erneuerbaren Energieträger benötigt. Werden die aus fachlicher Sicht anzustrebenden Ausbauziele je Energieträger erreicht, könnte die Energieproduktion im Kanton Luzern im Jahr 2050 wie folgt aussehen:  Die Photovoltaik leistet mit einem Anteil von `r roundTo(grafikGesamtenergieRda$sw$anteilSolarenergiePV2050*100, 1)` % den grössten Beitrag zur kantonalen Energieproduktion (@fig-zusammenfassung). Die untiefe Geothermie folgt mit `r roundTo(grafikGesamtenergieRda$sw$anteilGeothermieUntief2050 *100, 1)` %. Verholzte Biomasse und Abwärme spielen im Jahr 2050 mit `r roundTo(grafikGesamtenergieRda$sw$anteilBiomasseVerholzt2050 * 100, 1)` % und `r roundTo(grafikGesamtenergieRda$sw$anteilAbwärme2050 * 100, 1)` % weiterhin eine tragende Rolle. Die restlichen Energieträger sind in der Summe ebenso wichtig, tragen jedoch einzeln mit weniger als 10 % bei.
+\newpage

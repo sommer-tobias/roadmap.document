@@ -1,0 +1,29 @@
+## Entwicklung des Endenergieverbrauchs im Kanton Luzern {#sec-entwicklungEndenergie}
+
+Der Endenergieverbrauch im Kanton Luzern (skaliert aus den EP2050+) soll von aktuell `r roundTo(grafikEntwicklungEndenergieRda$endenergieTotal2021, params$roundfac)` GWh im Jahr 2021 auf `r roundTo(grafikEntwicklungEndenergieRda$endenergieTotal2050, params$roundfac)` GWh im Jahr 2050 sinken (@fig-entwicklungEndenergie, @fig-tabelleGetSummaryTable). Dies entspricht einer Reduktion von `r roundTo((1 - grafikEntwicklungEndenergieRda$endenergie2050div2021)*100, 1)` %. Diese Reduktion beruht sowohl auf Effizienzmassnahmen (z.B. Dämmung der Gebäudehülle) als auch auf dem Wechsel von den fossilen Energieträgern Öl und Erdgas hin zu Elektrizität, welcher mit grösseren Wirkungsgraden verbunden ist, vor allem auch im Treibstoffsektor. Der Strombedarf selbst steigt aufgrund der zunehmenden Elektrifizierung in den Sektoren Verkehr (Elektrofahrzeuge) und Wärme (Wärmepumpen) an[^anstiegStromverbrauch] (blau in @fig-entwicklungEndenergie). Dieser Anstieg wird jedoch durch die Einsparungen im Bereich Wärme (orange) und Treibstoffe[^_defTreibstoffe] (grau) mehr als kompensiert. Der Endenergieverbrauch von `r roundTo(grafikEntwicklungEndenergieRda$endenergieTotal2050, params$roundfac)` GWh im Jahr 2050 kann in eine Dauerleistung von `r roundTo(grafikEntwicklungEndenergieRda$leistungMittelPerson, params$roundfac)` W pro Person umgerechnet werden[^_entwicklungendenergie-1]. Mit der angestrebten Reduktion wird das Ziel "2000-Watt-Dauerleistung" der 2000-Watt-Gesellschaft bis zum Jahr 2050 noch nicht erreicht[^_entwicklungendenergie-2]. 
+\
+
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| label: fig-entwicklungEndenergie
+#| fig-cap: 'Erwartete Entwicklung des Endenergieverbrauchs im Kanton Luzern'
+grafikEntwicklungEndenergieRda$grafik
+```
+
+![Übersicht der Energielandschaft im Jahr 2021 und 2050 im Kanton Luzern](grafiken/getSummaryTable.png){#fig-tabelleGetSummaryTable width="100%"}
+
+\
+
+Die Endenergieverbräuche in den Sektoren Strom und Wärme im Jahr 2050 bilden die Basis für den Produktionsbedarf des Kantons Luzern im Jahr 2050 und betragen `r roundTo(grafikEntwicklungEndenergieRda$endenergieStrom2050, params$roundfac)` GWh respektive `r roundTo(grafikEntwicklungEndenergieRda$endenergieWärme2050, params$roundfac)` GWh. Beim Produktionsbedarf müssen allerdings zusätzlich Verluste und der Bedarf im Umwandlungssektor miteinbezogen werden, siehe @sec-zieleStromWärme. Es ist weiterhin zu beachten, dass die Sektoren Strom und Wärme nicht eindeutig trennbar sind, da Strom teilweise zur Wärmeerzeugung beiträgt (z.B. mittels Wärmepumpen). Dieser Anteil ist in @fig-entwicklungEndenergie im Sektor Strom bilanziert.
+<!-- und beträgt im Jahr 2050 `r roundTo(grafikEntwicklungEndenergieRda$wärmeverbrauchElektrizität2050, params$roundfac)` GWh. -->
+
+[^_entwicklungendenergie-1]: Diese Leistung ist bezogen auf einen Primärenergieverbrauch (hergeleitet aus dem Endenergieverbrauch) von `r roundTo(grafikEntwicklungEndenergieRda$bruttoenergieverbrauchKLU2050, params$roundfac)` GWh, welcher mit der Einwohneranzahl des Kantons Luzern von `r roundTo(grafikEntwicklungEndenergieRda$personenKlu, params$roundfac)` und `r roundTo(24*365, 100)` Jahresstunden in die angegebene mittlere Leistung (Dauerleistung) umgerechnet wird.
+
+[^_entwicklungendenergie-2]: In @Richtplan2024 sowie in @KEnG2019 (Art. 1 Abs. 3) ist die 2000-Watt-Gesellschaft als langfristiges Ziel erwähnt.
+
+[^_defTreibstoffe]: Treibstoffe beinhalten Benzin, Diesel, Kerosin, sonstige Mineralölprodukte, biogene Treibstoffe und Power-to-X (PtX, d.h. synthetische Treibstoffe, hergestellt unter Einsatz von Elektrizität, wie z.B. Wasserstoff). Im Jahr 2050 tragen nur biogene Treibstoffe und PtX zu den Treibstoffen bei.
+
+[^anstiegStromverbrauch]: Der Anstieg beim Stromverbrauch beträgt trotz vermehrtem Einsatz von Wärmepumpen und Elektrifizierung des Verkehrs lediglich `r roundTo(( grafikEntwicklungEndenergieRda$endenergieStrom2050div2021-1)*100, 1)` %. Prozesse wie Carbon Capture and Storage (CCS), Stromverbrauch durch Grosswärmepumpen für Wärmenetze und Elektrolyse zur Wasserstofferzeugung sind im Umwandlungssektor bilanziert und werden beim Produktionsbedarf berücksichtigt, siehe @sec-zieleStromWärme.
+

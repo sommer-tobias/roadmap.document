@@ -1,0 +1,14 @@
+<!-- Check vor Veröffentlichung des Word Dokuments: -->
+
+<!-- Alle Links gültig? -->
+<!-- Captions zusammen mit Figure? -->
+<!-- Seitenzahlen einfügen (lässt sich nicht im Template festlegen) -->
+<!-- Silbentrennung ausschalten (lässt sich nicht im Template ausschalten) -->
+<!-- Durch Silbentrennung ausschalten hat sich auch das Problem mit der Fussnote 5 über zwei Zeilen gelöst. -->
+<!-- netto null, Netto-null-Ziel, netto null Treibhausgasemissionen -->
+
+<!--  Schreibweisen von Netto null Klimaziel «Netto null 2050», Ziel dieses Berichts sind «Netto-Null Treibhausgasemissionen bis 2050», das Netto-Null-Ziel, um das Ziel “Netto null bis 2050” zu erreichen, führen zu Netto-Null Emissionen, «Netto null 2050»-kompatiblen Energieplanungen   -->
+
+
+<!-- geschützter Leerschlag kann im visual modus eingefügt werden und dann über copy paste in snippets und auch find/replace eingefügt werden -->
+
