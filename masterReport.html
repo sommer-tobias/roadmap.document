@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="masterReport_files/libs/clipboard/clipboard.min.js"></script>
@@ -45,7 +65,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul class="collapse">
-  <li><a href="#grundwasser" id="toc-grundwasser" class="nav-link active" data-scroll-target="#grundwasser">Grundwasser</a></li>
+  <li><a href="#biomasse-nicht-verholzt" id="toc-biomasse-nicht-verholzt" class="nav-link active" data-scroll-target="#biomasse-nicht-verholzt">Biomasse nicht verholzt</a></li>
+  <li><a href="#sec-anhangBiogasanlagen" id="toc-sec-anhangBiogasanlagen" class="nav-link" data-scroll-target="#sec-anhangBiogasanlagen">Anhang A1: Biogasanlagen</a></li>
+  <li><a href="#literatur" id="toc-literatur" class="nav-link" data-scroll-target="#literatur">Literatur</a></li>
   </ul>
 </nav>
 </div>
@@ -95,37 +117,51 @@ ul.task-list li input[type="checkbox"] {
 <!-- {{< include kapitel/_geothermieUntief.qmd >}} -->
 <!-- {{< include kapitel/_luft.qmd >}} -->
 <!-- {{< include kapitel/_oberflaechengewaesser.qmd >}} -->
-<section id="grundwasser" class="level2">
-<h2 class="anchored" data-anchor-id="grundwasser">Grundwasser</h2>
-<section id="definition" class="level3">
-<h3 class="anchored" data-anchor-id="definition">Definition</h3>
-<p>Die thermische Nutzung von Grundwasser bezieht sich auf die Verwendung von Grundwasser zum Heizen oder Kühlen von Gebäuden oder Prozessen. Dabei wird das Grundwasser je nach Bedarf als Wärmequelle oder Wärmesenke genutzt. In diesem Kapitel wird nur der Heizfall betrachtet. Das zum Heizen nötige Temperaturniveau wird durch den Einsatz von Wärmepumpen erreicht.</p>
-</section>
-<section id="aktuelle-produktion-120-gwh" class="level3">
-<h3 class="anchored" data-anchor-id="aktuelle-produktion-120-gwh">Aktuelle Produktion (120&nbsp;GWh)</h3>
-<p>Im Kanton Luzern existieren aktuell 311 bewilligte und sich in Betrieb befindende Konzessionen für thermische Grundwassernutzung mit einer maximalen jährlichen Fördermenge von Mio. m<sup>3</sup>. Mit einer Temperaturdifferenz von 3 °C, einer Jahresarbeitszahl von 4 und unter der Annahme, dass 80 % der maximalen Fördermenge ausgenutzt werden ergibt dies eine Heizenergie von &nbsp;GWh.</p>
-</section>
-<section id="theoretisches-potenzial--" class="level3">
-<h3 class="anchored" data-anchor-id="theoretisches-potenzial--">Theoretisches Potenzial (-)</h3>
-<p>Die Ausweisung eines theoretischen Potenzials macht im Bereich Grundwasser keinen Sinn, da gesetzliche Vorgaben (Grundwasserschutzzonen, max. Abkühlung bzw. Erwärmung) immer zu berücksichtigen sind.</p>
-</section>
-<section id="realistisches-potenzial-gwh" class="level3">
-<h3 class="anchored" data-anchor-id="realistisches-potenzial-gwh">Realistisches Potenzial (&nbsp;GWh)</h3>
-<p>Es existieren aktuell fünf Studien zu thermischer Grundwassernutzung im Kanton Luzern. In diesen Studien wird für intensiv genutzte Gebiete eine Bilanzierung durchgeführt und die zur Verfügung stehende Grundwassermenge (Gundwasserdargebot, gemessen in Liter pro Minute) abgeschätzt. Bei thermischen Grundwassernutzungen spielt das Dargebot nur bei der technischen/hydrogeologischen Machbarkeit eine Rolle, weil das geförderte Grundwasser aus dem Entnahmebrunnen über einen Rückgabebrunnen dem Vorkommen zurückgegeben wird. Das Dargebot bleibt somit erhalten. Limitierend sind die Beschränkungen der Temperaturveränderungen im Grundwasser (Gewässerschutzgesetz)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Einfachheitshalber wird das nutzbare Dargebot (nach Abzug der jährlichen Fördermengen für Trink- und Brauchwasserzwecke) für eine erste Grobschätzung auf das maximale jährliche Fördervolumen hochgerechnet. <!-- Es existieren aktuell 5 Studien zu thermischer Grundwassernutzung im Kanton Luzern. In diesen Studien wird für intensiv genutzte Gebiete der Zufluss (l/min) (z.B. durch Zufluss aus oberliegenden Abschnitten, Infiltration von Flüssen, Versickerung) in ein Gebiet abgeschätzt und davon die aktuelle Entnahme (z.B. für Trinkwasser) abgezogen. Dies ergibt den für die thermische Nutzung verfügbaren Durchfluss (l/min). Dieser Durchfluss wird für eine erste Grobschätzung auf das maximale jährliche Fördervolumen hochgerechnet.  --> Diese Fördervolumen beträgt Mio. m<sup>3</sup>, etwas mehr als zwei Mal das aktuell konzessionierte Fördervolumen für thermische Nutzung ( Mio. m<sup>3</sup>). Mit einer Temperaturdifferenz von 3 K entsprechen Mio. m<sup>3</sup> etwa GWh dem Grundwasser entzogener Wärme und einer Heizwärme von GWh. Weitere Studien für eine verbesserte Abschätzung (z.B. im Wiggertal, aber auch für die gesamte Schweiz) sind aktuell in Arbeit.</p>
-<b>
-paul: auswirkungen motion jauslin?
-</b>
-</section>
-<section id="aus-fachlicher-sicht-empfohlenes-ausbauziel-für-2050-gwh" class="level3">
-<h3 class="anchored" data-anchor-id="aus-fachlicher-sicht-empfohlenes-ausbauziel-für-2050-gwh">Aus fachlicher Sicht empfohlenes Ausbauziel für 2050 (&nbsp;GWh)</h3>
-<p>Bei der Festlegung eines Ausbauziels ist zu beachten, dass es im Kanton Luzern bereits heute Siedlungsgebiete gibt, in denen weitere Nutzungen kaum mehr möglich sind (z.B. Emmen, Perlen) oder nur noch örtlich eingeschränkt, da das Potenzial mit den bestehenden Nutzungen bereits zur Hälfte ausgeschöpft wird (z.B. Malters, Sursee). Überdies können sehr kleine Grundwassernutzungen, z.B. für Einfamilienhäuser, nicht bewilligt werden, da jeder Eingriff (d.h. jede Bohrung) ins Grundwasser ein potenzielles Risiko für Grundwasserverunreinigungen darstellt. Mit einer Vielzahl kleiner Nutzungen würden ausserdem zukünftige grössere Grundwassernutzungen verhindert. Zusätzlich würde das Risiko für die Nutzung des Grundwassers als Trinkwasser übermässig erhöht. Soll das realistische Potenzial zu zwei Dritteln <!--# grundwasser$ausbaupfad$ziel$ausnutzungRealistischePotenzial = 0.66 --> ausgeschöpft werden, ergibt dies einen Zielwert von &nbsp;GWh.</p>
-<div style="page-break-after: always;"></div>
-<!-- Auffallend ist das deutlich höhere Ausbauziel der EP2050+, welches sogar über dem realistischen Potenzial liegt. In den EP2050+ wird jedoch nicht Grundwasser direkt dokumentiert, sondern als Teil des Bereichs Umweltwärme, zusammen mit untiefer Geothermie und Luft. Umweltwärme wurde gemäss Anhang @sec-anhangFernwaermeUmweltwaerme in diese drei Bereiche aufgeteilt. Möglicherweise ist diese Aufteilung zu hinterfragen.  -->
+<!-- {{< include kapitel/_grundwasser.qmd >}} -->
 <!-- {{< include kapitel/_solarenergieThermisch.qmd >}} -->
 <!-- {{< include kapitel/_geothermieTief.qmd >}} -->
 <!-- {{< include kapitel/_abwaerme.qmd >}} -->
 <!-- {{< include kapitel/_biomasseVerholzt.qmd >}} -->
-<!-- {{< include kapitel/_biomasseNichtVerholzt.qmd >}} -->
+<section id="biomasse-nicht-verholzt" class="level2">
+<h2 class="anchored" data-anchor-id="biomasse-nicht-verholzt">Biomasse nicht verholzt</h2>
+<b>
+braucht es hier noch einen check pronovo und holinger bzgl. der einbezogenen anlagen?
+</b>
+<section id="definition" class="level3">
+<h3 class="anchored" data-anchor-id="definition">Definition</h3>
+<p>Zur nicht verholzten Biomasse zählen Hofdünger (Gülle und Mist), landwirtschaftliche Nebenprodukte (z.B. Reststroh aus der Getreideproduktion), organische Abfälle aus Industrie und Gewerbe, organische Abfälle im Haushaltskehricht, Grüngut aus Haushalt und Landschaft sowie Klärschlamm. Die Rohstoffkategorien ohne Hofdünger werden auch als Co-Substrate bezeichnet und sind energetisch ergiebiger als Hofdünger. Nicht verholzte Biomassen werden durch Vergärung Biogas umgewandelt. Biogas ist ein Gemisch, das zu rund zwei Dritteln aus Methan und zu einem Drittel aus Kohlendioxid besteht. Biogas kann gereinigt und aufbereitet in das Erdgasnetz eingespeist werden oder in Blockheizkraftwerken zur Strom- und Wärmegewinnung genutzt werden.</p>
+<!-- Wasserstoff wird im Rahmen dieses Berichts nicht zu Biogas gezählt, da dessen Produktion durch einen Elektrolyseprozess, d.h. die Aufspaltung von Wasser in Sauerstoff und Wasserstoff mithilfe von Strom, erfolgt. Ebenso wenig zählen synthetische Gase, welche ein Folgeprodukt von Wasserstoff sind, zu Biogas.  -->
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-biomassseNichtVerholzt" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-biomassseNichtVerholzt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="masterReport_files/figure-html/fig-biomassseNichtVerholzt-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-biomassseNichtVerholzt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abb.&nbsp;1: Entwicklung der kantonalen Energieproduktion aus nicht-verholzter Biomasse und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="aktuelle-produktion-gwh" class="level3">
+<h3 class="anchored" data-anchor-id="aktuelle-produktion-gwh">Aktuelle Produktion (&nbsp;GWh)</h3>
+<p>Im Kanton Luzern gibt es insgesamt 32 Anlagen (<a href="#fig-tabelleBiogasanlagen" class="quarto-xref">Abbildung&nbsp;2</a>), welche Biogas energetisch verwerten: 13 Abwasserreinigungsanlagen, 6 industrielle Anlagen und 13 landwirtschaftliche Co-Vergärungsanlagen. Alle Anlagen produzieren mittels Blockheizkraftwerk Strom und Wärme, nur zwei speisen Biogas zusätzlich in das Gasnetz ein<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Die Stromproduktion aller Biogasanlagen im Jahr 2022 betrug 58&nbsp;GWh<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Die aus dieser Stromproduktion abgeschätzte genutzte Waerme beträgt 81&nbsp;GWh<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Insgesamt resultieren 139&nbsp;GWh Strom und Wärme. Die direkt ins Gasnetz eingespeiste Energiemenge beträgt 35&nbsp;GWh<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. In der Summe ist die aktuelle Nutzung somit 174&nbsp;GWh<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
+<!-- [^_biomassenichtverholzt-1]: Emmi Schweiz AG Dagmersellen, Kompogasanlage Wauwil, SwissFarmerPower Inwil, Weiherhus Luzern, Gefu Rickenbach, Perlen Papierfabrik. -->
+</section>
+<section id="theoretisches-potenzial-840-gwh" class="level3">
+<h3 class="anchored" data-anchor-id="theoretisches-potenzial-840-gwh">Theoretisches Potenzial (840&nbsp;GWh)</h3>
+<p>In <span class="citation" data-cites="BiogasStrategieKLU2013">Kanton Luzern (<a href="#ref-BiogasStrategieKLU2013" role="doc-biblioref">2013</a>)</span> wird das theoretische Potenzial von Biogas mit 854&nbsp;GWh angeben. In <span class="citation" data-cites="Thees2017">Thees u.&nbsp;a. (<a href="#ref-Thees2017" role="doc-biblioref">2017</a>)</span> wird das theoretische Potenzial mit 817&nbsp;GWh beziffert. Es wird der Mittelwert von 840&nbsp;GWh übernommen.</p>
+</section>
+<section id="realistisches-potenzial-400-gwh" class="level3">
+<h3 class="anchored" data-anchor-id="realistisches-potenzial-400-gwh">Realistisches Potenzial (400&nbsp;GWh)</h3>
+<p>In <span class="citation" data-cites="BiogasStrategieKLU2013">Kanton Luzern (<a href="#ref-BiogasStrategieKLU2013" role="doc-biblioref">2013</a>)</span> wird das realistische Potenzial mit &nbsp;GWh angegeben. Aus <span class="citation" data-cites="Thees2017">Thees u.&nbsp;a. (<a href="#ref-Thees2017" role="doc-biblioref">2017</a>)</span> ergibt sich ein realistisches Potenzial von 490&nbsp;GWh. Als Arbeitswert wird hier ein Mittelwert von 400&nbsp;GWh angenommen. Inwieweit dieser Arbeitswert wirklich nutzbar ist, hängt stark von der Nutzbarmachung des Hofdüngers ab, welcher energetisch etwa 75 % des realistischen Potenzials ausmacht<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>. Auf die Menge bezogen macht der Hofdünger sogar 96 % der verwendeten Biomasse aus.</p>
+</section>
+<section id="aus-fachlicher-sicht-empfohlenes-ausbauziel-für-2050-250-gwh" class="level3">
+<h3 class="anchored" data-anchor-id="aus-fachlicher-sicht-empfohlenes-ausbauziel-für-2050-250-gwh">Aus fachlicher Sicht empfohlenes Ausbauziel für 2050 (250&nbsp;GWh)</h3>
+<p>Das Ausbauziel hängt stark von der Nutzbarmachung des Hofdüngers ab. Hofdünger hat gegenüber Co-Substraten (z.B. organische Abfälle, Glycerin) eine geringere Energiedichte (Energie pro kg). Wo das Ausbauziel zwischen dem genutzten Potenzial von 170&nbsp;GWh und dem realistischen Potenzial von 400&nbsp;GWh zu positionieren ist, bedarf einer Interessenabwägung. Für ein hohes Ausbauziel sprechen die gesteigerte Nachfrage nach erneuerbarem und speicherbarem Gas für Hochtemperaturprozesse<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, eine weniger starke Abhängigkeit von Importgasen (Wasserstoff, Biogas), die Entlastung des Rohstoffes Holz sowie die Reduktion von Treibhausgasemissionen<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>. Tendenziell fördert vergorene Gülle (im Vergleich zum Ausbringen unvergorener Gülle), trotz dem geringeren Kohlenstoffgehalt<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>, zusätzlich die Humusbildung. Für ein konservatives Ausbauziel sprechen die geringe Wirtschaftlichkeit der Energieproduktion aus Hofdünger alleine (und damit die Abhängigkeit von hohen Fördergeldern) und die langen Transportwege der Co-Substrate (zum Teil aus dem Ausland) und des rückgeführten Düngers nach der Vergärung. Vergorene Gülle hat (im Vergleich zu unvergorener Gülle) ausserdem in der Regel eine erhöhten Ammoniumgehalt. Das damit verbundene erhöhte Auswaschrisiko von Stickstoff kann zu einer Verschmutzung des Grundwassers führen. Gemäss PB K&amp;E die landwirtschaftlichen Treibhausgasemissionen bis 2050 halbiert werden. Dafür ist eine Reduktion des Tierbestands und eine klimaschonende Ernährung nötig (Massnahme KS-L2.2 des PB K&amp;E). Dies reduziert die Menge an verfügbarem Hofdünger und somit das realistische Potenzial. Als Arbeitswert wird ein Ausbauziel von 250&nbsp;GWh gewählt. Dabei wird davon ausgegangen, dass kleine landwirtschaftliche Anlagen mithilfe von Förderung und technischen Fortschritten in Zukunft zumindest teilweise wirtschaftlich betrieben werden können. Das skalierte Bundesziel ist um ein Dreifaches höher und sogar höher als das realistische Potenzial. Dies ist auf importiertes Biogas zurückzuführen, welches in den Daten der EP2050+ nicht von der Inlandproduktion zu trennen ist. </p><div style="page-break-after: always;"></div><p></p>
 <!-- # Übersicht aller Ausbauziele {#sec-ausbauziele} -->
 <!-- {{< include kapitel/_resultateStromUndWaerme.qmd >}} -->
 <!-- {{< include kapitel/_resultateStrom.qmd >}} -->
@@ -133,9 +169,35 @@ paul: auswirkungen motion jauslin?
 <!-- {{< include kapitel/_kühlen.qmd >}} -->
 <!-- # Anhang -->
 <!-- {{< include kapitel/_anhangInteressengruppen.qmd >}} -->
+</section>
+</section>
+<section id="sec-anhangBiogasanlagen" class="level2">
+<h2 class="anchored" data-anchor-id="sec-anhangBiogasanlagen">Anhang A1: Biogasanlagen</h2>
+<div id="fig-tabelleBiogasanlagen" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tabelleBiogasanlagen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="grafiken/biogasanlagen.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tabelleBiogasanlagen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abb.&nbsp;2: Biogasanlagen im Kanton Luzern
+</figcaption>
+</figure>
+</div>
 <!-- {{< include kapitel/_anhangFernwaermeUmweltwaerme.qmd >}} -->
-<!-- # Literatur -->
-<!-- {{< include kapitel/_referenzen.qmd >}} -->
+</section>
+<section id="literatur" class="level1">
+<h1>Literatur</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-biogasHolinger2022" class="csl-entry" role="listitem">
+Holinger AG. (2022). <em>Biogas im Kanton Luzern</em>.
+</div>
+<div id="ref-BiogasStrategieKLU2013" class="csl-entry" role="listitem">
+Kanton Luzern. (2013). <em>Strategie Biogasanlagen im Kanton Luzern</em>.
+</div>
+<div id="ref-Thees2017" class="csl-entry" role="listitem">
+Thees, O., Burg, V., Erni, M., Bowman, G., &amp; Lemm, R. (2017). <em>Biomassenpotenziale der Schweiz für die energetische Nutzung</em>. <em>Heft</em> (Bd. 57).
+</div>
+</div>
 <!-- {{< include kapitel/_feedbackAntworten.qmd >}} -->
 <!-- {{< include kapitel/_feedbackVorinformation.qmd >}} -->
 <!--# Wasserkraft:
@@ -144,13 +206,20 @@ Stromtechnologien betrachten, bei allen anderen ähnliche Ausgangslage aus bei W
 Ausbaupfad im Titel durch Ausbauziel ersetzen?-->
 <!-- {{< include kapitel/_titelseite.qmd >}} -->
 </section>
-</section>
 
 
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Fußnoten</h2>
 
 <ol>
-<li id="fn1"><p>Voraussetzung für die Nutzung des Potenzials ist der lokale Wärmebedarf. Dieser Aspekt reduziert das realistische Potenzial zusätzlich. Die dafür nötige räumliche Analyse des Wärmebedarfs übersteigt den Rahmen dieses Berichts.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>ARA Buholz und SwissFamerPowerInwil<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Pronovo Daten, d.h. ohne Eigenbedarf<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Annahmen: Strom und Wärmeproduktion stehen im Verhältnis 35:65 und 75 % der produzierten Wärme werden genutzt<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>ARA Buholz 6.8 GWh/Jahr <span class="citation" data-cites="biogasHolinger2022">(Tab. 21 in <a href="#ref-biogasHolinger2022" role="doc-biblioref">Holinger AG, 2022</a>)</span> und SFPI 28 GWh/Jahr <span class="citation" data-cites="biogasHolinger2022">(Tab. 21 in <a href="#ref-biogasHolinger2022" role="doc-biblioref">Holinger AG, 2022</a>)</span><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Die Studie <span class="citation" data-cites="biogasHolinger2022">Holinger AG (<a href="#ref-biogasHolinger2022" role="doc-biblioref">2022</a>)</span> analysiert Einzelanlagen und die aufsummierte Gesamtenergie ergibt 151&nbsp;GWh. Der Unterschied zum angegebenen Wert von 174&nbsp;GWh zeigt die Unsicherheit der Abschätzungen aufgrund unterschiedlicher Methodiken.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p><span class="citation" data-cites="BiogasStrategieKLU2013">Kanton Luzern (<a href="#ref-BiogasStrategieKLU2013" role="doc-biblioref">2013</a>)</span>: Hofdüngeranteil 80 %; <span class="citation" data-cites="Thees2017">Thees u.&nbsp;a. (<a href="#ref-Thees2017" role="doc-biblioref">2017</a>)</span>: Hofdüngeranteil 71 %<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Eine entsprechende Aufbereitung des Biogases wird vorausgesetzt.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Treibhausgassemissionen können mit Hilfe von Biogasanlagen über folgende Wirkungspfade eingespart werden: (i) Umwandlung vom stark klimaschädlichen Methan, welches bei der Hofdüngerlagerung freigesetzt würde, zum weniger klimaschädlichen CO<sub>2</sub> bei der Verbrennung, siehe hierzu auch das Kompensationsprogramm des Bundes <a href="https://www.bafu.admin.ch/bafu/de/home/themen/klima/fachinformationen/verminderungsmassnahmen/kompensation/inland/registrierte-projekte.html">Methanvermeidung aus biogenenen Abfällen</a> (ii) Substitution fossiler Brenn- und Treibstoffe durch Biogas, (iii) die Substitution von Mineraldüngern aus fossiler Energiequelle durch organische Dünger.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Bei der Vergärung von Hofdüngern entsteht Methan. Der darin enthaltene Kohlenstoff gelangt als CO<sub>2</sub> in die Atmosphäre und wird nicht mehr dem Boden zugeführt.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->

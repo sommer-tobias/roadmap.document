@@ -9,7 +9,7 @@ bibliography: referenzen/references.bib
 csl: referenzen/geophysical-research-letters.csl
 lang: de
 format: 
-  html:
+  docx:
      fig-width: 7
      toc: true
      toc-depth: 2
@@ -76,7 +76,7 @@ params:
 
 <!-- {{< include kapitel/_oberflaechengewaesser.qmd >}} -->
 
-{{< include kapitel/_grundwasser.qmd >}}
+<!-- {{< include kapitel/_grundwasser.qmd >}} -->
 
 <!-- {{< include kapitel/_solarenergieThermisch.qmd >}} -->
 
@@ -86,7 +86,7 @@ params:
 
 <!-- {{< include kapitel/_biomasseVerholzt.qmd >}} -->
 
-<!-- {{< include kapitel/_biomasseNichtVerholzt.qmd >}} -->
+{{< include kapitel/_biomasseNichtVerholzt.qmd >}}
 
 <!-- # Übersicht aller Ausbauziele {#sec-ausbauziele} -->
 
@@ -102,11 +102,13 @@ params:
 
 <!-- {{< include kapitel/_anhangInteressengruppen.qmd >}} -->
 
+{{< include kapitel/_anhangBiogasanlagen.qmd >}}
+
 <!-- {{< include kapitel/_anhangFernwaermeUmweltwaerme.qmd >}} -->
 
-<!-- # Literatur -->
+# Literatur
 
-<!-- {{< include kapitel/_referenzen.qmd >}} -->
+{{< include kapitel/_referenzen.qmd >}}
 
 <!-- {{< include kapitel/_feedbackAntworten.qmd >}} -->
 

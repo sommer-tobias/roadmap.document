@@ -10,7 +10,7 @@ Die thermische Nutzung von Grundwasser bezieht sich auf die Verwendung von Grund
 #| warning: false
 #| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus Grundwasser in Kombination mit einer Wärmepumpe und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
 
-#grafikProTechRda$grundwasser$grafik
+grafikProTechRda$grundwasser$grafik
 ``` 
 
 
@@ -31,10 +31,10 @@ Die Ausweisung eines theoretischen Potenzials macht im Bereich Grundwasser keine
 Es existieren aktuell fünf Studien zu thermischer Grundwassernutzung im Kanton Luzern. In diesen Studien wird für intensiv genutzte Gebiete eine Bilanzierung durchgeführt und die zur Verfügung stehende Grundwassermenge (Gundwasserdargebot, gemessen in Liter pro Minute) abgeschätzt.  Bei thermischen Grundwassernutzungen spielt das Dargebot nur bei der technischen/hydrogeologischen Machbarkeit eine Rolle, weil das geförderte Grundwasser aus dem Entnahmebrunnen über einen Rückgabebrunnen dem Vorkommen zurückgegeben wird. Das Dargebot bleibt somit erhalten. Limitierend sind die Beschränkungen der Temperaturveränderungen im Grundwasser (Gewässerschutzgesetz)[^bedarfsanalyse]. 
 Einfachheitshalber wird das nutzbare Dargebot (nach Abzug der jährlichen Fördermengen für Trink- und Brauchwasserzwecke) für eine erste Grobschätzung auf das maximale jährliche Fördervolumen hochgerechnet.
 <!-- Es existieren aktuell 5 Studien zu thermischer Grundwassernutzung im Kanton Luzern. In diesen Studien wird für intensiv genutzte Gebiete der Zufluss (l/min) (z.B. durch Zufluss aus oberliegenden Abschnitten, Infiltration von Flüssen, Versickerung) in ein Gebiet abgeschätzt und davon die aktuelle Entnahme (z.B. für Trinkwasser) abgezogen. Dies ergibt den für die thermische Nutzung verfügbaren Durchfluss (l/min). Dieser Durchfluss wird für eine erste Grobschätzung auf das maximale jährliche Fördervolumen hochgerechnet.  -->
-Diese Fördervolumen beträgt `r roundTo(grundwasser$ausbaupfad$realistisch$fördermenge_Miom3, 1)`
+Diese Fördervolumen beträgt `r roundTo(grundwasser$ausbaupfad$realistisch$foerdermenge_Miom3, 1)`
 Mio. m^3^, etwas mehr als zwei Mal das aktuell konzessionierte Fördervolumen für thermische Nutzung (`r roundTo(grundwasser$ausbaupfad$genutzt$maxjährlFördermengeKonzessionen_Miom3Jahr, 1)`
 Mio. m^3^). Mit einer Temperaturdifferenz von `r roundTo(parameters$grundwasser$dT, 1)`
-K entsprechen `r roundTo(grundwasser$ausbaupfad$realistisch$fördermenge_Miom3, 1)`
+K entsprechen `r roundTo(grundwasser$ausbaupfad$realistisch$foerdermenge_Miom3, 1)`
 Mio. m^3^ etwa `r roundTo(grundwasser$ausbaupfad$realistisch$umweltaerme_gwh, 10)`
 GWh dem Grundwasser entzogener Wärme und einer Heizwärme von `r roundTo(grundwasser$ausbaupfad$realistisch$heizwaerme_gwh, 10)`
 GWh. Weitere Studien für eine verbesserte Abschätzung (z.B. im Wiggertal, aber auch für die gesamte Schweiz) sind aktuell in Arbeit. 

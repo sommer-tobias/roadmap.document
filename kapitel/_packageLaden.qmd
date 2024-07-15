@@ -5,7 +5,6 @@
 
 
 library(roadmap.dashboard)
-library(knitr)
 
 
 ```
