@@ -9,7 +9,7 @@ bibliography: referenzen/references.bib
 csl: referenzen/geophysical-research-letters.csl
 lang: de
 format: 
-  docx:
+  html:
      fig-width: 7
      toc: true
      toc-depth: 2
