@@ -1,0 +1,61 @@
+## Grundwasser
+
+
+### Definition
+Die thermische Nutzung von Grundwasser bezieht sich auf die Verwendung von Grundwasser zum Heizen oder Kühlen von Gebäuden oder Prozessen. Dabei wird das Grundwasser je nach Bedarf als Wärmequelle oder Wärmesenke genutzt. In diesem Kapitel wird nur der Heizfall betrachtet. Das zum Heizen nötige Temperaturniveau wird durch den Einsatz von Wärmepumpen erreicht.
+
+```{r}
+#| label: fig-grundwasser
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus Grundwasser in Kombination mit einer Wärmepumpe und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+
+grafikProTechRda$grundwasser$grafik
+``` 
+
+
+### `r params$genutzt` (`r roundTo(grundwasser$ausbaupfad$genutzt$heizwaerme_gwh,10)` GWh)
+Im Kanton Luzern existieren aktuell `r roundTo(grundwasser$ausbaupfad$genutzt$anzahlKonzessionen, 1)`
+bewilligte und sich in Betrieb befindende Konzessionen für thermische Grundwassernutzung mit einer maximalen jährlichen Fördermenge von `r roundTo(grundwasser$ausbaupfad$genutzt$maxjährlFördermengeKonzessionen_Miom3Jahr, 1)`
+Mio. m^3^. Mit einer Temperaturdifferenz von `r roundTo(parameters$grundwasser$dT, 1)`
+°C, einer Jahresarbeitszahl von `r roundTo(parameters$grundwasser$JAZ, 1)`
+und unter der Annahme, dass `r roundTo(parameters$grundwasser$ausnutzungsgradFoerdermenge*100, 1)`
+% der maximalen Fördermenge ausgenutzt werden ergibt dies eine Heizenergie von `r roundTo(grundwasser$ausbaupfad$genutzt$heizwaerme_gwh,10)` GWh.  
+
+
+### Theoretisches Potenzial (-)
+Die Ausweisung eines theoretischen Potenzials macht im Bereich Grundwasser keinen Sinn, da gesetzliche Vorgaben (Grundwasserschutzzonen, max. Abkühlung bzw. Erwärmung) immer zu berücksichtigen sind.
+
+
+### Realistisches Potenzial (`r roundTo(grundwasser$ausbaupfad$realistisch$heizwaerme_gwh,10)` GWh)
+Es existieren aktuell fünf Studien zu thermischer Grundwassernutzung im Kanton Luzern. In diesen Studien wird für intensiv genutzte Gebiete eine Bilanzierung durchgeführt und die zur Verfügung stehende Grundwassermenge (Gundwasserdargebot, gemessen in Liter pro Minute) abgeschätzt.  Bei thermischen Grundwassernutzungen spielt das Dargebot nur bei der technischen/hydrogeologischen Machbarkeit eine Rolle, weil das geförderte Grundwasser aus dem Entnahmebrunnen über einen Rückgabebrunnen dem Vorkommen zurückgegeben wird. Das Dargebot bleibt somit erhalten. Limitierend sind die Beschränkungen der Temperaturveränderungen im Grundwasser (Gewässerschutzgesetz)[^bedarfsanalyse]. 
+Einfachheitshalber wird das nutzbare Dargebot (nach Abzug der jährlichen Fördermengen für Trink- und Brauchwasserzwecke) für eine erste Grobschätzung auf das maximale jährliche Fördervolumen hochgerechnet.
+<!-- Es existieren aktuell 5 Studien zu thermischer Grundwassernutzung im Kanton Luzern. In diesen Studien wird für intensiv genutzte Gebiete der Zufluss (l/min) (z.B. durch Zufluss aus oberliegenden Abschnitten, Infiltration von Flüssen, Versickerung) in ein Gebiet abgeschätzt und davon die aktuelle Entnahme (z.B. für Trinkwasser) abgezogen. Dies ergibt den für die thermische Nutzung verfügbaren Durchfluss (l/min). Dieser Durchfluss wird für eine erste Grobschätzung auf das maximale jährliche Fördervolumen hochgerechnet.  -->
+Diese Fördervolumen beträgt `r roundTo(grundwasser$ausbaupfad$realistisch$foerdermenge_Miom3, 1)`
+Mio. m^3^, etwas mehr als zwei Mal das aktuell konzessionierte Fördervolumen für thermische Nutzung (`r roundTo(grundwasser$ausbaupfad$genutzt$maxjährlFördermengeKonzessionen_Miom3Jahr, 1)`
+Mio. m^3^). Mit einer Temperaturdifferenz von `r roundTo(parameters$grundwasser$dT, 1)`
+K entsprechen `r roundTo(grundwasser$ausbaupfad$realistisch$foerdermenge_Miom3, 1)`
+Mio. m^3^ etwa `r roundTo(grundwasser$ausbaupfad$realistisch$umweltaerme_gwh, 10)`
+GWh dem Grundwasser entzogener Wärme und einer Heizwärme von `r roundTo(grundwasser$ausbaupfad$realistisch$heizwaerme_gwh, 10)`
+GWh. Weitere Studien für eine verbesserte Abschätzung (z.B. im Wiggertal, aber auch für die gesamte Schweiz) sind aktuell in Arbeit. 
+
+
+[^bedarfsanalyse]: Voraussetzung für die Nutzung des Potenzials ist der lokale Wärmebedarf. Dieser Aspekt reduziert das realistische Potenzial zusätzlich. Die dafür nötige räumliche Analyse des Wärmebedarfs übersteigt den Rahmen dieses Berichts.
+
+```{=html}
+<b>
+paul: auswirkungen motion jauslin?
+</b>
+```
+
+### `r params$ziel` (`r roundTo(grundwasser$ausbaupfad$ziel$heizwaerme_gwh, 10)` GWh)
+Bei der Festlegung eines Ausbauziels ist zu beachten, dass es im Kanton Luzern bereits heute Siedlungsgebiete gibt, in denen weitere Nutzungen kaum mehr möglich sind (z.B. Emmen, Perlen) oder nur noch örtlich eingeschränkt, da das Potenzial mit den bestehenden Nutzungen bereits zur Hälfte ausgeschöpft wird (z.B. Malters, Sursee). Überdies können sehr kleine Grundwassernutzungen, z.B. für Einfamilienhäuser, nicht bewilligt werden, da jeder Eingriff (d.h. jede Bohrung) ins Grundwasser ein potenzielles Risiko für Grundwasserverunreinigungen darstellt. Mit einer Vielzahl kleiner Nutzungen würden ausserdem zukünftige grössere Grundwassernutzungen verhindert. Zusätzlich würde das Risiko für die Nutzung des Grundwassers als Trinkwasser übermässig erhöht. Soll das realistische Potenzial zu zwei Dritteln <!--# grundwasser$ausbaupfad$ziel$ausnutzungRealistischePotenzial = 0.66 -->
+ausgeschöpft werden, ergibt dies einen Zielwert von `r roundTo(grundwasser$ausbaupfad$ziel$heizwaerme_gwh, 10)` GWh. 
+{{< pagebreak >}}
+
+
+
+
+<!-- Auffallend ist das deutlich höhere Ausbauziel der EP2050+, welches sogar über dem realistischen Potenzial liegt. In den EP2050+ wird jedoch nicht Grundwasser direkt dokumentiert, sondern als Teil des Bereichs Umweltwärme, zusammen mit untiefer Geothermie und Luft. Umweltwärme wurde gemäss Anhang @sec-anhangFernwaermeUmweltwaerme in diese drei Bereiche aufgeteilt. Möglicherweise ist diese Aufteilung zu hinterfragen.  -->
+
+

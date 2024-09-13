@@ -1,0 +1,30 @@
+```{r}
+#| echo: false
+#| warning: false
+#| eval: true
+
+library(gt)
+
+
+load('output/grafikGesamtenergie.rda')
+
+
+roundTo = function(x, a){
+  #input: 
+  #x: value to round
+  #a: accuracy, e.g. 100 rounds to hundred
+  if( a == 0.1){
+    ndig <- 1
+    }
+    else{
+      ndig <- 0
+    }
+  
+  junk <- round(x/a, digits = 0)*a
+  output <- format(junk, big.mark = "'", scientific = FALSE, nsmall = ndig)
+  return(output)
+}
+```
+
+
+

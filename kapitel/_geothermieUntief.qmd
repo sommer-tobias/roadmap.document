@@ -19,7 +19,7 @@ grafikProTechRda$geothermieUntief$grafik
 
 Vom Jahr 1990 bis zum Jahr 2022 wurden im Kanton Luzern `r roundTo(geothermieUntief$ausbaupfad$genutzt$anzahlAnlagen, 1)`
 Erdsondenanlagen mit `r roundTo(geothermieUntief$ausbaupfad$genutzt$anzahlErdsonden, 10)`
-Erdsonden und einer Gesamtlänge von fast `r roundTo(geothermieUntief$ausbaupfad$genutzt$totallängerBohrmeter/1000, 100)`
+Erdsonden und einer Gesamtlänge von fast `r roundTo(geothermieUntief$ausbaupfad$genutzt$totallaengerBohrmeter/1000, 100)`
 Kilometern bewilligt. Bei einer Wärmeentzugsleistung von `r roundTo(parameters$geothermieUntief$spezifischerWärmeentzugProSondenmeter_Wm, 1)`
 W pro Sondenmeter entspricht dies einer totalen Entzugsleistung von `r roundTo(geothermieUntief$ausbaupfad$genutzt$totaleEntzugleistung_mw, 1)`
 MW und unter der Annahme von `r roundTo(parameters$geothermieUntief$volllaststunden_h, 1)`

@@ -1,0 +1,46 @@
+
+
+## Windenergie
+
+
+### Definition
+
+Windenergie bezeichnet die Stromerzeugung aus Wind mithilfe von Windenergieanlagen. Der Fokus liegt auf grossen Windanlagen mit einer Gesamthöhe von über 30 Metern und Jahreserträgen von mehreren GWh pro Anlage. Die Windenergie produziert zwei Drittel ihres Stroms im Winter. Sie leistet somit einen wichtigen Beitrag zu Winterstromproduktion und ergänzt die Stromerzeugung durch Photovoltaik und Wasserkraft ideal.
+
+```{r}
+#| label: fig-windenergie
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus Windenergie und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+
+grafikProTechRda$windenergie$grafik
+```
+
+
+### `r params$genutzt` (`r roundTo(windenergie$ausbaupfad$aktuelleNutzung_gwh,1)` GWh)
+
+Die aktuelle Produktion durch Windenergie beträgt `r roundTo(windenergie$ausbaupfad$aktuelleNutzung_gwh,1)` GWh, zum Grossteil erzeugt durch drei Windanlagen im Entlebuch. 
+
+
+### Theoretisches Potenzial (-)
+
+Ähnlich wie bei der Photovoltaik macht die Ausweisung eines theoretischen Potenzials basierend auf der gesamten Kantonsfläche und den Windgeschwindigkeiten keinen Sinn. Zu betrachten ist das realistische Potenzial für Gebiete in denen tatsächlich Windanlagen gebaut werden können.
+
+### Realistisches Potenzial (`r roundTo(parameters$windenergie$realistischesPotenzialKLU_gwh,1)` GWh)
+
+Das realistische Potenzial von Windenergie in der Schweiz wird aktuell auf `r roundTo(parameters$windenergie$realistischesPotenzialCH_gwh, 10)` GWh
+ geschätzt [@windpotenzialBFE2022]. Dabei wurden ausreichend windreiche Gebiete mit diversen Ausschlusskriterien (Schutzgebiete wie Moore und Reservate, Flughäfen und angrenzende Sektoren, etc.)  überlagert und basierend auf den verbleibenden Gebieten das Windenergiepotenzial basierend auf Anlagen des aktuellen Standes berechnet. Für den Kanton Luzern beträgt das Potenzial `r roundTo(parameters$windenergie$realistischesPotenzialKLU_gwh , 10)` GWh[^erläuterungPotenzialKLU].  
+ 
+[^erläuterungPotenzialKLU]: Unter Berücksichtigung der örtlichen Begebenheiten des Kantons Luzerns [@windpotenzialBFE2022].
+
+### `r params$ziel` (`r roundTo(windenergie$ausbaupfad$ziel$zielKLU2050_gwh, 10)` GWh)
+
+Grundlage für das kantonale Ausbauziel ist das Konzept Windenergie des Bundes [@KonzeptWindenergieCH]. Darin wird der Beitrag des Kantons Luzern zum Bundesziel (`r roundTo(windenergie$ausbaupfad$ziel$zielCH_gwh, 10)` GWh) zwischen 130 GWh und 400 GWh beziffert. Im Konzept Windenergie des Kantons Luzern [@KonzeptWindenergieKLU] wurde daraufhin ein Ziel von `r roundTo(windenergie$ausbaupfad$ziel$zielKLU2050_gwh, 10)`
+  GWh bis 2050 festgelegt mit einem Zwischenziel von `r roundTo(windenergie$ausbaupfad$ziel$zielKLU2035_gwh, 10)`
+   GWh bis 2035. Diese Ziele wurden im teilrevidierten Richtplan Windenergie[^teilrevisionWind] [@TeilrevisionRichtplanWind2022] übernommen. Das Ausbauziel der Windenergie entspricht einer Potenzialausschöpfung von `r roundTo(prioTabelle$potenzialausschöpfungWind2050 * 100, 1)` %. Dies ist die geringste Potenzialausschöpfung aller 12 untersuchten Energieträger. Das Ausbauziel ist daher konservativ und als Minimalziel aufzufassen. 
+   
+{{< pagebreak >}}
+   
+   
+[^teilrevisionWind]: Der Regierungsrat hat am 6. Juni 2023 die Richtplanteilrevision beschlossen. Der Kantonsrat hat die Botschaft [B 160](https://richtplan.lu.ch/-/media/Richtplan/Dokumente/Teilrevision_Windenergie/B_160_KRP_TR_Wind.pdf?rev=cf7d575ea02e4095854e2ef09de38cb8) Teilrevision des kantonalen Richtplans betreffend Windenergie [@B160] in der Oktober-Session 2023 zustimmend verabschiedet. Die Genehmigung des Bundesrates ist aktuell noch ausstehend.
+

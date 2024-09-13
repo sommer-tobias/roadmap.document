@@ -1,0 +1,39 @@
+## Luft
+
+### Definition
+
+Bei der thermischen Nutzung von Luft wird die Aussenluft zum Heizen oder Kühlen von Gebäuden oder Prozessen verwendet. Die Luft wird dabei je nach Bedarf als Wärmequelle oder Wärmesenke genutzt. In diesem Kapitel wird nur der Heizenergiebedarf betrachtet mit Luft als Wärmequelle. Das zum Heizen nötige Temperaturniveau wird durch den Einsatz einer Wärmepumpe erreicht. 
+
+```{r}
+#| label: fig-luft
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion durch der Umweltwärmequelle Luft in Kombination mit einer Wärmepumpe und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+
+
+grafikProTechRda$luft$grafik
+```
+
+
+### `r params$genutzt` (`r roundTo(luft$ausbaupfad$genutzt$heizwaerme_gwh,10)` GWh)
+
+Im Jahr 2020 betrug die totale Heizleistung von Luft-Wasser-Wärmepumpen etwa `r roundTo(parameters$luft$totaleInstallierteHeizleistungKLU_mw, 10)`
+ MW. Mit `r roundTo(parameters$luft$volllasstunden, 10)`
+  Vollaststunden ergibt dies eine Heizwärme von `r roundTo(luft$ausbaupfad$genutzt$heizwaerme_gwh, 10)`
+   GWh. Die totale Heizleistung wurde aus den jährlichen Energiemeldungen unter Annahme eines exponentiellen Wachstums in der Vergangenheit bestimmt und über das Gebäude- und Wohnungsregister plausibilisiert. 
+
+
+### Theoretisches Potenzial (-)
+
+Das theoretische Potenzial der Umweltwärme Luft ist nicht standortabhängig und kann somit nahezu als unendlich angenommen werden. 
+
+### Realistisches Potenzial (`r roundTo(luft$ausbaupfad$realistisch$heizwaerme_gwh,10)` GWh)
+Das realistische Potenzial orientiert sich am realistischen Potenzial der EP2050+. Darin werden Schallgrenzwerte und die begrenzte Leistung von Luft-Wasser-Wärmepumpen berücksichtigt. Skaliert auf den Kanton Luzern ergibt dies `r roundTo(luft$ausbaupfad$realistisch$heizwaerme_gwh, 10)`
+ GWh. Diese Skalierung gibt hier lediglich einen groben Anhaltspunkt. Die Schallproblematik hängt von der Bebauungsdichte ab. Die Bebauungsdichte des Kantons Luzern im Vergleich zum Bundesdurchschnitt wurde nicht weiter untersucht.
+
+### `r params$ziel` (`r roundTo(luft$ausbaupfad$ziel$heizwaerme_gwh, 10)` GWh)
+
+Gleich wie beim realistische Potenzial wird das Ausbauziel von den EP2050+ abgeleitet. Das Ausbauziel beträgt somit `r roundTo(luft$ausbaupfad$ziel$heizwaerme_gwh, 10)` GWh.
+{{< pagebreak >}}
+
+

@@ -1,0 +1,63 @@
+## Abwärme
+
+
+### Definition
+Als Abwärme zählen Wärmeüberschüsse aus Kehrichtverwertungsanlagen (KVA), Abwasserreinigungsanlagen (ARA), Kernkraftwerken (KKW), industriellen Prozessen (z.B. Stahlindustrie) und aus Kühlprozessen (z.B. Rechenzentren). Abwärme aus industriellen Hochtemperatur-Prozessen (KVA) kann über eine Dampfturbine zur Stromerzeugung genutzt werden und/oder direkt in ein thermisches Netz eingespeist werden. Bei Abwärmequellen mit geringeren Temperaturen, wie aus einer ARA oder aus Kühlprozessen, muss das Temperaturniveau meist durch eine Wärmepumpe angehoben werden.
+
+```{r}
+#| label: fig-abwärme
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus Abwärme und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+
+grafikProTechRda$abwärme$grafik
+```
+
+
+### `r params$genutzt` (`r roundTo(abwärme$ausbaupfad$genutzt$potenzial,10)` GWh)
+Der Grossteil der genutzten Abwärme stammt aus der Kehrrichtverwertungsanlage Renergia in Perlen. Dort wurden im Jahr 2022 `r roundTo(abwärme$ausbaupfad$genutzt$renergiaVerbrannteAbfallmenge, 100)` Tonnen Abfall verbrannt. Der Energieinhalt dieser Abfallmenge beträgt `r roundTo(abwärme$ausbaupfad$genutzt$renergiaEnergieinhaltAbfälle_gwh, 1)` GWh[^heizwertAbfall]. Von dieser Abfallmenge wurden `r roundTo(abwärme$ausbaupfad$genutzt$renergiaStromGenutzt_gwh, 1)`
+GWh (`r roundTo(abwärme$ausbaupfad$genutzt$renergiaAnteilStromGenutzt * 100, 1)` %) als Strom ins Netz eingespeist und `r roundTo(abwärme$ausbaupfad$genutzt$renergiaWärmeGenutzt_gwh, 1)` GWh  (`r roundTo(abwärme$ausbaupfad$genutzt$renergiaAnteilWärmeGenutzt * 100, 1)` %) als Wärme genutzt (`r roundTo(abwärme$ausbaupfad$genutzt$renergiaWärmeGenutztFernwärme_gwh, 1)` GWh
+Fernwärme und `r roundTo(abwärme$ausbaupfad$genutzt$renergiaWärmeGenutztPerlen_gwh, 1)` GWh
+ Prozessdampf an die Perlen Papier AG [@Renergia2022]). Der Eigenverbrauch (Strom und Wärme) der Anlage betrug `r roundTo(abwärme$ausbaupfad$genutzt$renergiaEigenbedarf_gwh, 1)` GWh (`r roundTo(abwärme$ausbaupfad$genutzt$renergiaAnteilEigenbedarf * 100, 1)` %) und Verluste beliefen sich auf `r roundTo(abwärme$ausbaupfad$genutzt$renergiaVerluste_gwh, 1)` GWh (`r roundTo(abwärme$ausbaupfad$genutzt$renergiaAnteilVerluste * 100, 1)` %). Ungenutzt als Wärme an die Umgebung abgegeben wurden `r roundTo(abwärme$ausbaupfad$genutzt$renergiaNichtGenutzt_gwh, 1)` GWh (`r roundTo(abwärme$ausbaupfad$genutzt$renergiaAnteilNichtGenutzt * 100, 1)` %). Das genutzte Potenzial der Renergia beträgt damit `r roundTo(abwärme$ausbaupfad$genutzt$renergiaAbgabe_gwh, 1)` GWh (`r roundTo(abwärme$ausbaupfad$genutzt$renergiaAnteilAbgabe * 100, 1)` %). Etwa `r roundTo(abwärme$ausbaupfad$genutzt$aras, 1)` GWh Abwärme wurden zusätzlich aus Abwässern gewonnen[^arasEinzeln]. `r roundTo(parameters$abwärme$steeltecGenutzt_gwh, 1)` GWh Wärme wurden aus der Abwärme von der Steeltec AG in Emmenbrücke bezogen. Das gesamte genutzte Potenzial beträgt damit `r roundTo(abwärme$ausbaupfad$genutzt$potenzial, 1)` GWh, gerundet `r roundTo(abwärme$ausbaupfad$genutzt$potenzial, 10)` GWh.
+ ```{=html}
+ <b>
+ priska: Es gibt noch weitere Nutzungen (z.B. Triengen, Sursee, Stadthaus Kriens)<br>
+ </b>
+ ```
+ 
+  
+[^heizwertAbfall]: Heizwert `r roundTo(abwärme$infos$heizwert_mwhT, 0.1)`  MWh/t [@heizwertBAFUBFE]
+[^arasEinzeln]: Hirschengraben (400 kW Wärme), Concordia Hirschmattstrasse (150 kW Wärme, 180 kW Kälte), Löwengraben (1000 kW Wärme, 1500 kW Kälte), gesamt 1550 kW Wärme. Mit 2000 Vollbetriebsstunden ergibt dies 3.1 GWh Wärme
+
+<!--# oben noch bericht renergia referenzieren --> 
+
+   
+### Theoretisches Potenzial (`r roundTo(abwärme$ausbaupfad$theoretisch$theoretischesPotenzialKLU_gwh, 10)` GWh)
+Im PB K&E wird eine Reduktion der Abfallmenge von `r roundTo(parameters$abwärme$reduktionAbfallbis2050_anteil*100, 1)`
+% bis 2050 angenommen[^redAbfall]. Dies reduziert die zu erwartende Abfallmenge auf `r roundTo(abwärme$ausbaupfad$theoretisch$abfallmenge2050_t, 1000)` Tonnen mit einem  Energieinhalt von `r roundTo(abwärme$ausbaupfad$theoretisch$energieInAbfall2050_gwh, 10)`
+GWh. Für Abwasserreinigungsanlagen (ARA) ist das auf den Kanton Luzern skalierte theoretische Potenzial etwa `r roundTo(abwärme$ausbaupfad$theoretisch$theoretischAraKLU_gwh, 10)` 
+GWh [@bundesrat2019, Tab. 14; @EP2050T]. Für die Industrie beträgt es etwa `r roundTo(abwärme$ausbaupfad$theoretisch$theoretischIndustrieKLU_gwh, 10)`
+ GWh [@bundesrat2019, Tab. 14]. Insgesamt ergibt dies `r roundTo(abwärme$ausbaupfad$theoretisch$theoretischesPotenzialKLU_gwh, 10)`
+  GWh. 
+
+[^redAbfall]: Durch Recycling, Kreislaufwirtschaft und Reduktion von Food Waste, siehe auch @PROGNOS2018, Abb. 43.
+
+### Realistisches Potenzial (`r roundTo(abwärme$ausbaupfad$realistisch$gesamt_gwh,10)` GWh)
+
+
+Beim realistischen Potenzial der KVA Renergia wird wie beim theoretischen Potenzial von der in 2050 zu erwartenden Abfallmenge von `r roundTo(abwärme$ausbaupfad$theoretisch$abfallmenge2050_t, 1000)` Tonnen ausgegangen mit einem  Energieinhalt von `r roundTo(abwärme$ausbaupfad$theoretisch$energieInAbfall2050_gwh, 10)`
+GWh. Die Renergia plant bis 2030 eine Verdoppelung des Fernwärmeabsatzes von `r roundTo(abwärme$ausbaupfad$genutzt$renergiaWärmeGenutztFernwärme_gwh, 10)` GWh auf etwa `r roundTo(abwärme$ausbaupfad$realistisch$renergiaFernwärme2030, 10)` GWh[^infoHansMusch]. Unter der Annahme, dass die Perlen Papier AG auch in Zukunft `r roundTo(abwärme$ausbaupfad$genutzt$renergiaWärmeGenutztPerlen_gwh, 10)` GWh an Prozessdampf abnimmt, resultiert eine Gesamtwärmeabgabe von `r roundTo(abwärme$ausbaupfad$realistisch$renergiaWärme2030, 10)` GWh. Wird die Stromabgabe von `r roundTo(abwärme$ausbaupfad$genutzt$renergiaStromGenutzt_gwh, 10)` GWh dazu addiert, ergibt sich eine Gesamtenergieabgabe von etwa `r roundTo(abwärme$ausbaupfad$realistisch$renergiaRealistischStromUndWärme, 10)` GWh.
+<!-- Es wird angenommen, dass der Anteil der nicht genutzten Abwärme von 32 % auf 16 %  reduziert werden kann und dieser Anteil im Fernwärmenetz abgesetzt werden kann. Damit können aus dem Energieinhalt von 1309 GWh  407 GWh (55 %)  als Wärme und 132 GWh (18 %, unveränderter Anteil) als Strom genutzt werden, insgesamt 539 GWh (73 %).  -->
+Das realistische Potenzial der ARAs im Kanton Luzern schwankt je nach Studie zwischen `r roundTo(abwärme$ausbaupfad$realistisch$araPotenzialARABuholzHolinger_gwh, 10)`
+ GWh [@araHolinger2016] und `r roundTo(abwärme$ausbaupfad$realistisch$araRealistischesPotenzialAraKluRyser_gwh, 10)`
+  GWh [@araRyser2013]. Hier wird ein Arbeitswert von `r roundTo(abwärme$ausbaupfad$realistisch$ara_gwh, 10)`
+   GWh basierend auf skalierten Bundeszahlen [@bundesrat2019] angenommen. Für die Industrie finden sich keine geografisch zugeordneten Werte auf Bundesebene. Das grösste hochwertige Abwärmepotenzial besteht bei der Steeltec AG mit `r roundTo(abwärme$ausbaupfad$realistisch$steeltec_gwh, 1)` GWh[^steeltecEwl], niederwertiges Abwärmepotenzial mit etwa `r roundTo(abwärme$ausbaupfad$realistisch$ckwEwl_gwh, 1)`
+ GWh  besteht bei den Rechenzentren der lokalen Energieversorger CKW und ewl. Das gesamte realistische Potenzial beläuft sich daher auf etwa `r roundTo(abwärme$ausbaupfad$realistisch$gesamt_gwh,10)` GWh. Bei diesem Potenzial ist jedoch davon auszugehen, dass viele potenziell nutzbare Abwärmequellen aktuell nicht erfasst sind.
+
+### `r params$ziel` (`r roundTo(abwärme$ausbaupfad$ziel$gesamt_gwh, 10)` GWh)
+Das Ausbauziel für 2050 wird gleich dem realistischen Potenzial gesetzt. Um bei der KVA Renergia trotz sinkender Abfallmengen den Wärmeabsatz von `r roundTo(abwärme$ausbaupfad$genutzt$renergiaWärmeGenutzt_gwh, 10)` GWh auf `r roundTo(abwärme$ausbaupfad$ziel$renergiaWärme , 10)` GWh zu steigern, ist voraussichtlich eine saisonale Speicherung der im Sommer nicht genutzten Wärme für den Winter nötig.   
+{{< pagebreak >}}
+
+
+[^infoHansMusch]: persönliche Kommunikation mit Hans Musch, Geschäftsleiter Renergia
+[^steeltecEwl]: Nach Einschätzung der ewl eher optimistisch.

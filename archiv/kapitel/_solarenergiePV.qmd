@@ -1,0 +1,63 @@
+## Solarenergie Photovoltaik {#sec-solarenergiePV}
+
+
+### Definition
+Mit Photovoltaik (PV) wird die Umwandlung von Sonnenlicht in elektrische Energie durch die Verwendung von Solarzellen bezeichnet. Die Umwandlung von Sonnenlicht in Wärme wird in @sec-solarenergieThermisch separat behandelt. Die Potenzialanalyse beinhaltet Dächer, Fassaden sowie Strasseninfrastrukturanlagen des Kantons, nicht jedoch Freiflächen. Freiflächenanlagen sind im Rahmen der aktuellen gesetzlichen Rahmenbedingungen kaum bewilligungsfähig. Für Photovoltaik-Grossanlagen zur Winterstromproduktion (z.B. alpine PV-Anlagen) wurden auf Bundesebene im September 2022 erleichterte Bewilligungsverfahren eingeführt. Für solche Anlagen fehlen im Kanton Luzern nach einer ersten Analyse jedoch entweder die Voraussetzungen[^voraussetzungAlpinPV] oder potenzielle Flächen befinden sich in Landschaftsschutzgebieten. PV auf landwirtschaftlichen Nutzflächen (Agri-PV) ist aktuell noch wenig erforscht und wird in der Potenzialanalyse ebenfalls nicht berücksichtigt. 
+
+[^voraussetzungAlpinPV]: Minimale Stromproduktion im Winterhalbjahr (mind. 500 kWh/kW), minimale Grösse (mind. 10 GWh jährliche Produktion)
+<!-- Der Ausschluss von Freiflächen und Agri-PV wird jedoch durch eine eher optimistische Schätzung des Potenzials für Dach- und Fassadenflächen teilweise kompensiert. -->
+
+
+```{r}
+#| label: fig-solarenergiePV
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus Photovoltaik und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+
+grafikProTechRda$solarenergiePV$grafik
+``` 
+
+
+### `r params$genutzt` (`r roundTo(solarenergiePV$ausbaupfad$genutzt$strom_gwh,10)` GWh)
+Im Jahr 2022 wurden im Kanton Luzern etwa `r roundTo(solarenergiePV$ausbaupfad$genutzt$strom_gwh,10)` GWh Strom durch PV-Anlagen produziert. Diese Zahl beruht auf einer installierten Gesamtleistung von `r roundTo(solarenergiePV$ausbaupfad$genutzt$strom_mw, 10)`
+ MW und der Annahme eines spezifischen Ertrags von `r roundTo(parameters$solarenergiePV$ertrag_kwhKwp, 10)`
+  kWh/kWp[^spezErtrag] [@statistikSonnenergie2022]. Die ins Netz eingespeiste Energie ist mit `r roundTo(solarenergiePV$ausbaupfad$genutzt$stromEingespiessen_gwh, 10)` GWh geringer, weil ein Teil der produzierten Energie für den Eigenverbrauch verwendet wird.
+   
+[^spezErtrag]: 2021: 895 kWh/kW, 2022: 970 kWh/kW 
+   
+### Theoretisches Potenzial (-)
+Das theoretische Potenzial ist durch die Fläche des Kantons Luzern limitiert. Eine Berechnung des theoretischen Potenzials basierend auf der Gesamtfläche des Kantons Luzern ist wenig sinnvoll. Für mögliche Teilflächen konnten aktuell ebenfalls keine vernünftigen Annahmen getroffen werden. Auf eine Bestimmung des theoretischen Potenzials wird daher verzichtet.
+
+
+### Realistisches Potenzial (`r roundTo(solarenergiePV$ausbaupfad$realistisch$strom_gwh,10)` GWh)
+Das Solarpotenzial aller Schweizer Dächer und Fassaden beträgt `r roundTo(parameters$solarenergiePV$pvPotenzialDächerCH_twh, 1)`
+TWh[^PotenzialZHAW] respektive `r roundTo(parameters$solarenergiePV$pvPotenzialFassadenCH_twh, 1)`
+ TWh, insgesamt `r roundTo(solarenergiePV$ausbaupfad$realistisch$stromFassadenDächerCH_twh, 1)`
+  TWh [@sonnendach]. Im Kanton Luzern besteht ein Potenzial von `r roundTo(solarenergiePV$ausbaupfad$realistisch$stromnurDächer, 10)`
+   GWh auf Dächern und `r roundTo(812.98, 10)`
+    GWh auf Fassaden, insgesamt rund `r roundTo(solarenergiePV$ausbaupfad$realistisch$stromFassadenUndDächer_gwh, 10)`
+     GWh [@sonnendachGemeinden]. Ein Viertel des Gesamtpotenzials entfällt damit auf die Fassaden. Zusätzlich existiert Potenzial auf Strasseninfrastrukturen[^strasseninfrastrukturen] des Kantons Luzern, welches etwa `r roundTo(solarenergiePV$ausbaupfad$realistisch$stromInfraRealistisch, 1)` GWh beträgt [@pvInfra] und das Gesamtpotenzial nicht wesentlich verändert. Insgesamt ergibt sich für den Kanton Luzern ein realistisches Potenzial von etwa `r roundTo(solarenergiePV$ausbaupfad$realistisch$strom_gwh, 10)`
+      GWh[^alternativesPotenzial].
+      
+[^alternativesPotenzial]: Würde auf den Dächern PV und Solarthermie (für Warmwasser) kombiniert, reduziert sich die verfügbare Fläche für PV dementsprechend. Das realistische Potenzial für PV verringert sich dadurch auf `r roundTo(solarenergiePV$ausbaupfad$realistisch$strom2_gwh, 10)` GWh [@sonnendachGemeinden]. Jedoch auch dann ist das Ausbauziel von `r roundTo(solarenergiePV$ausbaupfad$ziel$strom_gwh, 10)` GWh noch möglich, würde jedoch das so definierte realistische Potenzial fast vollständig ausschöpfen.
+
+
+[^strasseninfrastrukturen]: Bezieht sich auf Böschungen, Lärmschutzwände, Brücken, Stützmauern, Tunnel und Galerien. Werden Kantonsstrassen und Velowege miteinbezogen, beträgt das Potenzial `r roundTo(solarenergiePV$ausbaupfad$realistisch$stromInfraGesamt, 10)` GWh. Die Überdachung von Kantonsstrassen und Velowegen wird aktuell jedoch als nicht realistisch erachtet.
+
+[^PotenzialZHAW]: Nach Studie @potenzialZHAW2022 bis zu 54 TWh
+
+### `r params$ziel` (`r roundTo(solarenergiePV$ausbaupfad$ziel$strom_gwh, 10)` GWh)
+
+Das Ausbauziel für PV gemäss EP2050+ beträgt `r roundTo(solarenergiePV$ausbaupfad$ziel$ep2050CH_twh, 1)`
+ TWh. Skaliert auf den Kanton Luzern entspricht dies `r roundTo(solarenergiePV$ausbaupfad$ziel$ep2050ChKlu_gwh, 10)` GWh.  Swissolar geht von einer Produktion von `r roundTo(solarenergiePV$ausbaupfad$ziel$suissolar2050CH_twh, 1)` TWh bis 2050 aus. Dies entspricht auch dem Ziel für die erneuerbare Stromproduktion ohne Wasserkraft im Jahr 2050 gemäss der Vorlage zum "Gesetz über eine sichere Stromversorgung mit erneuerbaren Energien".
+`r roundTo(solarenergiePV$ausbaupfad$ziel$suissolar2050CH_twh, 1)` TWh national entsprechen `r roundTo(solarenergiePV$ausbaupfad$ziel$suissolar2050Klu_gwh, 10)` GWh für den Kanton Luzern. Als Ausbauziel für den Kanton Luzern wird ein Mittelwert 
+von  `r roundTo(solarenergiePV$ausbaupfad$ziel$strom_gwh, 10)` GWh verwendet, `r numberToLetter(roundTo(solarenergiePV$ausbaupfad$ziel$stromSteigerung_gwh, 1))`
+ Mal mehr als die aktuelle Produktion. Der Kantonsrat hat dem Regierungsrat zum PB K&E den Auftrag überwiesen, im nächsten Klimabericht aufzuzeigen, wie bis 2035 das Solarstrompotenzial im Kanton Luzern zu 50 % ausgeschöpft werden kann [@Kantonsratsbeschluss2022]. Dies entspricht einem Zwischenziel von `r roundTo(solarenergiePV$ausbaupfad$ziel$ruekKlu2035_gwh, 10)` GWh bis zum Jahr 2035,  `r numberToLetter(roundTo(solarenergiePV$ausbaupfad$ziel$ruekKlu2035Steigerung_gwh, 1))`
+ Mal mehr als die aktuelle Produktion. Dieses Zwischenziel wurde in den Ausbaupfad aufgenommen.
+
+{{< pagebreak >}}
+
+<!-- `r numberToLetter(roundTo(solarenergiePV$ausbaupfad$ziel$ruekKlu2035Steigerung_gwh, 1))` -->
+
+
+<!-- Satz aus der Botschaft des Energiegesetzes (bezieht sich nur auf das Potenzial der Dächer): Das Potenzial, durch Photovoltaikanlagen auf den Dächern im Kanton Luzern Strom zu erzeugen, beträgt aktuell rund 2,4 TWh. Das ist mehr als das Doppelte des aktuellen Stromverbrauchs aller Privathaushalte und rund zwei Drittel des gesamten Stromverbrauchs im Kanton Luzern. Die aktuelle Produktion müsste mehr als verzehnfacht werden, um das Potenzial von rund 2,4 TWh zu erreichen. -->

@@ -1,0 +1,32 @@
+## Wärme {#sec-wärme}
+
+Die im Bericht vorgeschlagenen Ausbauziele resultieren in einer Wärmeproduktion von `r roundTo(grafikGesamtenergieRda$w$produktionsZiel2050, 10)`
+GWh im Jahr 2050. Der Wärmebedarf geht aufgrund von Effizienzmassnahmen (z.B. Dämmung der Gebäudehülle) und dem Wechsel von der Verbrennung fossiler Energieträger (Öl und Erdgas) hin zu Elektrizität (Wärmepumpen) zurück. Das Produktionsziel für die erneuerbare Wärmeproduktion von `r roundTo(grafikGesamtenergieRda$w$produktionsZiel2050, 10)` GWh deckt den nötigen Produktionsbedarf von `r roundTo(grafikGesamtenergieRda$w$produktionsBedarf2050, 10)` GWh. <!--#  um etwa `r roundTo((grafikGesamtenergieRda$w$bedarfÜberZiel-1)*100, 1)` % --> 
+(@fig-resWaerme). Insgesamt ist eine Steigerung von `r roundTo(grafikGesamtenergieRda$w$produktionAktuell, 10)`
+GWh im Jahr 2021 auf `r roundTo(grafikGesamtenergieRda$w$produktionsZiel2050, 10)` GWh um einen Faktor `r roundTo(grafikGesamtenergieRda$w$steigerung, 0.1)`
+nötig (@fig-tabelleWärme). 
+
+Aktuell hat die verholzte Biomasse mit `r roundTo(grafikGesamtenergieRda$w$anteilBiomasseVerholztAktuell*100, 1)`
+% den grössten Anteil an der erneuerbaren Wärmeproduktion, gefolgt von der untiefen Geothermie (`r roundTo(grafikGesamtenergieRda$w$anteilGeothermieUntiefAktuell*100, 1)` %) und  Abwärme (`r roundTo(grafikGesamtenergieRda$w$anteilAbwärmeAktuell*100, 1)`
+%). Im Jahr 2050 verdrängt die untiefe Geothermie mit `r roundTo(grafikGesamtenergieRda$w$anteilGeothermieUntief2050 *100, 1)`
+% die verholzte Biomasse (`r roundTo(grafikGesamtenergieRda$w$anteilBiomasseVerholzt2050*100, 1)`
+%), welche bereits im Jahr 2021 weitgehend ausgeschöpft ist. Abgesehen von der tiefen Geothermie hat die thermische Solarenergie mit `r roundTo(grafikGesamtenergieRda$w$steigerungSolarenergieThermisch, 1)`
+den grössten Ausbaufaktor. Die Solarthermie wird längerfristig eine Schlüsselrolle bei der Unterstützung von Holzwärmeverbünden und der Regeneration von Erdsonden spielen. Oberflächengewässer (Faktor `r roundTo(grafikGesamtenergieRda$w$steigerungOberflächengewässer, 1)`) spielen beim Ausbau der thermischen Netze eine entscheidende Rolle. 
+\
+
+```{r}
+#| echo: false
+#| eval: true
+#| warning: false
+#| label: fig-resWaerme
+#| fig-cap: 'Entwicklung der erneuerbaren Wärmeproduktion im Kanton Luzern. Die schwarze durchgezogene Linie zeigt den Produktionsbedarf für Wärme. Die gestrichelte Linie stellt eine Schätzung des Kühlbedarfs dar.'
+grafikGesamtenergieRda$w$grafik
+```
+\
+
+![Übersicht der erneuerbaren Wärmeproduktion im Kanton Luzern[^erklärungAbweichungWärme].](grafiken/grafikGesamtenergieWärme.png){#fig-tabelleWärme width=100%}
+
+\
+
+[^erklärungAbweichungWärme]: Für Energieträger, welche Strom und Wärme produzieren (tiefe Geothermie, Abwärme, verholzte und nichtverholzte Biomasse) ist hier nur der Wärmeanteil aufgeführt, der Stromanteil findet sich in @fig-resStrom.
+

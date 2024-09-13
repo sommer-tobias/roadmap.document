@@ -1,0 +1,21 @@
+## Anhang A2: Feedback Vorinformation
+
+```{r}
+#| label: tbl-feedbackVorinformation
+#| echo: false
+#| warning: false
+#| tbl-cap: "Feedback Vorinformation"
+
+
+kable(feedbackVorinformation)
+```
+
+
+
+
+
+
+
+
+
+

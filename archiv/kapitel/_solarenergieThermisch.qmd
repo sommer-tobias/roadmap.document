@@ -1,0 +1,45 @@
+## Solarenergie Thermisch {#sec-solarenergieThermisch}
+
+
+### Definition
+Thermische Solarenergie (oder Solarwärme) ist die Umwandlung von Sonnenlicht in Wärme mithilfe von Solarkollektoren. Im Gegensatz zu Photovoltaik wird kein Strom erzeugt. Solarthermische Anlagen erzeugen in der Regel Brauchwarmwasser und können die Raumheizung unterstützen. In den Bereichen Prozesswärme, Wärmenetze und Erdsondenregeneration[^erklärungRegeneration] existieren erst wenige Anlagen. Diese Anwendungen werden in der zukünftigen Nutzung der Solarthermie wichtig werden.
+
+[^erklärungRegeneration]: Bei Erdsondenregeneration wird ein Teil der dem Erdreich im Winter entzogenen Wärme im Sommer wieder zugeführt, um eine Abkühlung des Untergrunds zu vermeiden.  
+
+```{r}
+#| label: fig-solarenergieThermisch
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus Solarthermie und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+grafikProTechRda$solarenergieThermisch$grafik
+```
+
+
+### `r params$genutzt` (`r roundTo(solarenergieThermisch$ausbaupfad$genutzt$heizwaerme_gwh,1)` GWh)
+Im Jahr 2020 wurden etwa `r roundTo(solarenergieThermisch$ausbaupfad$genutzt$heizwaerme_gwh, 1)`
+GWh Wärme über Solarkollektoren produziert. Dieser Wert bezieht sich auf die seit 2007 durch das kantonale Förderprogramm Energie unterstützten Solarthermieanlagen[^infoLustat] [@lustat2022] . Dabei wurde angenommen, dass lediglich `r roundTo(parameters$solarenergieThermisch$anteilAnlagenImFöPro * 100, 10)`
+ % der realisierten Anlagen vom Förderprogramm erfasst wurden. Solarthermische Anlagen auf Neubauten bekommen z.B. keine Förderung. 
+   
+[^infoLustat]: Bis zum Jahr 2016 wurde der jährliche Wärmegewinn der geförderten Anlagen direkt in  @lustat2022 publiziert. Ab dem Jahr 2017 wird nur noch die Nennleistung aller Anlagen publiziert. Um weiterhin auf die produzierte Wärme rückschliessen zu können werden `r roundTo(solarenergieThermisch$ausbaupfad$genutzt$volllaststunden_kWhkWp, 10)`
+ Vollaststunden angenommen. Dies ist gleichbedeutend mit den Annahmen, dass die Nennleistung pro Fläche `r roundTo(parameters$solarenergieThermisch$nennleistungProFläche_Wp_m2, 10)`
+ W/m^2^ beträgt und damit ein Wärmeertrag von `r roundTo(solarenergieThermisch$ausbaupfad$genutzt$wärmeertragProFläche_kwhm2, 1)`
+  kWh/m^2^ [@roadmapSolarwärmeSwissolar2023] pro Jahr gewonnen werden kann.
+   
+### Theoretisches Potenzial (-)
+Für das theoretische Potenzial bei der thermischen Solarenergie gelten die gleichen Überlegungen wie bei der Photovoltaik. Auf eine Bestimmung des theoretischen Potenzials wird daher verzichtet.
+
+### Realistisches Potenzial (`r roundTo(solarenergieThermisch$ausbaupfad$realistisch$heizwaerme_gwh,10)` GWh)
+Das Potenzial für Solarwärme auf Dächern in der Schweiz beträgt `r roundTo(solarenergieThermisch$ausbaupfad$ziel$heizwaermeCH_twh ,1)` TWh und im Kanton Luzern `r roundTo(solarenergieThermisch$ausbaupfad$realistisch$heizwaerme_gwh,10)` GWh[^flächenkonfliktPV] [@sonnendach]. 
+
+
+[^flächenkonfliktPV]: Würde dieses Potenzial ausgenutzt, wäre auf den Dächern weniger Fläche für Photovoltaik verfügbar und das realistische Potenzial von Photovoltaik würde sich dementsprechend reduzieren [@sonnendachGemeinden].
+
+### `r params$ziel` (`r roundTo(solarenergieThermisch$ausbaupfad$ziel$heizwaerme_gwh, 10)` GWh)
+In @roadmapSolarwärmeSwissolar2023 ist ein Produktionsziel von `r roundTo(solarenergieThermisch$ausbaupfad$ziel$heizwaermeCH_twh, 1)`
+ TWh Solarwärme für 2050 vorgegeben, davon 2 TWh auf Wohnhäusern, 3 TWh für Wärmeverbünde (zur Einsparung von Holz im Sommerbetrieb) und 2 TWh für industrielle Prozesswärme. Dieses Ausbauziel entspricht etwa 10 % des Wärmebedarfs im Jahr 2050. Der Anwendungsfall liegt bei grossen Flächen (Industriedächern, Spitäler, Freiflächen [falls die Raumplanung dies zulässt]) und weniger auf kleinen Dachflächen von Wohngebäuden. Skaliert auf den Kanton Luzern resultiert ein Ausbauziel von `r roundTo(solarenergieThermisch$ausbaupfad$ziel$heizwaerme_gwh, 10)` GWh. 
+ 
+ <!-- Daher ergibt sich auch kein direkter Nutzungskonflikt bezüglich der Flächen mit Solarenergie PV, welche den Fokus auf Wohngebäuden haben. -->
+ 
+{{< pagebreak >}}
+
+

@@ -1,0 +1,54 @@
+## Oberflächengewässer
+
+
+### Definition
+Die thermische Nutzung von Oberflächengewässern (Seen und Flüsse) bezieht sich auf die Verwendung dieser Gewässer zum Heizen oder Kühlen von Gebäuden oder Prozessen. Dabei wird je nach Bedarf das Gewässer als Wärmequelle oder Wärmesenke genutzt. In diesem Kapitel wird nur der Heizfall betrachtet. Das Temperaturniveau wird dabei mittels einer Wärmepumpe auf das benötigte Niveau angehoben. 
+
+
+```{r}
+#| label: fig-oberflaechengewaesser
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus Oberflächengewässern in Kombination mit einer Wärmepumpe und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+
+grafikProTechRda$oberflächengewässer$grafik
+```
+
+
+### `r params$genutzt` (`r roundTo(oberflächengewässer$ausbaupfad$genutzt$heizwaerme_gwh,10)` GWh)
+Im Kanton Luzern existieren aktuell `r roundTo(oberflächengewässer$ausbaupfad$genutzt$anzahlKonzessionen, 1)`
+ bewilligte Konzessionen für die Nutzung von Oberflächengewässern mit einer maximalen jährlichen Fördermenge von `r roundTo(oberflächengewässer$ausbaupfad$genutzt$maxFördermenge_Miom3, 1)`
+Mio. m^3^. Von den `r roundTo(oberflächengewässer$ausbaupfad$genutzt$anzahlKonzessionen, 1)`
+Konzessionen beziehen sich `r roundTo(oberflächengewässer$ausbaupfad$genutzt$anzahlKonzessionenKühlen, 1)`
+auf reine Kühlnutzung, `r roundTo(oberflächengewässer$ausbaupfad$genutzt$anzahlKonzessionenHeizen, 1)`
+auf reine Heiznutzung und `r roundTo(oberflächengewässer$ausbaupfad$genutzt$anzahlKonzessionenHeizenundKühlen, 1)`
+auf kombinierte Nutzung. Die daraus abgeleitete Heizenergie beträgt `r roundTo(  oberflächengewässer$ausbaupfad$genutzt$heizwaerme_gwh, 1)`
+GWh. Dafür wurden folgende Annahmen getroffen:  Die Jahresarbeitszahl beträgt `r roundTo(parameters$oberflachengewaesser$JAZ, 0.1)` und die Temperaturdifferenz zwischen Entnahme- und Rückgabewasser ist gemäss Konzession. Zusätzlich wurde angenommen, das aktuell `r roundTo(oberflächengewässer$ausbaupfad$genutzt$ausnutzungMittel*100, 1)` % der maximalen Heizenergie genutzt werden[^annahmenOberflächengewässer]. Die geringe Ausnutzung resultiert daher, dass die ausgestellten Konzessionen durch Seewasserfassungen der ewl bestimmt sind, die Netze dazu jedoch aktuell noch im Ausbau sind. 
+
+
+[^annahmenOberflächengewässer]: Annahmen: Bei gleichzeitiger Heiz- und Kühlnutzung einer Konzession werden `r roundTo(parameters$oberflachengewaesser$heizfaktor$heizenkühlen*100, 1)`
+ % der Fördermenge dem Heizen zugeordnet, Wärmeabsatz ewl 2022: `r roundTo(oberflächengewässer$ausbaupfad$genutzt$wärmeabsatzEwl2022_gwh, 1)`
+  GWh (`r roundTo(oberflächengewässer$ausbaupfad$genutzt$ausnutzungewl * 100, 1)`
+ % der durch die max. Fördermenge definierte Heizenergie), bei den restlichen Konzessionen wird eine Ausnutzung von zwei Drittel <!--# parameters$oberflachengewaesser$ausnutzung$sonst --> angenommen. 
+   
+### Theoretisches Potenzial (`r roundTo( oberflächengewässer$ausbaupfad$theoretisch$heizwaerme_gwh, 100)` GWh)
+Das theoretische Potenzial der Oberflächengewässer im Kanton Luzern ist weitgehend bestimmt durch das Wasservolumen des Vierwaldstättersees, des Baldeggersees und des Sempachersees [@Gaudard2017]. Die theoretische Entzugswärme ist `r roundTo(oberflächengewässer$ausbaupfad$theoretisch$umweltaerme_gwh, 100)`
+ GWh. Mit einer Jahresarbeitszahl von 3.8 resultiert eine Heizenergie von `r roundTo(oberflächengewässer$ausbaupfad$theoretisch$heizwaerme_gwh, 100)` GWh.
+
+
+### Realistisches Potenzial (`r roundTo(oberflächengewässer$ausbaupfad$realistisch$heizwaerme_gwh,10)` GWh)
+Die Energienutzung von Oberflächengewässern erfolgt leitungsgebunden und ist somit massgeblich durch wirtschaftliche Aspekte limitiert. Die grossflächige Nutzung von Energie aus Oberflächengewässern ist vor allem in Gebieten mit hoher Wärmedichte sowie ausreichender Gewässernähe möglich. Zur Abschätzung des realistischen Potenzials wird davon ausgegangen, dass die bereits zur Konzessionierung bewilligten Anlagen die entsprechende Marktanalyse vorgenommen haben und die See- bzw. Flusswasserfassungen auf das künftige Marktpotenzial ausgelegt wurden. Das realistische Potenzial berechnet sich damit wie das genutzte Potenzial aus der maximalen jährlichen Fördermenge, jedoch mit 100-prozentiger Ausnutzung. Dies ergibt `r roundTo(oberflächengewässer$ausbaupfad$realistisch$Ohnevorabklärungen_gwh, 10)`
+ GWh. Aktuell sind Anfragen für Seewassernutzungen in der Grössenordnung von `r roundTo(oberflächengewässer$ausbaupfad$realistisch$vorabklärungen_gwh, 10)`
+ GWh Heizenergie (bei vollständiger Ausnutzung der Konzession) in der Vorabklärung. Dies entspricht mehr als einer Verdoppelung der aktuellen Konzessionen auf `r roundTo(oberflächengewässer$ausbaupfad$realistisch$heizwaerme_gwh,10)` GWh. Dieser Wert dient als Arbeitswert für das realistische Potenzial.
+
+### `r params$ziel` (`r roundTo(oberflächengewässer$ausbaupfad$ziel$heizwaerme_gwh, 10)` GWh)
+Die thermische Nutzung der Oberflächengewässer ist dominiert durch die Stadt Luzern. In der Energieplanung der Stadt Luzern wurden verschiedene Szenarien mit unterschiedlichen Energieträgern untersucht. Im Szenario mit dem grössten Seewasseranteil beträgt der Wärmeabsatz 2050 etwa `r roundTo( oberflächengewässer$ausbaupfad$ziel$energieplanungEwl_gwh, 100)`
+ GWh. Werden zusätzlich `r roundTo(oberflächengewässer$ausbaupfad$ziel$verhältnisSonstigezuEWL*100, 1)`
+  %[^anteilSonstUeberEwl] (`r roundTo(oberflächengewässer$ausbaupfad$ziel$zielSonstige_gwh, 10)`
+   GWh) für die restliche Seewassernutzungen dazugezählt, ergibt sich ein Ausbauziel von `r roundTo(oberflächengewässer$ausbaupfad$ziel$heizwaerme_gwh, 10)` GWh[^einschätzungMarcoStephan].
+{{< pagebreak >}}
+
+[^anteilSonstUeberEwl]: Entspricht dem aktuellen Verhältnis Heizwärme aus nicht-ewl-Nutzungen zu Heizwärme aus ewl-Nutzungen. Diese Rechnung setzt voraus, dass sich die nicht-ewl-Nutzungen in Zukunft ähnlich entwickeln wie ewl-Nutzungen
+
+[^einschätzungMarcoStephan]: Gemäss Einschätzung ewl bei der Konsultation zu diesem Bericht ist dieses Ausbauziel konservativ.
+

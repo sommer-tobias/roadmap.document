@@ -1,0 +1,123 @@
+---
+title: "Potenziale der erneuerbaren Energieproduktion \ im Kanton Luzern"
+# title: Vision/roter Faden/Wunschdenken verschiedener Projekte im Bereich Energie
+editor: visual
+cache: false
+crossref:
+  fig-title: Abb.     # (default is "Figure")
+bibliography: referenzen/references.bib
+csl: referenzen/geophysical-research-letters.csl
+lang: de
+format: 
+  html:
+     fig-width: 7
+     toc: true
+     toc-depth: 2
+reference-doc: templates/WordT_2024_05_14_two.docx #only for docxy
+#reference-doc: templates/WordT_2024_05_23_one.docx #only for docxy
+#bei Word Template: Inhaltverzeichnis, Benutzerderfiniertes Inhaltsverzeichnis, einfach wählen und Abspeichern
+shift-heading-level-by: 0 #onle for pdf
+number-sections: false
+params: 
+  genutzt: 'Aktuelle Produktion'  #noch nicht genau sicher, wie wir das benennen
+  ziel: 'Aus fachlicher Sicht empfohlenes Ausbauziel für 2050'
+  roundfac: 10
+---
+
+<!-- {{< include kapitel/_memos.qmd >}} -->
+
+{{< include kapitel/_packageLaden.qmd >}}
+
+<!-- {{< include kapitel/_datenLaden.qmd >}} -->
+
+<!-- {{< include kapitel/_funktionenLaden.qmd >}} -->
+
+<!-- {{< include kapitel/_impressum.qmd >}} -->
+
+<!-- # Zusammenfassung -->
+
+<!-- {{< include kapitel/_zusammenfassung.qmd >}} -->
+
+<!-- # Ziel -->
+
+<!-- {{< include kapitel/_zielDesProjekts.qmd >}} -->
+
+<!-- # Methodik -->
+
+<!-- {{< include kapitel/_vereinfachungenAnnahmen.qmd >}} -->
+
+<!-- {{< include kapitel/_ep2050plus.qmd >}} -->
+
+<!-- {{< include kapitel/_skalierungAufKantonLuzern.qmd >}} -->
+
+<!-- {{< include kapitel/_vorgehenAusbaupfade.qmd >}} -->
+
+<!-- {{< include kapitel/_entwicklungEndenergie.qmd >}} -->
+
+<!-- {{< include kapitel/_zieleStromWaermeproduktion.qmd >}} -->
+
+<!-- {{< include kapitel/_potenzialSystemgrenzen.qmd >}} -->
+
+<!-- # Politische Rahmenbedingungen -->
+
+<!-- {{< include kapitel/_politischeAusgangslage.qmd >}} -->
+
+<!-- # Potenziale erneuerbarer Energieproduktion -->
+
+<!-- {{< include kapitel/_solarenergiePV.qmd >}} -->
+
+<!-- {{< include kapitel/_windenergie.qmd >}} -->
+
+<!-- {{< include kapitel/_wasserkraft.qmd >}} -->
+
+<!-- {{< include kapitel/_geothermieUntief.qmd >}} -->
+
+<!-- {{< include kapitel/_luft.qmd >}} -->
+
+<!-- {{< include kapitel/_oberflaechengewaesser.qmd >}} -->
+
+<!-- {{< include kapitel/_grundwasser.qmd >}} -->
+
+<!-- {{< include kapitel/_solarenergieThermisch.qmd >}} -->
+
+<!-- {{< include kapitel/_geothermieTief.qmd >}} -->
+
+<!-- {{< include kapitel/_abwaerme.qmd >}} -->
+
+<!-- {{< include kapitel/_biomasseVerholzt.qmd >}} -->
+
+{{< include kapitel/_biomasseNichtVerholzt.qmd >}}
+
+<!-- # Übersicht aller Ausbauziele {#sec-ausbauziele} -->
+
+<!-- {{< include kapitel/_resultateStromUndWaerme.qmd >}} -->
+
+<!-- {{< include kapitel/_resultateStrom.qmd >}} -->
+
+<!-- {{< include kapitel/_resultateWärme.qmd >}} -->
+
+<!-- {{< include kapitel/_kühlen.qmd >}} -->
+
+<!-- # Anhang -->
+
+<!-- {{< include kapitel/_anhangInteressengruppen.qmd >}} -->
+
+{{< include kapitel/_anhangBiogasanlagen.qmd >}}
+
+<!-- {{< include kapitel/_anhangFernwaermeUmweltwaerme.qmd >}} -->
+
+# Literatur
+
+{{< include kapitel/_referenzen.qmd >}}
+
+<!-- {{< include kapitel/_feedbackAntworten.qmd >}} -->
+
+<!-- {{< include kapitel/_feedbackVorinformation.qmd >}} -->
+
+```{=html}
+<!--# Wasserkraft:
+Wärme und Strom getrennt, Wärme 100%, Strom offen
+Stromtechnologien betrachten, bei allen anderen ähnliche Ausgangslage aus bei Wasser, daher Skalierung. In Bezug auf Wasserfalldiagramm setezn
+Ausbaupfad im Titel durch Ausbauziel ersetzen?-->
+```
+<!-- {{< include kapitel/_titelseite.qmd >}} -->

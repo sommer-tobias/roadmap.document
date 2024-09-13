@@ -1,0 +1,81 @@
+
+
+## Planungsbericht über die Klima- und Energiepolitik
+
+Im Planungsbericht über die Klima- und Energiepolitik des Kantons Luzern (PB K&E, [B 87](https://newsletter.lu.ch/files/SK/Mitteilungen%202021/10_Okt/20211018_B87.pdf)) [@PKuE2021] sind zahlreiche Massnahmen definiert, um den Energieverbrauch durch Effizienzsteigerung zu reduzieren, die erneuerbare Energieproduktion zu steigern, Energie zu speichern und fossile Energieträger zu ersetzen. Der Regierungsrat hat dazu die Massnahmen- und Umsetzungsplanung für die Jahre 2022 bis 2026 [@MU2023] verabschiedet. Die relevanten Massnahmen zu den genannten Bereichen sind im Folgenden aufgeführt. Die Grundlage für dieses Projekt bilden die Massnahmen KS-E2.1 und KS-E2.2.
+
+* Klimaschutz und Effizienzsteigerung 
+     +  KS-G1.2: Anpassung energetische Vorschriften für Neubauten
+     +  KS-G2.1: Markante Erhöhung der kantonalen Mittel für das Gebäudeprogramm
+     +  KS-G2.2: Einführung Energiekennzahl für Wohngebäude verbunden mit Sanierungspflicht
+     +  KS-I1.1: Individuelle Analysen der grossen Industriebetriebe bezüglich Prozessenergie
+     +  KS-I2.1: Erhöhung Eigenverbrauchsvorschriften für industrielle Betriebe
+     +  KS-I2.2: Weiterentwicklung Betriebsoptimierung und Vorschriften für Grossverbraucher
+     +  KS-V1.3: Aufbau und Führen eines systematischen Monitorings des Verbrauchs für alle Gebäude
+     +  KS-E2.4: Beratungsangebot für Landwirtinnen und Landwirte im Bereich der betrieblichen Energieeffizienz (Agrocleantech)
+     
+* Steigerung der erneuerbaren Energieproduktion im Kanton Luzern 
+     + KS-G3.2: Kantonaler Stromrappen für die Förderung von grossen Photovoltaikanlagen 
+     + KS-V2.1: Zubauplan für PV-Anlagen bei, auf und an Gebäuden und Infrastrukturen des Kantons
+     + KS-V2.2: Sicherstellung Stromproduktion als integraler Bestandteil der Konzeption bei Bauprojekten
+     + **KS-E2.1: Definieren der Potenziale und kantonalen Ziele für erneuerbare Energien**
+     + **KS-E2.2: Erarbeitung und Umsetzung einer Roadmap zur Erreichung der Ziele gemäss Massnahme KS-E2.1**
+
+*	Speicherung von Energie zu Zeiten hoher Produktion und Abgabe in Zeiten geringer Produktion 
+     + KS-M1.1: Förderung Ladeinfrastruktur für Elektromobilität
+     + KS-E2.3: Förderung Winterstromproduktion und Technologien für Strom und Wärme zum saisonalen Ausgleich
+
+* Substitution von Energieträgern beim Endverbraucher und Priorisierung von Energieträgern 
+    + KS-M2.2: Investitionsbeiträge für Busse mit alternativen Antrieben
+    + KS-M3.2: Infrastrukturelle Massnahmen für emissionsarme Verkehrsmittel
+    + KS-M3.6: Prüfung monetärer Anreize zur Verlagerung von MIV zu Fuss-/ Veloverkehr und öV
+    + KS-G3.1: Erhöhung der Anforderungen beim Heizungsersatz im Rahmen einer KEnG-Revision.
+    + KS-V3.2: Erarbeitung einer Richtlinie zur Beschaffung von (fossilfreien) Strassenfahrzeugen
+    + KS-E1.1: Erarbeitung und Umsetzung einer Strategie für die Dekarbonisierung der Gasversorgung
+    + KS-E1.3: Erstellung von «Netto null 2050»-kompatiblen Energieplanungen in allen Gemeinden
+    + KS-W3.1: Stärkung der regionalen Wertschöpfungskette von Luzerner Holz
+
+
+## Offensive Holz
+
+Synergien mit der Offensive Holz [@offHolz] ergeben sich insbesondere bezüglich der Schwerpunktmassnahmen 
+
+  + M1.1: Konkretisierung des effektiven Nutzungspotentials des Luzerner Waldes
+  + M4.2: Erstellung und Bewirtschaftung einer Übersicht über den Rohstoffbedarf von bestehenden und geplanten Holzenergiekraftwerken. 
+
+
+## Biogasstrategie
+
+Eine Überarbeitung der bestehenden Biogasstrategie [@BiogasStrategieKLU2013] ist vorgesehen. Die Erkenntnisse aus diesem Bericht bilden dafür die Grundlage.
+
+
+## Revisionen des kantonalen Richtplans und des kantonalen Energiegesetzes
+
+Die Ziele des Kantons Luzern in der Teilrevision des Richtplans zum Thema Windenergie ([B 160](https://newsletter.lu.ch/files/SK/Mitteilungen%202023/07_Jul/20230704_B%20160%20KRP%20TR%20Wind.pdf)) [@TeilrevisionRichtplanWind2022] wurden im Kapitel zur Windenergie übernommen. Zukünftige Teilrevisionen des kantonalen Richtplans und des Energiegesetzes berücksichtigen die Ergebnisse dieses Berichts und tragen zur Erreichung der Produktionsziele bei.
+
+
+## Politische Vorstösse
+
+Folgende politische Motionen und Postulate stehen in thematischem Zusammenhang mit diesem Bericht:
+
+*	[M 174](https://www.lu.ch/kr/parlamentsgeschaefte/Overview?geschaeftsnr=M%20174&art=-0-1-2-3&bart=-0-1-2-3-4&vart=-0-1-2-3&wart=1&gart=1&status=-0-1): Motion Meier Thomas und Mit. über die Abschaffung der Konzessionsgebühren für die Grundwassernutzung zu thermischen Zwecken (erheblich als Postulat)
+*	[M 612](https://www.lu.ch/kr/parlamentsgeschaefte/Overview?geschaeftsnr=M%20612&art=-0-1-2-3&bart=-0-1-2-3-4&vart=-0-1-2-3&wart=1&gart=1&status=-0-1): Motion Nussbaum Adrian und Mit. über die Beschleunigung von Bau und Betrieb von PV-Anlagen zur Stromproduktion im Kanton Luzern (erheblich)
+*	[M 633](https://www.lu.ch/kr/parlamentsgeschaefte/Overview?geschaeftsnr=M%20633&art=-0-1-2-3&bart=-0-1-2-3-4&vart=-0-1-2-3&wart=1&gart=1&status=-0-1): Motion Heeb Jonas und Mit. über eine Solaranlage auf oder an jedes Gebäude (erheblich als Postulat)
+*	[M 382](https://www.lu.ch/kr/parlamentsgeschaefte/Overview?geschaeftsnr=M%20382&art=-0-1-2-3&bart=-0-1-2-3-4&vart=-0-1-2-3&wart=1&gart=1&status=-0-1): Motion Meier Thomas und Mit. über die Anpassung der kantonalen Gesetzgebung bezüglich der Besteuerung der Energielieferung, welche den Eigenverbrauch übersteigt (erheblich als Postulat)
+*	[M 653](https://www.lu.ch/kr/parlamentsgeschaefte/Overview?geschaeftsnr=M%20653&art=-0-1-2-3&bart=-0-1-2-3-4&vart=-0-1-2-3&wart=1&gart=1&status=-0-1): Motion Frye Urban und Mit. über die Förderung von grossen Solaranlagen (teilweise erheblich als Postulat)
+*	[P 634](https://www.lu.ch/kr/parlamentsgeschaefte/Overview?geschaeftsnr=P%20634&art=-0-1-2-3&bart=-0-1-2-3-4&vart=-0-1-2-3&wart=1&gart=1&status=-0-1): Postulat Frey Maurus und Mit. über die Förderung von Zusammenschlüssen zum Eigenverbrauch und die Beteiligung am Herkunftsnachweissystem (erheblich)
+*	[P 554](https://www.lu.ch/kr/parlamentsgeschaefte/Overview?geschaeftsnr=P%20554&art=-0-1-2-3&bart=-0-1-2-3-4&vart=-0-1-2-3&wart=1&gart=1&status=-0-1): Postulat Brücker Urs und Mit. über die technischen Möglichkeiten zur Reduktion des Treibhausgasausstosses durch die Nutztierhaltung (teilweise erheblich)
+*	[P 964](https://www.lu.ch/kr/parlamentsgeschaefte/Overview?geschaeftsnr=P%20694&art=-0-1-2-3&bart=-0-1-2-3-4&vart=-0-1-2-3&wart=1&gart=1&status=-0-1): Postulat Özvegyi András und Mit. über die Vereinfachung der Meldepflicht von Solaranlagen (teiweise erheblich)
+* [P 50](https://www.lu.ch/kr/parlamentsgeschaefte/Overview?geschaeftsnr=P%2050&art=-0-1-2-3&bart=-0-1-2-3-4&vart=-0-1-2-3&wart=1&gart=1&status=-0-1): Postulat Brücker Urs und Mit. über den Vollzug der Pegelkorrekturen bei Blockheizkraftwerken (hängig)
+* [P 90](https://www.lu.ch/kr/parlamentsgeschaefte/Overview?geschaeftsnr=P%2090&art=-0-1-2-3&bart=-0-1-2-3-4&vart=-0-1-2-3&wart=1&gart=1&status=-0-1): Postulat Bärtsch Korintha und Mit. über die Förderung der finanziellen Beteiligung der lokalen Bevölkerung an Windkraftanlagen (erheblich)
+
+\newpage
+
+
+
+
+
+    
+
+
+

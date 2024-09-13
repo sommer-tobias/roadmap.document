@@ -1,0 +1,28 @@
+## Anhang A2: Ausbauziele basierend auf den EP2050+ {#sec-anhangFernwaermeUmweltwaerme}
+
+Die in diesem Bericht vorgeschlagenen Ausbauziele basieren auf den skalierten Ausbauzielen der EP2050+ des Bundes. In den EP2050+ werden die Ausbauziele pro Energieträger entweder direkt vorgeschlagen oder können aus den Grössen "Umweltwärme" und "Fernwärme" abgeleitet werden.
+
+### Datengrundlagen
+
+In @fig-tabelleDatenherkunft ist tabellarisch aufgeführt, welche Daten aus den EP2050+ verwendet wurden. Sind mehrere Datenquellen vermerkt (z.B. für Abwärme) wird aufsummiert.
+
+![Verwendete Daten aus den EP2050+](grafiken/datengrundlagenDatenherkunft.png){#fig-tabelleDatenherkunft width="100%"}
+
+### Aufschlüsselung der Umweltwärme
+
+In den EP2050+ ist lediglich das Ausbauziel für "Umweltwärme" aufgeführt, jedoch nicht deren Aufteilung in die Energieträger Luft, Geothermie untief und Grundwasser. Um die Werte (GWh) für diese Energieträger abzuleiten, wurde die Zusammensetzung gemäss den Anteilen in @fig-tabelleAufteilungUmweltwärme verwendet. Die Anteile sind aus dem realistischen Potenzial abgeleitet, welches in den EP2050+ dokumentiert ist [@EP2050T, Tab. 14]. Zusätzlich wird vorausgesetzt, dass sich diese Anteile mit der Zeit nicht verändern.
+
+![Aufteilung der Umweltwärme auf konkrete Energieträger basierend auf den realistischen Potenzialen aus den EP2050+ (hier bereits auf den Kanton Luzern skaliert).](grafiken/ausbaupfadeEP2050plusTabelleAufteilungUmweltw%C3%A4rme.png){#fig-tabelleAufteilungUmweltwärme width="80%"}
+
+```{=html}
+<b>
+Grundwasser hat aktuelle Produktion von 120 GWh, nicht 30 GWh
+</b>
+```
+### Aufschlüsselung der Fernwärme
+
+In den EP2050+ ist lediglich das Ausbauziel für thermische Netze (dort "Fernwärme" genannt) aufgeführt. Es ist nicht aufgeschlüsselt, welche Energieträger den thermischen Netzen zugrunde liegen und wie sich der Energieträgermix thermischer Netze mit der Zeit entwickelt. Der Verband Thermische Netze Schweiz (früher "Verband Fernwärme Schweiz") publiziert jährlich den aktuellen Produktionsmix der thermischen Netze in der Schweiz [@VFS2021]. Eine Potenzialstudie des Bundes [@bundesrat2019] prognostiziert die zeitliche Entwicklung des Energiemixes in thermischen Netzen. @fig-tabelleAufteilungFernwärme zeigt die aus beiden Studien abgeleitete Entwicklung des Energiemixes thermischer Netze. Dabei wurde angenommen, dass sich die Anteile der Energieträger zwischen 2020 und 2050 linear entwickeln. Es ist zu beachten, dass es sich in @fig-tabelleAufteilungFernwärme um die Entwicklung der Anteile in Prozent handelt. Durch den generellen Ausbau thermischer Netze ist trotz gleichbleibendem Anteil (z.B. Industrie und Abwärme, 5%) ein Zuwachs (GWh) zu erwarten.
+
+![Zeitliche Entwicklung des Energiemixes thermischer Netze](grafiken/ausbaupfadeEP2050plusTabelleAufteilungFernw%C3%A4rme.png){#fig-tabelleAufteilungFernwärme width="80%"}
+
+

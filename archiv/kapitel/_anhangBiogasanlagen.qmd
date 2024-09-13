@@ -1,0 +1,10 @@
+## Anhang A1: Biogasanlagen {#sec-anhangBiogasanlagen}
+
+![Biogasanlagen im Kanton Luzern](grafiken/biogasanlagen.png){#fig-tabelleBiogasanlagen width=60%}
+
+
+
+
+
+
+

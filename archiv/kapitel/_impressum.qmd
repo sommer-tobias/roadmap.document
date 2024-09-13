@@ -1,0 +1,47 @@
+\newpage
+
+**Impressum**
+
+*Auftraggeber* \
+Regierungsrat Fabian Peter\
+Bau-, Umwelt- und Wirtschaftsdepartement (BUWD)\
+c/o Dienststelle Umwelt und Energie (uwe)\
+www.uwe.lu.ch\
+\
+*Projektsteuerung*\
+Jürgen Ragaller, Politik und Strategie, Klima (BUWD)\
+Bruno Röösli, Dienststelle Landwirtschaft und Wald (lawa)\
+Paul Hürlimann, Dienststelle Umwelt und Energie (uwe)\
+\
+*Projektleitung*\
+Tobias Sommer, Dienststelle Umwelt und Energie (uwe)\
+\
+*Projektgruppe*\
+Michiel Fehr, Dienststelle Landwirtschaft und Wald (lawa) \
+Jules Gut, Dienststelle Umwelt und Energie (uwe)\
+\
+*Externe fachliche Begleitung* \
+Chris Steffen, diePROJEKTFABRIK AG, Luzern\
+\
+Luzern, `r format(Sys.Date(), "%d %B, %Y")`, Version 1.0\
+<!-- Chris Steffen\ -->
+<!-- Raymond Studer \ -->
+<!-- Christian Büchler\ -->
+
+<!-- diePROJEKTFABRIK AG \ -->
+<!-- Luzernerstrasse 131\ -->
+<!-- 6014 Luzern \ -->
+<!-- +41 41 412 35 35 \ -->
+<!-- kontakt\@dieprojektfabrik.ch \ -->
+<!-- dieprojektfabrik.ch\ -->
+
+<!-- *Herausgegeben durch* \ -->
+<!-- Kanton Luzern Umwelt und Energie (uwe) \ -->
+<!-- Libellenrain 15 \ -->
+<!-- Postfach 3439 \ -->
+<!-- 6002 Luzern \ -->
+<!-- +41 41 228 60 60 \ -->
+<!-- www.uwe.lu.ch \ -->
+<!-- uwe\@lu.ch\ -->
+
+\newpage

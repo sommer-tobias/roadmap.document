@@ -1,0 +1,67 @@
+
+
+## Biomasse verholzt
+
+
+### Definition
+
+Verholzte Biomasse umfasst Waldholz, Landschaftsholz (z.B. entlang von Strassen), Restholz aus holzverarbeitenden Betrieben (inklusive Pellets) und Altholz aus der Entsorgung und dem Rückbau von Gebäuden. Holz kann energetisch in Form von Wärme und Strom genutzt werden. Die Potenzialabschätzungen beruhen auf einem Bericht von @HolzenergieSchweiz2023. Die Auswirkungen des Klimawandels auf das Energieholz werden nicht berücksichtigt. Es wird davon ausgegangen, dass die vermehrte Trockenheit zu Wachstumseinbussen und dadurch zu einer Reduktion des Energieholzes aus dem Wald führt. Dieser Effekt wird jedoch durch einen klimabedingten Wechsel zu anderen Baumarten mit grösserem Energieholzanteil teilweise kompensiert.
+
+
+```{r}
+#| label: fig-biomassseVerholzt
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus verholzter Biomasse und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+grafikProTechRda$biomasseVerholzt$grafik
+```
+
+### `r params$genutzt` (`r roundTo(biomasseVerholzt$ausbaupfad$genutzt$stromUndWärme_gwh,10)` GWh)
+
+Im Kanton Luzern wurden im Jahr 2021 `r roundTo(biomasseVerholzt$infos$energetischeVerwendungKantonLuzern2021_m3, 1000)` m^3^ (Festmeter) energetisch verwertet [@HolzenergieSchweiz2023]. Dies entspricht einer Energiemenge von rund `r roundTo(biomasseVerholzt$ausbaupfad$genutzt$stromUndWärme_gwh, 10)` GWh[^1]. Davon stammen `r roundTo(biomasseVerholzt$infos$waldholzLuzern_m3, 1000)` m^3^ aus Waldholz, `r roundTo(biomasseVerholzt$infos$landschaftsholzLuzern_m3, 1000)` m^3^ aus Landschaftsholz, `r roundTo(biomasseVerholzt$infos$restholzLuzern_m3, 1000)` m^3^ aus Restholz und `r roundTo(biomasseVerholzt$infos$altholzLuzern_m3, 1000)` m^3^ aus Altholz. Der verstromte Anteil davon beträgt etwa `r roundTo(biomasseVerholzt$ausbaupfad$genutzt$strom_gwh, 1)` GWh[^2]. Da die Forststatistik des Kantons Luzern für den gleichen Zeitraum lediglich `r roundTo(parameters$biomasseVerholzt$forststatistik$energieholzLuzern2021_m3, 1000)` m^3^ Waldholz ausweist, ist davon auszugehen, dass ein erheblicher Anteil Waldholz aus anderen Regionen für die ansässige Holzindustrie importiert wird.
+
+[^1]: Annahme: 1 m^3^ Holz produziert `r roundTo(biomasseVerholzt$infos$mwhfromm3, 0.1)` MWh Endenergie, basierend auf einem berechneten Mittelwert aus [@HolzenergieSchweiz2023]
+
+[^2]: Pronovo
+
+#### Theoretisches Potenzial (`r roundTo(biomasseVerholzt$ausbaupfad$theoretisch$stromUndWärme_gwh,10)` GWh)
+
+Das theoretische Potenzial wird nur für Wald- und Landschaftsholz abgeschätzt. Die gesamte Waldfläche des Kantons Luzern umfasst `r roundTo(parameters$biomasseVerholzt$waldflächeKLU_ha, 1)` Hektaren. Der Zuwachs beträgt ca. `r parameters$biomasseVerholzt$wachstumHolz_m3ha` m^3^ pro Hektare und Jahr. Damit ergeben sich `r roundTo(biomasseVerholzt$infos$nachwachsendesWaldholz_m3, 1)` m^3^ nachwachsendes Waldholz, zusammen mit etwa `r roundTo(biomasseVerholzt$infos$nachwachsendesLandschaftsholz_m3, 1000)` m^3^ nachwachsendem Landschaftsholz ergibt das `r roundTo(biomasseVerholzt$infos$nachwachsendesHolz_m3, 1)` m^3^ Holz, welches einem Energieinhalt von `r roundTo(biomasseVerholzt$ausbaupfad$theoretisch$stromUndWärme_gwh,10)` GWh entspricht.
+
+### Realistisches Potenzial (`r roundTo(biomasseVerholzt$ausbaupfad$realistisch$stromUndWärme_gwh,10)` GWh)
+
+Basierend auf @Thees2017 hat @HolzenergieSchweiz2023 ein realistisches Potenzial von `r roundTo(biomasseVerholzt$infos$potenzialKeelSum_m3, 1000)` m^3^ oder `r roundTo(biomasseVerholzt$infos$potenzialKeelSum_gwh, 10)` GWh berechnet. Dieses setzt sich zusammen aus `r roundTo(  biomasseVerholzt$infos$waldholzPotenzialLuzern_m3, 1000)` m^3^ Waldholz, `r roundTo(  biomasseVerholzt$infos$landschaftsholzPotenzialLuzern_m3, 1000)` m^3^ Landschaftsholz, `r roundTo(  biomasseVerholzt$infos$restholzPotenzialLuzern_m3, 1000)` m^3^ Restholz und `r roundTo(  biomasseVerholzt$infos$altholzPotenzialLuzern_m3, 1000)` m^3^ Altholz. Die Zahlen lassen sich aufgrund der Unsicherheiten im Bereich Waldholz und unterschiedlicher Abgrenzungen beim Restholz nur schwer mit der aktuellen Nutzung vergleichen. Dennoch kann hier die Differenz zwischen der aktuellen Nutzung gemäss @HolzenergieSchweiz2023 und dem Potenzial gemäss @Thees2017 als Grössenordnung für das verbleibende Potenzial angenommen werden. Dieses beträgt `r roundTo(biomasseVerholzt$infos$verbleibendesPotenzial_m3, 1000)` m^3^ oder `r roundTo(biomasseVerholzt$infos$verbleibendesPotenzial_gwh, 10)` GWh. Im Kanton Luzern sind bereits heute Projekte in der Grössenordnung von `r roundTo( biomasseVerholzt$infos$projekteLuzernSumSum_gwh, 10)` GWh in der Umsetzung bzw. teilweise schon umgesetzt. Damit ist das Potenzial faktisch ausgeschöpft. Zusätzlich existieren Projektideen für `r roundTo(biomasseVerholzt$infos$projektIdeenLuzernSumSum_gwh, 10)` GWh, welche das realistische Potenzial deutlich übersteigen.
+
+### `r params$ziel` (`r roundTo(biomasseVerholzt$ausbaupfad$ziel$stromUndWärme_gwh, 10)` GWh)
+
+Das realistische Potenzial soll ausgenutzt werden. Damit ergibt sich ein Ausbauziel von `r roundTo(biomasseVerholzt$ausbaupfad$ziel$stromUndWärme_gwh, 10)` GWh, welches in den nächsten Jahren ausgeschöpft sein wird. Bei der Nutzung von Holz sind folgende Grundsätze zu beachten: Die stoffliche Nutzung, idealerweise Mehrfachnutzung, steht im Vordergrund. Der Einsatz von Energieholz im Hochtemperaturbereich oder zur Spitzenlastdeckung ist gegenüber reinem Einsatz im Niedertemperaturbereich (z.B. Raumwärme, Warmwasser) zu bevorzugen [@Richtplan2024; @Nussbaumer2023]. Um den Energiegehalt des Holzes möglichst vollständig zu nutzen, ist beim Einsatz von Holz im Hochtemperaturbereich zusätzlich die anfallende Niedertemperaturwärme zu nutzen. Dies gilt insbesondere, wenn mit Holz Strom- oder Pflanzenkohle produziert wird. Um Holz für Anwendungen im Hochtemperaturbereich bei limitiertem Potenzial verfügbar zu machen, ist eine Umnutzung aus dem Niedertemperaturbereich erforderlich. Im Niedertemperaturbereich können dann Technologien wie Solarthermie oder Wärmepumpen die entstandene Lücke schliessen. Auffallend an @fig-biomassseVerholzt ist der Rückgang der skalierten Bundesziele über die Zeit (graue Linie). Dieser Rückgang beruht hauptsächlich auf Rückgängen in den Sektoren Haushalte und Dienstleistungen [@EP2050ExkursBiomasse]. Als Begründung werden steigende Energieeffizienz und kostengünstige Alternativen für die Bereitstellung von Raumwärme und Warmwasser mit Wärmepumpen und Wärmenetzen genannt [@EP2050T]. Im Jahr 2050 wird ebenfalls angenommen, dass ein geringer Teil fester
+Biomasse als Massnahme zur Erzeugung von Negativemissionen eingesetzt wird, indem dieser in Form
+von Pflanzenkohle in landwirtschaftliche Böden eingearbeitet wird [@EP2050ExkursBiomasse]. 
+{{< pagebreak >}}
+
+<!-- Die Begründung der @EP2050T ist, dass mit der Zeit eine verstärkte Nutzung im Umwandlungssektor stattfindet und Holz dort bilanziert wird. Mit Umwandlungssektor ist in diesem Fall wahrscheinlich die Verwendung im Bereich Fernwärme gemeint. Der Holzanteil der Fernwärme ist in der vorliegenden Betrachtung jedoch gemäss @sec-anhangFernwaermeUmweltwaerme berücksichtigt. Der Rückgang der Bundesziele ist daher ungeklärt. -->
+
+<!-- Begründung Exkurs -->
+<!-- Der Verbrauch an Holz nimmt hingegen sowohl im Sektor Private Haushalte auch im Sektor -->
+<!-- Dienstleistungen/Landwirtschaft im Zeitverlauf ab. -->
+
+<!-- Begründung EPT -->
+<!-- iomasseeinsatz im Sektor Private -->
+<!-- Haushalte, aber auch im Dienstleistungssektor ist im Szenario ZERO Basis hingegen rückläufig. -->
+<!-- Dies ist einerseits auf die steigende Energieeffizienz zurückzuführen. Andererseits stehen für die -->
+<!-- Bereitstellung von Raumwärme und Warmwasser mit Wärmepumpen und Wärmenetzen kosten- -->
+<!-- günstige Alternativen mit hoher Gesamtenergieeffizienz zur Verfügung. -->
+
+
+
+
+
+
+
+
+```{=html}
+<!-- Im Jahr 2021 wurden `r roundTo(parameters$biomasseVerholzt$holzernte2021_m3, 1000)` m^3^ (`r roundTo(biomasseVerholzt$infos$holzernte2021_gwh, 100)` GWh) Holz geerntet. Das Holzpotenzial ist damit zu 80 % ausgeschöpft und es verbleiben `r roundTo(biomasseVerholzt$infos$verbleibendesHolz$volumen_m3, 100)` m^3^ (`r roundTo(biomasseVerholzt$infos$verbleibendesHolz$energie_gwh, 100)` GWh). Das geerntete Holz wird jedoch nur zu einem kleinen Teil direkt energetisch genutzt (aktuell zu etwa 25-30 %). Der Rest wird in Sägereien und der Holzindustrie für die stoffliche Nutzung weiterverarbeitet. In den Sägereien fällt Restholz an, welches ebenfalls energetisch genutzt wird. Auch das Altholz aus dem Rückbau von Gebäuden nach der stofflichen Nutzung steht für die energetische Verwertung zur Verfügung, allerdings zeitlich verzögert. Die Darstellung dieser Stoffflüsse und deren zeitlichen Dynamik übersteigt den Detaillierungsgrad der vorliegenden Studie. Bei einer territorialen Betrachtung für den Kanton Luzern und unter der Annahme, dass früher oder später sämtliches Holz energetisch genutzt wird, entspricht das nachhaltige Energiepotenzial über lange Zeiträume betrachtet der nachhaltigen Nutzungsmenge. Das nachhaltige Energieholzpotenzial wird daher mit `r roundTo(biomasseVerholzt$ausbaupfad$realistisch$stromUndWärme_gwh, 100)` GWh angegeben.
+
+
+Die nachhaltig nutzbare Holzmenge aus Wald und Landschaft von `r roundTo(biomasseVerholzt$infos$nachhaltigeNutzung_m3, 1000)` m^3^ (`r roundTo(biomasseVerholzt$infos$nachhaltigeNutzung_gwh, 100)` GWh) soll ausgeschöpft werden. Diese Menge definiert das längerfristige nachhaltige Ausbauziel basierend auf kantonalen Holzvorkommen. Solange die Holzströme über die Kantonsgrenzen hinweg nicht bekannt sind, ist dies aktuell die plausibelste Annahme. Dabei soll der Energieholzanteil aus dem Wald bei rund 30% stabilisiert werden. Die stoffliche Nutzung, idealerweise Mehrfachnutzung, steht im Vordergrund. Der Einsatz von Energieholz im Hochtemperaturbereich sowie die Kombination mit Koppelprodukten wie z.B. Strom oder Pflanzenkohle sind gegenüber der reinen Wärmeproduktion zu bevorzugen, sofern die anfallende Wärme sinnvoll genutzt werden kann [@Richtplan2024]. Die verfügbaren Mengen an Rest- und Altholz sind stark abhängig von den ansässigen grossen Holzindustriebetrieben, welche aktuell auch Holz über die Kantonsgrenzen hinweg importieren. Wird dies auch längerfristig der Fall sein, kann der Ausbaupfad über den kantonalen Ressourcen liegen. Auffallend an @fig-biomassseVerholzt ist der Rückgang der skalierten Bundesziele (graue Linie). Die Begründung nach EP2050+ ist, dass mit der Zeit eine verstärkte Nutzung im Umwandlungssektor stattfindet und Holz dort bilanziert wird. Mit Umwandlungssektor ist in diesem Fall wahrscheinlich die Verwendung im Bereich Fernwärme gemeint. Der Holzanteil der Fernwärme geht gemäss @sec-anhangFernwaermeUmweltwaerme in unserer Betrachtung wieder in den Bereich Biomasse verholzt ein. Der Rückgang der Bundesziele ist daher ungeklärt.-->
+```

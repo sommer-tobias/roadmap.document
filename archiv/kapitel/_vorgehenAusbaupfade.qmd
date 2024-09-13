@@ -1,0 +1,16 @@
+---
+lang: de 
+---
+
+## Ausbauziele pro Energieträger
+
+Die sechs Hauptenergieträger sind Sonne, Wind, Wasser, Biomasse, Umweltwärme und Abwärme. Diese werden weiter aufgeteilt in die zwölf Energieträger: Solarenergie Photovoltaik (PV), Solarenergie thermisch, Windenergie, Wasserkraft, Biomasse verholzt, Biomasse nicht verholzt (Biogas), Geothermie tief, Geothermie untief (hauptsächlich Erdsonden), Grundwasser, Oberflächengewässer, Luft und Abwärme.
+\
+
+In einem ersten Schritt werden kantonale Datensätze und Berichte verwendet um für jeden der zwölf Energieträger die aktuelle Produktion, das theoretische Potenzial und das realistische Potenzial zu bestimmen (für Definitionen siehe @sec-systemgrenzenPotenzial). Basierend auf diesen Daten wird ein erster kantonaler Zielwert für 2050 festgelegt und die Etappenziele von heute bis 2050 bestimmt (blau in @fig-methodikAusbaupfade). Zur Kontrolle, dass die kantonalen Werte die richtige Grössenordnung haben, werden zusätzlich aus den EP2050+ pro Energieträger die entsprechenden Werte mit dem Skalierungsfaktor auf den Kanton Luzern umgerechnet (grau in @fig-methodikAusbaupfade). 
+\
+
+Diese Schritte werden für alle zwölf erneuerbaren Energieträger durchgeführt. Anschliessend werden die Ausbauziele der einzelnen Energieträger separat für die Bereiche Wärme und Strom aufsummiert und mit den auf den Kanton Luzern skalierten Bundeszielen verglichen (siehe @sec-zieleStromWärme). Stimmen die kantonalen Ausbauziele für Strom und Wärme nicht mit den skalierten Bundeszielen überein, werden die kantonalen Ausbauziele der einzelnen Energieträger so lange angepasst, bis deren Summe den skalierten Bundeszielen entspricht. Die kantonalen Ausbauziele für die Einzelenergieträger können dabei weiterhin von den auf den Kanton Luzern skalierten Bundeszielen abweichen.
+\
+
+![Schematisches Vorgehen zur Festlegung der Ausbauziele für die einzelnen Energieträger am Beispiel der untiefen Geothermie.](grafiken/methodikAusbaupfade4.png){#fig-methodikAusbaupfade}

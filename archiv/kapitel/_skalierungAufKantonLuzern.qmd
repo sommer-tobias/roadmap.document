@@ -1,0 +1,13 @@
+---
+lang: de 
+---
+
+## Skalierung auf den Kanton Luzern {#sec-skalierungAufKantonLuzern}
+
+Der mittlere Stromverbrauch der Schweiz in den Jahren 2015 bis 2021 betrug `r roundTo(skalierungKLU$stromverbrauchCh_gwh/1000, 0.1)`
+ TWh, im Kanton Luzern `r roundTo(skalierungKLU$stromverbrauchKlu_gwh/1000, 0.1)`
+  TWh. Der Stromverbrauch des Kantons Luzern beträgt damit `r roundTo(skalierungKLU$anteil * 100, 0.1)` %
+des Stromverbrauchs in der Schweiz. Im vorliegenden Bericht wird mit diesem Skalierungsfaktor von  `r roundTo(skalierungKLU$anteil * 100, 0.1)` % eine erste Abschätzung des künftigen Verbrauchs von Strom, Wärme und Gesamtenergie des Kantons Luzern basierend auf den EP2050+ abgeleitet. Da der Wärmeverbrauch nicht flächendeckend gemessen wird, scheint eine Übernahme des Skalierungsfaktors basierend auf Strommessungen als erste pragmatische Näherung legitim. Die Skalierung der Bundeswerte berücksichtigt keine standortspezifischen Besonderheiten des Kantons Luzern. Dies wird z.B. besonders deutlich beim Energieträger Wasserkraft (@sec-wasserkraft). Da der Kanton Luzern im Vergleich zum Bundesdurchschnitt kaum Wasserkraftpotenzial besitzt und damit auch wenig Energie aus Wasserkraft produziert, sind bei diesem Energieträger die kantonalen Werte deutlich geringer als die skalierten Bundeswerte. Für die Ausbauziele der meisten Energieträger werden die skalierten Bundesziele daher lediglich als Orientierungshilfe verwendet und die kantonalen Auswertungen bestimmen die Ausbauziele. Wenn keine kantonalen Abschätzungen für die Zukunft möglich sind und keine Abweichung vom Bundesdurchschnitt erwartet wird, werden die skalierten Bundesziele für den Kanton Luzern übernommen.
+
+
+

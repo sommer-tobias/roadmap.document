@@ -1,0 +1,58 @@
+## Biomasse nicht verholzt
+
+```{=html}
+<b>
+braucht es hier noch einen check pronovo und holinger bzgl. der einbezogenen anlagen?
+</b>
+```
+### Definition
+
+Zur nicht verholzten Biomasse zählen Hofdünger (Gülle und Mist), landwirtschaftliche Nebenprodukte (z.B. Reststroh aus der Getreideproduktion), organische Abfälle aus Industrie und Gewerbe, organische Abfälle im Haushaltskehricht, Grüngut aus Haushalt und Landschaft sowie Klärschlamm. Die Rohstoffkategorien ohne Hofdünger werden auch als Co-Substrate bezeichnet und sind energetisch ergiebiger als Hofdünger. Nicht verholzte Biomassen werden durch Vergärung Biogas umgewandelt. Biogas ist ein Gemisch, das zu rund zwei Dritteln aus Methan und zu einem Drittel aus Kohlendioxid besteht. Biogas kann gereinigt und aufbereitet in das Erdgasnetz eingespeist werden oder in Blockheizkraftwerken zur Strom- und Wärmegewinnung genutzt werden.
+
+<!-- Wasserstoff wird im Rahmen dieses Berichts nicht zu Biogas gezählt, da dessen Produktion durch einen Elektrolyseprozess, d.h. die Aufspaltung von Wasser in Sauerstoff und Wasserstoff mithilfe von Strom, erfolgt. Ebenso wenig zählen synthetische Gase, welche ein Folgeprodukt von Wasserstoff sind, zu Biogas.  -->
+
+```{r}
+#| label: fig-biomassseNichtVerholzt
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus nicht-verholzter Biomasse und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+grafikProTechRda$biomasseNichtVerholzt$grafik
+```
+
+### `r params$genutzt` (`r roundTo(biomasseNichtVerholzt$ausbaupfad$genutzt$pronovoGenutzt2022_gwh,1)` GWh)
+
+Im Kanton Luzern gibt es insgesamt `r roundTo(biogasanlagen$n_biogas_comp, 1)` Anlagen ([@fig-tabelleBiogasanlagen]), welche Biogas energetisch verwerten: `r roundTo(biogasanlagen$n_biogas_ara, 1)` Abwasserreinigungsanlagen, `r roundTo(biogasanlagen$n_biogas_ind, 1)` industrielle Anlagen und `r roundTo(biogasanlagen$n_biogas_land, 1)` landwirtschaftliche Co-Vergärungsanlagen. Alle Anlagen produzieren mittels Blockheizkraftwerk Strom und Wärme, nur zwei speisen Biogas zusätzlich in das Gasnetz ein[^_biomassenichtverholzt-2]. Die Stromproduktion aller Biogasanlagen im Jahr 2022 betrug `r roundTo(biomasseNichtVerholzt$ausbaupfad$genutzt$pronovoStromproduktion2022_gwh, 1)` GWh[^_biomassenichtverholzt-3]. Die aus dieser Stromproduktion abgeschätzte genutzte Waerme beträgt `r roundTo(biomasseNichtVerholzt$ausbaupfad$genutzt$pronovoGenutzteWaerme2022_gwh, 1)` GWh[^_biomassenichtverholzt-4]. Insgesamt resultieren `r roundTo(biomasseNichtVerholzt$ausbaupfad$genutzt$pronovoStromWaerme2022_gwh, 1)` GWh Strom und Wärme. Die direkt ins Gasnetz eingespeiste Energiemenge beträgt `r roundTo(biomasseNichtVerholzt$ausbaupfad$genutzt$GasEingespeisst2022_gwh, 1)` GWh[^_biomassenichtverholzt-5]. In der Summe ist die aktuelle Nutzung somit `r roundTo(biomasseNichtVerholzt$ausbaupfad$genutzt$pronovoGenutzt2022_gwh, 1)` GWh[^_biomassenichtverholzt-6].
+
+<!-- [^_biomassenichtverholzt-1]: Emmi Schweiz AG Dagmersellen, Kompogasanlage Wauwil, SwissFarmerPower Inwil, Weiherhus Luzern, Gefu Rickenbach, Perlen Papierfabrik. -->
+
+[^_biomassenichtverholzt-2]: ARA Buholz und SwissFamerPowerInwil
+
+[^_biomassenichtverholzt-3]: Pronovo Daten, d.h. ohne Eigenbedarf
+
+[^_biomassenichtverholzt-4]: Annahmen: Strom und Wärmeproduktion stehen im Verhältnis `r roundTo(parameters$waermekraftkopplung$grobschaetzungEndenergie$anteilStrom*100, 1)`:`r roundTo((1 - parameters$waermekraftkopplung$grobschaetzungEndenergie$anteilStrom)*100, 1)` und `r roundTo(parameters$waermekraftkopplung$grobschaetzungEndenergie$anteilGenutzerWaermeAnProduzierterWaerme*100, 1)` % der produzierten Wärme werden genutzt
+
+[^_biomassenichtverholzt-5]: ARA Buholz 6.8 GWh/Jahr [Tab. 21 in @biogasHolinger2022] und SFPI 28 GWh/Jahr [Tab. 21 in @biogasHolinger2022]
+
+[^_biomassenichtverholzt-6]: Die Studie @biogasHolinger2022 analysiert Einzelanlagen und die aufsummierte Gesamtenergie ergibt `r roundTo(biomasseNichtVerholzt$ausbaupfad$genutzt$hollingerAufSummiert, 1)` GWh. Der Unterschied zum angegebenen Wert von `r roundTo(biomasseNichtVerholzt$ausbaupfad$genutzt$pronovoGenutzt2022_gwh, 1)` GWh zeigt die Unsicherheit der Abschätzungen aufgrund unterschiedlicher Methodiken.
+
+### Theoretisches Potenzial (`r roundTo(biomasseNichtVerholzt$ausbaupfad$theoretisch$stromUndWaerme_gwh, 10)` GWh)
+
+In @BiogasStrategieKLU2013 wird das theoretische Potenzial von Biogas mit `r roundTo(biomasseNichtVerholzt$ausbaupfad$theoretisch$strategieKLU_gwh, 1)` GWh angeben. In @Thees2017 wird das theoretische Potenzial mit `r roundTo(biomasseNichtVerholzt$ausbaupfad$theoretisch$thees_gwh, 1)` GWh beziffert. Es wird der Mittelwert von `r roundTo(biomasseNichtVerholzt$ausbaupfad$theoretisch$stromUndWaerme_gwh, 10)` GWh übernommen.
+
+### Realistisches Potenzial (`r roundTo(biomasseNichtVerholzt$ausbaupfad$realistisch$stromUndWaerme_gwh, 10)` GWh)
+
+In @BiogasStrategieKLU2013 wird das realistische Potenzial mit `r roundTo(biomasseNichtVerholzt$ausbaupfad$realistisch$strategieKLU$technischOekologischesPotential_gwh, 10)` GWh angegeben. Aus @Thees2017 ergibt sich ein realistisches Potenzial von `r roundTo(biomasseNichtVerholzt$ausbaupfad$realistisch$thees$sustainablePotential_gwh, 10)` GWh. Als Arbeitswert wird hier ein Mittelwert von `r roundTo(biomasseNichtVerholzt$ausbaupfad$realistisch$stromUndWaerme_gwh, 10)` GWh angenommen. Inwieweit dieser Arbeitswert wirklich nutzbar ist, hängt stark von der Nutzbarmachung des Hofdüngers ab, welcher energetisch etwa `r roundTo(biomasseNichtVerholzt$ausbaupfad$realistisch$anteilHofduenger*100, 1)` % des realistischen Potenzials ausmacht[^_biomassenichtverholzt-7]. Auf die Menge bezogen macht der Hofdünger sogar `r roundTo(biomasseNichtVerholzt$ausbaupfad$realistisch$anteilHofduengerAnFrischsubstanz*100, 1)` % der verwendeten Biomasse aus.
+
+[^_biomassenichtverholzt-7]: @BiogasStrategieKLU2013: Hofdüngeranteil `r roundTo(biomasseNichtVerholzt$ausbaupfad$realistisch$strategieKLU$anteilHofduenger*100, 1)` %; @Thees2017: Hofdüngeranteil `r roundTo(biomasseNichtVerholzt$ausbaupfad$realistisch$thees$fractionAnimalManure *100, 1)` %
+
+### `r params$ziel` (`r roundTo(biomasseNichtVerholzt$ausbaupfad$ziel$stromUndWaerme_gwh, 10)` GWh)
+
+Das Ausbauziel hängt stark von der Nutzbarmachung des Hofdüngers ab. Hofdünger hat gegenüber Co-Substraten (z.B. organische Abfälle, Glycerin) eine geringere Energiedichte (Energie pro kg). Wo das Ausbauziel zwischen dem genutzten Potenzial von `r roundTo(biomasseNichtVerholzt$ausbaupfad$genutzt$pronovoGenutzt2022_gwh, 10)` GWh und dem realistischen Potenzial von `r roundTo(biomasseNichtVerholzt$ausbaupfad$realistisch$stromUndWaerme_gwh, 10)` GWh zu positionieren ist, bedarf einer Interessenabwägung. Für ein hohes Ausbauziel sprechen die gesteigerte Nachfrage nach erneuerbarem und speicherbarem Gas für Hochtemperaturprozesse[^_biomassenichtverholzt-8], eine weniger starke Abhängigkeit von Importgasen (Wasserstoff, Biogas), die Entlastung des Rohstoffes Holz sowie die Reduktion von Treibhausgasemissionen[^_biomassenichtverholzt-9]. Tendenziell fördert vergorene Gülle (im Vergleich zum Ausbringen unvergorener Gülle), trotz dem geringeren Kohlenstoffgehalt[^_biomassenichtverholzt-10], zusätzlich die Humusbildung. Für ein konservatives Ausbauziel sprechen die geringe Wirtschaftlichkeit der Energieproduktion aus Hofdünger alleine (und damit die Abhängigkeit von hohen Fördergeldern) und die langen Transportwege der Co-Substrate (zum Teil aus dem Ausland) und des rückgeführten Düngers nach der Vergärung. Vergorene Gülle hat (im Vergleich zu unvergorener Gülle) ausserdem in der Regel eine erhöhten Ammoniumgehalt. Das damit verbundene erhöhte Auswaschrisiko von Stickstoff kann zu einer Verschmutzung des Grundwassers führen. Gemäss PB K&E die landwirtschaftlichen Treibhausgasemissionen bis 2050 halbiert werden. Dafür ist eine Reduktion des Tierbestands und eine klimaschonende Ernährung nötig (Massnahme KS-L2.2 des PB K&E). Dies reduziert die Menge an verfügbarem Hofdünger und somit das realistische Potenzial. Als Arbeitswert wird ein Ausbauziel von `r roundTo(biomasseNichtVerholzt$ausbaupfad$ziel$stromUndWaerme_gwh, 10)` GWh gewählt. Dabei wird davon ausgegangen, dass kleine landwirtschaftliche Anlagen mithilfe von Förderung und technischen Fortschritten in Zukunft zumindest teilweise wirtschaftlich betrieben werden können. Das skalierte Bundesziel ist um ein Dreifaches höher und sogar höher als das realistische Potenzial. Dies ist auf importiertes Biogas zurückzuführen, welches in den Daten der EP2050+ nicht von der Inlandproduktion zu trennen ist. {{< pagebreak >}}
+
+[^_biomassenichtverholzt-8]: Eine entsprechende Aufbereitung des Biogases wird vorausgesetzt.
+
+[^_biomassenichtverholzt-9]: Treibhausgassemissionen können mit Hilfe von Biogasanlagen über folgende Wirkungspfade eingespart werden: (i) Umwandlung vom stark klimaschädlichen Methan, welches bei der Hofdüngerlagerung freigesetzt würde, zum weniger klimaschädlichen CO~2~ bei der Verbrennung, siehe hierzu auch das Kompensationsprogramm des Bundes [Methanvermeidung aus biogenenen Abfällen](https://www.bafu.admin.ch/bafu/de/home/themen/klima/fachinformationen/verminderungsmassnahmen/kompensation/inland/registrierte-projekte.html) (ii) Substitution fossiler Brenn- und Treibstoffe durch Biogas, (iii) die Substitution von Mineraldüngern aus fossiler Energiequelle durch organische Dünger.
+
+[^_biomassenichtverholzt-10]: Bei der Vergärung von Hofdüngern entsteht Methan. Der darin enthaltene Kohlenstoff gelangt als CO~2~ in die Atmosphäre und wird nicht mehr dem Boden zugeführt.
+
+

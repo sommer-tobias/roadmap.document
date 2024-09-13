@@ -1,0 +1,57 @@
+## Geothermie untief
+
+
+### Definition
+Die untiefe (oder oberflächennahe) Geothermie bezieht sich auf Erdwärme aus einer Tiefe von bis zu 400 Metern. In dieser Schicht hat das Erdreich Temperaturen von rund 10 bis 22 °C. Die Wärmenutzung erfolgt daher gewöhnlich indirekt, d.h., das Temperaturniveau wird mithilfe einer Wärmepumpe auf das erforderliche Temperaturniveau angehoben. Erdsonden können im Sommer zusätzlich zum Kühlen eingesetzt werden. Die beim Kühlen entstehende Wärme kann ins Erdreich zurückgeleitet werden, um einer langfristigen Abkühlung des Untergrunds entgegenzuwirken (Regeneration). Technologien für untiefe Geothermie umfassen Erdwärmesonden, Erdregister, Erdwärmekörbe und Erd- bzw. Energiepfähle (Geostrukturen). Grundwasser gehört auch zur untiefen Geothermie, wird hier jedoch als separater Energieträger aufgeführt. Die Analyse des genutzten Potenzials bezieht sich ausschliesslich auf Erdwärmesonden, da diese den Grossteil der Nutzung ausmachen und nur für diese ein Datensatz verfügbar ist.
+
+
+```{r}
+#| label: fig-geothermieUntief
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus untiefer Geothermie und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+
+grafikProTechRda$geothermieUntief$grafik
+```
+
+
+### `r params$genutzt` (`r roundTo(geothermieUntief$ausbaupfad$genutzt$heizwaerme_gwh,10)` GWh)
+
+Vom Jahr 1990 bis zum Jahr 2022 wurden im Kanton Luzern `r roundTo(geothermieUntief$ausbaupfad$genutzt$anzahlAnlagen, 1)`
+Erdsondenanlagen mit `r roundTo(geothermieUntief$ausbaupfad$genutzt$anzahlErdsonden, 10)`
+Erdsonden und einer Gesamtlänge von fast `r roundTo(geothermieUntief$ausbaupfad$genutzt$totallängerBohrmeter/1000, 100)`
+Kilometern bewilligt. Bei einer Wärmeentzugsleistung von `r roundTo(parameters$geothermieUntief$spezifischerWärmeentzugProSondenmeter_Wm, 1)`
+W pro Sondenmeter entspricht dies einer totalen Entzugsleistung von `r roundTo(geothermieUntief$ausbaupfad$genutzt$totaleEntzugleistung_mw, 1)`
+MW und unter der Annahme von `r roundTo(parameters$geothermieUntief$volllaststunden_h, 1)`
+Volllaststunden einer jährlichen Entzugsenergie von `r roundTo(geothermieUntief$ausbaupfad$genutzt$umweltaerme_gwh, 1)`
+GWh. Bei einer mittleren Jahresarbeitszahl von `r roundTo(parameters$geothermieUntief$JAZ, 0.1)`
+ergibt sich so eine Heizwärme von etwa `r roundTo(geothermieUntief$ausbaupfad$genutzt$heizwaerme_gwh ,10)` GWh. 
+
+### Theoretisches Potenzial (`r roundTo(geothermieUntief$ausbaupfad$theoretisch$heizwaerme_gwh, 100)` GWh)
+Die Bauzonenflächen im Kanton Luzern machen mit `r roundTo(geothermieUntief$ausbaupfad$theoretisch$bauzonenfläche_ha, 100)`
+Hektaren etwa `r roundTo(geothermieUntief$ausbaupfad$theoretisch$anteilBauzonenflächeAnKantonsfläche*100, 1)`
+% der Gesamtfläche des Kantons Luzern aus. Innerhalb der Bauzonen sind auf `r roundTo(geothermieUntief$ausbaupfad$theoretisch$verbotsflächeInnerhalbBauzone_ha, 100)`
+Hektaren Erdsonden aufgrund von nutzbarem Grundwasservorkommen verboten. Das ergibt eine nutzbare Fläche von `r roundTo(geothermieUntief$ausbaupfad$theoretisch$nutzbareFläche_ha, 100)`
+Hektaren. Gemäss SIA-Norm [@SIA384_6:2021] sind Entzugsdichten bis zu 8 kWh/m^2^ ohne Regeneration möglich. Wird regeneriert sind sogar Entzugsdichten bis `r roundTo(parameters$geothermieUntief$entzugsdichteMitRegeneration_kwhm2, 1)`
+kWh/m^2^ möglich. Für das theoretische Potenzial wird eine Entzugsdichte von `r roundTo(parameters$geothermieUntief$entzugsdichteMitRegeneration_kwhm2, 1)`
+kWh/m^2^ und die für Erdsonden erlaubte Bauzonenfläche angenommen. Zum Heizen werden dabei dem Untergrund `r roundTo(geothermieUntief$ausbaupfad$theoretisch$umweltaerme_gwh, 100)`
+GWh entzogen und es resultieren `r roundTo(geothermieUntief$ausbaupfad$theoretisch$heizwaerme_gwh, 100)`
+GWh Heizwärme (Jahresarbeitszahl von `r roundTo(parameters$geothermieUntief$JAZ, 0.1)`). 
+
+
+### Realistisches Potenzial (`r roundTo(geothermieUntief$ausbaupfad$realistisch$heizwaerme_gwh,100)` GWh)
+Das nachhaltig nutzbare, also das realistische Heizwärmepotenzial von Erdwärmesonden, liegt in der Schweiz ohne Regeneration bei etwa `r roundTo(geothermieUntief$ausbaupfad$realistisch$heizwaermeEP2050plusOhneRegeneration_gwh, 1)`
+GWh [@EP2050T, Tab. 14] und mit Regeneration bei etwa `r roundTo(geothermieUntief$ausbaupfad$realistisch$heizwaermeEP2050plusMitRegeneration_gwh, 1)`
+GWh, wobei Zonen mit nutzbarem Grundwasservorkommen bereits ausgeschlossen wurden. Skaliert auf den Kanton Luzern ergibt dies `r roundTo(geothermieUntief$ausbaupfad$realistisch$heizwaermeEP2050plusSkaliertAufKLUohneRegeneration_gwh, 100)`
+GWh respektive `r roundTo(geothermieUntief$ausbaupfad$realistisch$heizwaermeEP2050plusSkaliertAufKLUmitRegeneration_gwh, 100)`
+GWh. Beide Schätzungen sind konservativ, da von Entzugsdichten von lediglich `r roundTo(parameters$geothermieUntief$entzugsdichteEp2050plus_kwhm2 , 1)`
+kWh/m^2^ ausgegangen wird, jedoch `r roundTo(parameters$geothermieUntief$entzugsdichteOhneRegeneration_kwhm2 , 1)`
+kWh/m^2^ sogar ohne Regeneration möglich sind. Als Arbeitswert wird trotzdem ein realistisches Potenzial von `r roundTo(geothermieUntief$ausbaupfad$realistisch$heizwaerme_gwh,100)` GWh angenommen und Regeneration in dicht bebauten Gebieten vorausgesetzt. Für eine konkretere Abschätzung des realistischen Potenzials ist eine Analyse des Luzerner Gebäudeparks inklusive existierenden Heizungsträgern, lokalen Wärmeentzugsdichten und verfügbaren Flächen nötig. 
+
+
+### `r params$ziel` (`r roundTo(geothermieUntief$ausbaupfad$ziel$heizwaerme_gwh, 100)` GWh)
+Entwickeln sich die realisierten Erdsondenmeter bis 2050 ähnlich wie von 2021 auf 2022, dann werden im Jahr 2050 `r roundTo(geothermieUntief$ausbaupfad$ziel$heizwaerme_gwh, 100)`
+GWh Heizwärme aus Erdsonden gewonnen. Bei diesem Ausbauziel ist das Miteinbeziehen der Regeneration von Erdsonden essenziell[^konfliktRegeneration]. Etwa 20 % der Entzugswärme könnten im Sommer durch das Kühlen von Gebäuden dem Untergrund zugeführt werden. Für grössere Regenerationsgrade ist jedoch zusätzliche Wärme, z.B. aus solarthermischen Anlagen oder durch reversible Wärmepumpen betrieben mit PV-Strom [@Cool2Regen], nötig. 
+{{< pagebreak >}}
+
+[^konfliktRegeneration]: Die Kosten für die Regeneration verringern die Wirtschaftlichkeit von Erdsonden [@RegenOpt]. Solarthermieanlagen konkurrieren mit den PV Anlagen um ähnliche Flächen. Diese Aspekte sind beim Thema Regeneration zu berücksichtigen.

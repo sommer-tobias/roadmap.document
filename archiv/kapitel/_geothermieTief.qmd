@@ -1,0 +1,42 @@
+## Geothermie tief
+
+
+### Definition
+<!-- Tiefe Geothermie erschliesst den Bereich ab 400 bis über 5'000 m unter der Erdoberfläche und erreicht Temperaturen bis zu 200 °C (auf die Unterkategorie mitteltiefe Geothermie bis 3000 m wird hier verzichtet). Das Temperaturniveau in diesen Tiefen eignet sich oft zur Direktnutzung ohne Wärmepumpen, beispielsweise zum direkten Heizen. Bei Temperaturen über 100 °C kann zusätzlich Strom produziert werden.   -->
+Der Begriff Geothermie tief schliesst in diesem Bericht auch die mitteltiefe Geothermie ein. Tiefe und mitteltiefe Geothermie erschliessen den Bereich ab 400 Meter unter der Erdoberfläche und erreichen hohe Temperaturen. Das Temperaturniveau in diesen Tiefen eignet sich oft zur Direktnutzung ohne Wärmepumpen, beispielsweise zum direkten Heizen (i.d.R. mitteltiefe Geothermie). Bei Temperaturen über 150 °C (i.d.R. Tiefengeothermie) kann Strom produziert werden. 
+
+```{r}
+#| label: fig-geothermieTief
+#| echo: false
+#| warning: false
+#| fig-cap: 'Entwicklung der kantonalen Energieproduktion aus tiefer Geothermie und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.'
+grafikProTechRda$geothermieTief$grafik
+```
+
+### `r params$genutzt` (`r roundTo(geothermieTief$ausbaupfad$genutzt$wärme_gwh,0.1)` GWh)
+Im Kanton Luzern gibt es aktuell nur eine Anlage  für tiefe Geothermie. Die jährliche Heizenergie beträgt `r roundTo(geothermieTief$ausbaupfad$genutzt$wärme_gwh,0.1)` GWh auf einem Temperaturniveau von ca. 70 °C [^detailsWeggis]. 
+
+[^detailsWeggis]: Weggis, Temperaturniveau 70°C, installierte Leistung 0.1 MW, Tiefe 2300 m
+   
+### Theoretisches Potenzial (`r roundTo(geothermieTief$ausbaupfad$theoretisch$potenzialGeothermieSchweiz, 100)` GWh)
+Sowohl für das theoretische als auch für das realistische Potenzial fehlen Grundlagenstudien, welche die Geologie, mögliche Standorte und den lokalen Wärmebedarf miteinbeziehen. Aufgrund mangelnder Daten werden hier die skalierten Bundeswerte übernommen. Das theoretische Potenzial der tiefen Geothermie in der Schweiz beträgt etwa `r roundTo(parameters$geothermieTief$theoretischesPotenzialCH_gwh, 100)`
+ GWh pro Jahr. Als grobe Schätzung beträgt das daraus abgeleitete skalierte Potenzial für den Kanton Luzern  `r roundTo(geothermieTief$ausbaupfad$theoretisch$potenzialGeothermieSchweiz, 100)` GWh [@GeothermieSchweiz2020]. 
+
+
+
+#### Realistisches Potenzial (`r roundTo(geothermieTief$ausbaupfad$realistisch$potenzialKLU_gwh,100)` GWh)
+Das realistische Potenzial wird für die Schweiz auf `r roundTo(parameters$geothermieTief$realistischesPotenzialCH_gwh, 100)`
+ GWh pro Jahr geschätzt. Skaliert auf den Kanton Luzern ergeben sich `r roundTo(geothermieTief$ausbaupfad$realistisch$potenzialKLU_gwh,100)` GWh [@GeothermieSchweiz2020].  
+
+
+### `r params$ziel` (`r roundTo(geothermieTief$ausbaupfad$ziel$zielStromWärmeKLU2050_gwh, 10)` GWh)
+Schweizweit ist ein Ausbau der Stromversorgung über tiefe Geothermie auf 2'000 GWh bis 2050 vorgesehen.  Das maximale damit verbundene Wärmepotenzial beträgt `r roundTo(geothermieTief$ausbaupfad$ziel$wärmeCH2050AbgeleitetVonStrom_gwh, 100)` GWh[^orcWirkungsgrad] [@ep2050plus]. Skaliert auf den Kanton Luzern ergibt dies `r roundTo(geothermieTief$ausbaupfad$ziel$stromKLU2050_gwh, 10)` GWh Strom und `r roundTo(geothermieTief$ausbaupfad$ziel$wärmeKLU2050AbgeleitetVonStrom_gwh , 10)` GWh Wärme. Für das von CKW geplante Geothermiekraftwerk in Inwil wird aktuell von `r roundTo(geothermieTief$ausbaupfad$ziel$ckwInwilStrom_gwh, 1)` GWh Strom und `r roundTo(geothermieTief$ausbaupfad$ziel$ckwInwilWärme_gwh, 1)` GWh Wärme ausgegangen [@ckwInwil2023]. Um das Ziel für die Stromproduktion zu erreichen, müssten also etwa `r numberToLetter(roundTo(geothermieTief$ausbaupfad$ziel$stromFaktor, 1))` von solchen Kraftwerken gebaut werden. Da es in der Schweiz noch kaum Erfahrungen mit Tiefengeothermie gibt, wird hier von `r numberToLetter(roundTo(parameters$geothermieTief$anzahlKraftwerkeKLU2050, 1))` Anlagen ausgegangen, d.h. einer Strom- und Wärmeproduktion von `r roundTo(geothermieTief$ausbaupfad$ziel$zielStromKLU2050_gwh, 1)` GWh und `r roundTo(geothermieTief$ausbaupfad$ziel$zielWärmeKLU2050_gwh, 1)` GWh. Daraus resultiert ein Ausbauziel von etwa `r (roundTo(geothermieTief$ausbaupfad$ziel$zielStromWärmeKLU2050_gwh, 10))` GWh.
+{{< pagebreak >}}
+
+
+
+[^orcWirkungsgrad]: Annahme Organic Ranking Cycle (ORC) mit Wirkungsgrad von `r roundTo(parameters$geothermieTief$orcWirkungsgrad, 0.01)`
+
+
+
+

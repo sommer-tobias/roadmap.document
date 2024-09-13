@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Potenziale der erneuerbaren Energieproduktion im Kanton Luzern</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="masterReport_files/libs/clipboard/clipboard.min.js"></script>
+<script src="masterReport_files/libs/quarto-html/quarto.js"></script>
+<script src="masterReport_files/libs/quarto-html/popper.min.js"></script>
+<script src="masterReport_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="masterReport_files/libs/quarto-html/anchor.min.js"></script>
+<link href="masterReport_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="masterReport_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="masterReport_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="masterReport_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="masterReport_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul class="collapse">
+  <li><a href="#biomasse-nicht-verholzt" id="toc-biomasse-nicht-verholzt" class="nav-link active" data-scroll-target="#biomasse-nicht-verholzt">Biomasse nicht verholzt</a></li>
+  <li><a href="#sec-anhangBiogasanlagen" id="toc-sec-anhangBiogasanlagen" class="nav-link" data-scroll-target="#sec-anhangBiogasanlagen">Anhang A1: Biogasanlagen</a></li>
+  <li><a href="#literatur" id="toc-literatur" class="nav-link" data-scroll-target="#literatur">Literatur</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Potenziale der erneuerbaren Energieproduktion im Kanton Luzern</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- {{< include kapitel/_memos.qmd >}} -->
+<!-- {{< include kapitel/_datenLaden.qmd >}} -->
+<!-- {{< include kapitel/_funktionenLaden.qmd >}} -->
+<!-- {{< include kapitel/_impressum.qmd >}} -->
+<!-- # Zusammenfassung -->
+<!-- {{< include kapitel/_zusammenfassung.qmd >}} -->
+<!-- # Ziel -->
+<!-- {{< include kapitel/_zielDesProjekts.qmd >}} -->
+<!-- # Methodik -->
+<!-- {{< include kapitel/_vereinfachungenAnnahmen.qmd >}} -->
+<!-- {{< include kapitel/_ep2050plus.qmd >}} -->
+<!-- {{< include kapitel/_skalierungAufKantonLuzern.qmd >}} -->
+<!-- {{< include kapitel/_vorgehenAusbaupfade.qmd >}} -->
+<!-- {{< include kapitel/_entwicklungEndenergie.qmd >}} -->
+<!-- {{< include kapitel/_zieleStromWaermeproduktion.qmd >}} -->
+<!-- {{< include kapitel/_potenzialSystemgrenzen.qmd >}} -->
+<!-- # Politische Rahmenbedingungen -->
+<!-- {{< include kapitel/_politischeAusgangslage.qmd >}} -->
+<!-- # Potenziale erneuerbarer Energieproduktion -->
+<!-- {{< include kapitel/_solarenergiePV.qmd >}} -->
+<!-- {{< include kapitel/_windenergie.qmd >}} -->
+<!-- {{< include kapitel/_wasserkraft.qmd >}} -->
+<!-- {{< include kapitel/_geothermieUntief.qmd >}} -->
+<!-- {{< include kapitel/_luft.qmd >}} -->
+<!-- {{< include kapitel/_oberflaechengewaesser.qmd >}} -->
+<!-- {{< include kapitel/_grundwasser.qmd >}} -->
+<!-- {{< include kapitel/_solarenergieThermisch.qmd >}} -->
+<!-- {{< include kapitel/_geothermieTief.qmd >}} -->
+<!-- {{< include kapitel/_abwaerme.qmd >}} -->
+<!-- {{< include kapitel/_biomasseVerholzt.qmd >}} -->
+<section id="biomasse-nicht-verholzt" class="level2">
+<h2 class="anchored" data-anchor-id="biomasse-nicht-verholzt">Biomasse nicht verholzt</h2>
+<b>
+braucht es hier noch einen check pronovo und holinger bzgl. der einbezogenen anlagen?
+</b>
+<section id="definition" class="level3">
+<h3 class="anchored" data-anchor-id="definition">Definition</h3>
+<p>Zur nicht verholzten Biomasse zählen Hofdünger (Gülle und Mist), landwirtschaftliche Nebenprodukte (z.B. Reststroh aus der Getreideproduktion), organische Abfälle aus Industrie und Gewerbe, organische Abfälle im Haushaltskehricht, Grüngut aus Haushalt und Landschaft sowie Klärschlamm. Die Rohstoffkategorien ohne Hofdünger werden auch als Co-Substrate bezeichnet und sind energetisch ergiebiger als Hofdünger. Nicht verholzte Biomassen werden durch Vergärung Biogas umgewandelt. Biogas ist ein Gemisch, das zu rund zwei Dritteln aus Methan und zu einem Drittel aus Kohlendioxid besteht. Biogas kann gereinigt und aufbereitet in das Erdgasnetz eingespeist werden oder in Blockheizkraftwerken zur Strom- und Wärmegewinnung genutzt werden.</p>
+<!-- Wasserstoff wird im Rahmen dieses Berichts nicht zu Biogas gezählt, da dessen Produktion durch einen Elektrolyseprozess, d.h. die Aufspaltung von Wasser in Sauerstoff und Wasserstoff mithilfe von Strom, erfolgt. Ebenso wenig zählen synthetische Gase, welche ein Folgeprodukt von Wasserstoff sind, zu Biogas.  -->
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-biomassseNichtVerholzt" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-biomassseNichtVerholzt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="masterReport_files/figure-html/fig-biomassseNichtVerholzt-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-biomassseNichtVerholzt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abb.&nbsp;1: Entwicklung der kantonalen Energieproduktion aus nicht-verholzter Biomasse und das entsprechende realistische Potenzial (blau). Zum Vergleich sind die skalierten Werte aus den Energieperspektiven 2050+ (EP2050+) in grau gezeigt.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="aktuelle-produktion-174-gwh" class="level3">
+<h3 class="anchored" data-anchor-id="aktuelle-produktion-174-gwh">Aktuelle Produktion (174&nbsp;GWh)</h3>
+<p>Im Kanton Luzern gibt es insgesamt 32 Anlagen (<a href="#fig-tabelleBiogasanlagen" class="quarto-xref">Abbildung&nbsp;2</a>), welche Biogas energetisch verwerten: 13 Abwasserreinigungsanlagen, 0 industrielle Anlagen und 19 landwirtschaftliche Co-Vergärungsanlagen. Alle Anlagen produzieren mittels Blockheizkraftwerk Strom und Wärme, nur zwei speisen Biogas zusätzlich in das Gasnetz ein<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Die Stromproduktion aller Biogasanlagen im Jahr 2022 betrug 58&nbsp;GWh<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Die aus dieser Stromproduktion abgeschätzte genutzte Waerme beträgt 81&nbsp;GWh<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Insgesamt resultieren 139&nbsp;GWh Strom und Wärme. Die direkt ins Gasnetz eingespeiste Energiemenge beträgt 35&nbsp;GWh<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. In der Summe ist die aktuelle Nutzung somit 174&nbsp;GWh<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
+<!-- [^_biomassenichtverholzt-1]: Emmi Schweiz AG Dagmersellen, Kompogasanlage Wauwil, SwissFarmerPower Inwil, Weiherhus Luzern, Gefu Rickenbach, Perlen Papierfabrik. -->
+</section>
+<section id="theoretisches-potenzial-840-gwh" class="level3">
+<h3 class="anchored" data-anchor-id="theoretisches-potenzial-840-gwh">Theoretisches Potenzial (840&nbsp;GWh)</h3>
+<p>In <span class="citation" data-cites="BiogasStrategieKLU2013">Kanton Luzern (<a href="#ref-BiogasStrategieKLU2013" role="doc-biblioref">2013</a>)</span> wird das theoretische Potenzial von Biogas mit 854&nbsp;GWh angeben. In <span class="citation" data-cites="Thees2017">Thees u.&nbsp;a. (<a href="#ref-Thees2017" role="doc-biblioref">2017</a>)</span> wird das theoretische Potenzial mit 817&nbsp;GWh beziffert. Es wird der Mittelwert von 840&nbsp;GWh übernommen.</p>
+</section>
+<section id="realistisches-potenzial-400-gwh" class="level3">
+<h3 class="anchored" data-anchor-id="realistisches-potenzial-400-gwh">Realistisches Potenzial (400&nbsp;GWh)</h3>
+<p>In <span class="citation" data-cites="BiogasStrategieKLU2013">Kanton Luzern (<a href="#ref-BiogasStrategieKLU2013" role="doc-biblioref">2013</a>)</span> wird das realistische Potenzial mit &nbsp;GWh angegeben. Aus <span class="citation" data-cites="Thees2017">Thees u.&nbsp;a. (<a href="#ref-Thees2017" role="doc-biblioref">2017</a>)</span> ergibt sich ein realistisches Potenzial von 490&nbsp;GWh. Als Arbeitswert wird hier ein Mittelwert von 400&nbsp;GWh angenommen. Inwieweit dieser Arbeitswert wirklich nutzbar ist, hängt stark von der Nutzbarmachung des Hofdüngers ab, welcher energetisch etwa 75 % des realistischen Potenzials ausmacht<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>. Auf die Menge bezogen macht der Hofdünger sogar 96 % der verwendeten Biomasse aus.</p>
+</section>
+<section id="aus-fachlicher-sicht-empfohlenes-ausbauziel-für-2050-250-gwh" class="level3">
+<h3 class="anchored" data-anchor-id="aus-fachlicher-sicht-empfohlenes-ausbauziel-für-2050-250-gwh">Aus fachlicher Sicht empfohlenes Ausbauziel für 2050 (250&nbsp;GWh)</h3>
+<p>Das Ausbauziel hängt stark von der Nutzbarmachung des Hofdüngers ab. Hofdünger hat gegenüber Co-Substraten (z.B. organische Abfälle, Glycerin) eine geringere Energiedichte (Energie pro kg). Wo das Ausbauziel zwischen dem genutzten Potenzial von 170&nbsp;GWh und dem realistischen Potenzial von 400&nbsp;GWh zu positionieren ist, bedarf einer Interessenabwägung. Für ein hohes Ausbauziel sprechen die gesteigerte Nachfrage nach erneuerbarem und speicherbarem Gas für Hochtemperaturprozesse<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, eine weniger starke Abhängigkeit von Importgasen (Wasserstoff, Biogas), die Entlastung des Rohstoffes Holz sowie die Reduktion von Treibhausgasemissionen<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>. Tendenziell fördert vergorene Gülle (im Vergleich zum Ausbringen unvergorener Gülle), trotz dem geringeren Kohlenstoffgehalt<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>, zusätzlich die Humusbildung. Für ein konservatives Ausbauziel sprechen die geringe Wirtschaftlichkeit der Energieproduktion aus Hofdünger alleine (und damit die Abhängigkeit von hohen Fördergeldern) und die langen Transportwege der Co-Substrate (zum Teil aus dem Ausland) und des rückgeführten Düngers nach der Vergärung. Vergorene Gülle hat (im Vergleich zu unvergorener Gülle) ausserdem in der Regel eine erhöhten Ammoniumgehalt. Das damit verbundene erhöhte Auswaschrisiko von Stickstoff kann zu einer Verschmutzung des Grundwassers führen. Gemäss PB K&amp;E die landwirtschaftlichen Treibhausgasemissionen bis 2050 halbiert werden. Dafür ist eine Reduktion des Tierbestands und eine klimaschonende Ernährung nötig (Massnahme KS-L2.2 des PB K&amp;E). Dies reduziert die Menge an verfügbarem Hofdünger und somit das realistische Potenzial. Als Arbeitswert wird ein Ausbauziel von 250&nbsp;GWh gewählt. Dabei wird davon ausgegangen, dass kleine landwirtschaftliche Anlagen mithilfe von Förderung und technischen Fortschritten in Zukunft zumindest teilweise wirtschaftlich betrieben werden können. Das skalierte Bundesziel ist um ein Dreifaches höher und sogar höher als das realistische Potenzial. Dies ist auf importiertes Biogas zurückzuführen, welches in den Daten der EP2050+ nicht von der Inlandproduktion zu trennen ist. </p><div style="page-break-after: always;"></div><p></p>
+<!-- # Übersicht aller Ausbauziele {#sec-ausbauziele} -->
+<!-- {{< include kapitel/_resultateStromUndWaerme.qmd >}} -->
+<!-- {{< include kapitel/_resultateStrom.qmd >}} -->
+<!-- {{< include kapitel/_resultateWärme.qmd >}} -->
+<!-- {{< include kapitel/_kühlen.qmd >}} -->
+<!-- # Anhang -->
+<!-- {{< include kapitel/_anhangInteressengruppen.qmd >}} -->
+</section>
+</section>
+<section id="sec-anhangBiogasanlagen" class="level2">
+<h2 class="anchored" data-anchor-id="sec-anhangBiogasanlagen">Anhang A1: Biogasanlagen</h2>
+<div id="fig-tabelleBiogasanlagen" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tabelleBiogasanlagen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="grafiken/biogasanlagen.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tabelleBiogasanlagen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abb.&nbsp;2: Biogasanlagen im Kanton Luzern
+</figcaption>
+</figure>
+</div>
+<!-- {{< include kapitel/_anhangFernwaermeUmweltwaerme.qmd >}} -->
+</section>
+<section id="literatur" class="level1">
+<h1>Literatur</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-biogasHolinger2022" class="csl-entry" role="listitem">
+Holinger AG. (2022). <em>Biogas im Kanton Luzern</em>.
+</div>
+<div id="ref-BiogasStrategieKLU2013" class="csl-entry" role="listitem">
+Kanton Luzern. (2013). <em>Strategie Biogasanlagen im Kanton Luzern</em>.
+</div>
+<div id="ref-Thees2017" class="csl-entry" role="listitem">
+Thees, O., Burg, V., Erni, M., Bowman, G., &amp; Lemm, R. (2017). <em>Biomassenpotenziale der Schweiz für die energetische Nutzung</em>. <em>Heft</em> (Bd. 57).
+</div>
+</div>
+<!-- {{< include kapitel/_feedbackAntworten.qmd >}} -->
+<!-- {{< include kapitel/_feedbackVorinformation.qmd >}} -->
+<!--# Wasserkraft:
+Wärme und Strom getrennt, Wärme 100%, Strom offen
+Stromtechnologien betrachten, bei allen anderen ähnliche Ausgangslage aus bei Wasser, daher Skalierung. In Bezug auf Wasserfalldiagramm setezn
+Ausbaupfad im Titel durch Ausbauziel ersetzen?-->
+<!-- {{< include kapitel/_titelseite.qmd >}} -->
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Fußnoten</h2>
+
+<ol>
+<li id="fn1"><p>ARA Buholz und SwissFamerPowerInwil<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Pronovo Daten, d.h. ohne Eigenbedarf<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Annahmen: Strom und Wärmeproduktion stehen im Verhältnis 35:65 und 75 % der produzierten Wärme werden genutzt<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>ARA Buholz 6.8 GWh/Jahr <span class="citation" data-cites="biogasHolinger2022">(Tab. 21 in <a href="#ref-biogasHolinger2022" role="doc-biblioref">Holinger AG, 2022</a>)</span> und SFPI 28 GWh/Jahr <span class="citation" data-cites="biogasHolinger2022">(Tab. 21 in <a href="#ref-biogasHolinger2022" role="doc-biblioref">Holinger AG, 2022</a>)</span><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Die Studie <span class="citation" data-cites="biogasHolinger2022">Holinger AG (<a href="#ref-biogasHolinger2022" role="doc-biblioref">2022</a>)</span> analysiert Einzelanlagen und die aufsummierte Gesamtenergie ergibt 151&nbsp;GWh. Der Unterschied zum angegebenen Wert von 174&nbsp;GWh zeigt die Unsicherheit der Abschätzungen aufgrund unterschiedlicher Methodiken.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p><span class="citation" data-cites="BiogasStrategieKLU2013">Kanton Luzern (<a href="#ref-BiogasStrategieKLU2013" role="doc-biblioref">2013</a>)</span>: Hofdüngeranteil 80 %; <span class="citation" data-cites="Thees2017">Thees u.&nbsp;a. (<a href="#ref-Thees2017" role="doc-biblioref">2017</a>)</span>: Hofdüngeranteil 71 %<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Eine entsprechende Aufbereitung des Biogases wird vorausgesetzt.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Treibhausgassemissionen können mit Hilfe von Biogasanlagen über folgende Wirkungspfade eingespart werden: (i) Umwandlung vom stark klimaschädlichen Methan, welches bei der Hofdüngerlagerung freigesetzt würde, zum weniger klimaschädlichen CO<sub>2</sub> bei der Verbrennung, siehe hierzu auch das Kompensationsprogramm des Bundes <a href="https://www.bafu.admin.ch/bafu/de/home/themen/klima/fachinformationen/verminderungsmassnahmen/kompensation/inland/registrierte-projekte.html">Methanvermeidung aus biogenenen Abfällen</a> (ii) Substitution fossiler Brenn- und Treibstoffe durch Biogas, (iii) die Substitution von Mineraldüngern aus fossiler Energiequelle durch organische Dünger.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Bei der Vergärung von Hofdüngern entsteht Methan. Der darin enthaltene Kohlenstoff gelangt als CO<sub>2</sub> in die Atmosphäre und wird nicht mehr dem Boden zugeführt.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Kopiert");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Kopiert");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
